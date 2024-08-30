@@ -1,0 +1,128 @@
+@import 'variables';
+
+// _mixins.scss
+
+// 1. 레이아웃 및 Flexbox 믹스인
+
+// Flexbox 설정 믹스인
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// 그리드 설정 믹스인
+@mixin grid($columns: 12, $gutter: 16px) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gutter;
+}
+
+// 2. 반응형 디자인 믹스인
+
+// 미디어 쿼리 믹스인
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'mobile' {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == 'tablet' {
+    @media (max-width: 900px) {
+      @content;
+    }
+  } @else if $breakpoint == 'desktop' {
+    @media (min-width: 901px) {
+      @content;
+    }
+  }
+}
+
+// 3. 스타일 관련 믹스인
+
+// Border Radius 믹스인
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// Box Shadow 믹스인
+@mixin box-shadow($offset-x: 0, $offset-y: 2px, $blur-radius: 4px, $color: rgba(0, 0, 0, 0.1)) {
+  box-shadow: $offset-x $offset-y $blur-radius $color;
+}
+
+// 4. Typography 믹스인
+
+// Font Style 믹스인_20240828
+@mixin typography($font-size-rem, $font-weight, $line-height, $letter-spacing) {
+  font-size: $font-size-rem;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+
+// Text Truncate 믹스인
+@mixin text-truncate($lines: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+// 5. Button 및 인터랙티브 요소 믹스인
+
+// Button Style 믹스인
+@mixin button-style($background-color, $border-color, $text-color, $hover-background-color, $hover-border-color, $hover-text-color) {
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  color: $text-color;
+  &:hover,
+  &:focus {
+    background-color: $hover-background-color;
+    border-color: $hover-border-color;
+    color: $hover-text-color;
+    outline: none;
+  }
+  &:focus-visible {
+    box-shadow: 0 0 0 2px #0b5cab;
+  }
+}
+
+// Button Size 믹스인
+@mixin button-size($padding, $font-size, $border-radius) {
+  padding: $padding;
+  font-size: $font-size;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+// Link Style 믹스인
+@mixin link-style($color: blue, $hover-color: darkblue) {
+  color: $color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+// 6. Accessibility 믹스인
+
+// Focus Style 믹스인
+@mixin focus-style($color: blue) {
+  &:focus {
+    outline: 2px solid $color;
+    outline-offset: 2px;
+  }
+}
+
+// 7. Animation 믹스인
+
+// Transition 믹스인
+@mixin transition($properties: all, $duration: 0.3s, $ease: ease) {
+  transition: $properties $duration $ease;
+}
+

@@ -1,0 +1,16 @@
+{
+  "name": "argos-classroom-publish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "flatpickr": "^4.6.13",
+    "sass": "^1.77.8"
+  }
+}

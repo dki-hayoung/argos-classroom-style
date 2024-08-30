@@ -1,0 +1,27 @@
+@import '../abstracts/_variables';
+@import '../abstracts/_mixins';
+
+// 기본 브라우저 스타일 리셋
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// 기본 폰트 설정
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple SD Gothic Neo', 'Nanum Gothic', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-size: 1rem; // 16px
+  line-height: 1.5; // 기본 줄 간격 (24px)
+}
+
+// 접근성
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

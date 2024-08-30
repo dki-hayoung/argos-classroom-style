@@ -1,0 +1,64 @@
+// Pretendard 폰트 페이스 정의
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../fonts/Pretendard-ExtraLight.woff2') format('woff2'),
+       url('../fonts/Pretendard-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../fonts/Pretendard-Regular.woff2') format('woff2'),
+       url('../fonts/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../fonts/Pretendard-Medium.woff2') format('woff2'),
+       url('../fonts/Pretendard-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../fonts/Pretendard-Bold.woff2') format('woff2'),
+       url('../fonts/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.body-02-b {
+  @include typography($font-size-body-02-rem, $font-weight-bold, $line-height-160, $letter-spacing-negative);
+}
+
+.body-02-m {
+  @include typography($font-size-body-02-rem, $font-weight-medium, $line-height-150, $letter-spacing-negative);
+}
+
+.body-01-b {
+  @include typography($font-size-body-01-rem, $font-weight-bold, $line-height-150, $letter-spacing-negative);
+}
+
+.body-01-m {
+  @include typography($font-size-body-01-rem, $font-weight-medium, $line-height-150, $letter-spacing-negative);
+}
+
+.caption-02-b {
+  @include typography($font-size-caption-02-rem, $font-weight-bold, $line-height-150, $letter-spacing-negative);
+}
+
+.caption-02-m {
+  @include typography($font-size-caption-02-rem, $font-weight-medium, $line-height-150, $letter-spacing-negative);
+}
+
+.caption-01-b {
+  @include typography($font-size-caption-01-rem, $font-weight-bold, $line-height-160, $letter-spacing-negative);
+}
+
+.caption-01-m {
+  @include typography($font-size-caption-01-rem, $font-weight-medium, $line-height-150, $letter-spacing-negative);
+}

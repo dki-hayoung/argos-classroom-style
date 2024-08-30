@@ -1,0 +1,112 @@
+// 색상 변수 예시
+$acl-color-secondary: #5c5c5c;
+$acl-color-neutral-100: #ffffff;
+$acl-color-neutral-90: #f3f3f3;
+$acl-color-neutral-80: #c9c9c9;
+$acl-color-brand-40: #0b5cab;
+$acl-color-error: #ea001e;
+$acl-color-warning: #dd7a01;
+$acl-color-success: #45c65a;
+$acl-font-size-base: 16px;
+$acl-line-height-base: 1.5;
+
+// typography 예시
+$font-size-base: 14px;
+$font-size-lg: 18px;
+$font-weight-bold: 700;
+$line-height-base: 1.5;
+
+// Font sizes (rem units) 예시
+$acl-font-size-xs: 0.75rem;  // 12px
+$acl-font-size-sm: 0.875rem; // 14px
+$acl-font-size-md: 1rem;     // 16px (Base size)
+$acl-font-size-lg: 1.125rem; // 18px
+$acl-font-size-xl: 1.5rem;   // 24px
+
+// Font weights 예시
+$acl-font-weight-thin: 100;
+$acl-font-weight-light: 300;
+$acl-font-weight-regular: 400; // Regular weight
+$acl-font-weight-medium: 500;
+$acl-font-weight-semibold: 600;
+$acl-font-weight-bold: 700; // Bold weight
+
+// Line heights 예시
+$acl-line-height-none: 1;     // No line-height
+$acl-line-height-tight: 1.25; // Tight line-height
+$acl-line-height-normal: 1.5; // Normal line-height (Base)
+$acl-line-height-relaxed: 1.75; // Relaxed line-height
+
+// Font families 예시
+$acl-font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$acl-font-family-serif: Georgia, "Times New Roman", Times, serif;
+$acl-font-family-mono: "Courier New", Courier, monospace;
+
+// Font Sizes in REM
+$font-size-body-02-rem: 1.125rem;
+$font-size-body-01-rem: 1rem;
+$font-size-caption-02-rem: 0.875rem;
+$font-size-caption-01-rem: 0.75rem;
+
+// Line Heights
+$line-height-160: 160%;
+$line-height-150: 150%;
+
+// Letter Spacing
+$letter-spacing-negative: -0.3%;
+
+// Font Weights
+$font-weight-bold: bold;
+$font-weight-medium: 500;
+
+
+//Black&White
+$black: #000;
+$white: #fff;
+
+// Grayscale Colors
+$gray01: #F9FAFA;
+$gray02: #EDEFF1;
+$gray03: #D9DBE0;
+$gray04: #C6CAD1;
+$gray05: #AAB0BB;
+$gray06: #8A93A2;
+$gray07: #6F7C94;
+$gray08: #47546C;
+$gray09: #1C283E;
+$gray10: #141426;
+
+// Primary Colors
+$primary01: #E9F0FD;
+$primary02: #BBD1F9;
+$primary03: #9ABBF6;
+$primary04: #6C9CF2;
+$primary05: #5089EF;
+$primary06: #246BEB;
+$primary07: #2161D6;
+$primary08: #1A4CA7;
+$primary09: #143B81;
+$primary10: #0F2D63;
+
+// Text Color 
+$text01: #141426;
+$text02: #1C283E;
+$text03: #47546C;
+$text04: #6F7C94;
+$text05: #8A93A2;
+
+// Background Color
+$bg-white: #fff;
+$bg-blue: #DDEBFF;
+$bg-light-blue: #E7EDF6;
+
+// System
+$red: #DA1E28;
+$accent: #FFD400;
+
+// Icons Colors
+$icon-radius-border: .25rem; // 아이콘 테두리 반경
+$icon-color-background: transparent; // 아이콘 배경색
+$icon-color-foreground-default: $gray07; // 기본 아이콘 색상 (fallback)
+$icon-color-foreground-success: $primary06;
+$icon-color-foreground-error: $red;

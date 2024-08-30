@@ -1,0 +1,412 @@
+/* Reset some default styles */
+body,
+h2,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  background-color: #f8f9fa; /* Light grey background */
+  color: #343a40; /* Dark grey text */
+}
+
+/* Catalog container layout */
+.docs-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styles */
+.docs-sidebar {
+  min-width: 250px;
+  background-color: #fff; /* Dark grey background */
+  color: #47546C; /* White text */
+  padding: 0.625rem;
+  border-right: 1px solid #d8dee6;
+  overflow-y: auto; /* Scrollable sidebar */
+}
+
+.docs-logo {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  i {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.625rem;
+    font-size: 2.5rem;
+  }
+}
+
+.docs-sidebar ul {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.docs-sidebar li {
+  margin-bottom: 1rem;
+}
+
+.docs-sidebar a {
+  color: #47546C;
+  text-decoration: none;
+  font-weight: 400;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  &.active {
+    background-color: #E7EDF6; /* Slightly lighter grey on hover/focus */
+  }
+}
+
+.docs-sidebar a:hover,
+.docs-sidebar a:focus {
+  background-color: #E7EDF6; /* Slightly lighter grey on hover/focus */
+}
+
+/* Main content area styles */
+.docs-main {
+  flex-grow: 1;
+  background-color: #ffffff; /* White background for main content */
+  overflow-y: auto;
+}
+
+.component-header {
+  padding: 1rem 2rem;
+  background-color: #f4f6f9;
+  ul {
+    display: flex;
+    gap: 10px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    font-size: 0.75rem;
+    color: #47546C;
+    &:not(:first-of-type)::before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 2px;
+      background-color: #47546C;
+      border-radius: 999px;
+    }
+  }
+}
+
+.component-main {
+  padding: 3rem 2rem;
+}
+
+.docs-main h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  color: #47546C; /* Primary color */
+}
+
+.docs-main h3 {
+  margin-bottom: 1rem;
+  font-size: 1.625rem;
+  color: #425a73; /* Primary color */
+  &:not(:first-of-type) {
+    margin-top: 3rem;
+  }
+}
+
+.docs-main h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #587ab9; /* Primary color */
+}
+.code-block + h4 {
+  margin-top: 2rem;
+}
+
+h4 + .docs-desc {
+  margin-top: 0.625rem;
+}
+.docs-desc {
+  color: #5a76aa; /* Primary color */
+  .doc {
+    padding: 0 2px;
+    font-size: 1rem;
+    color: #1990b8;
+    background: #f6f9fb;
+    border-radius: .125rem;
+  }
+}
+.docs-list {
+  margin: 0.625rem 0;
+  margin-left: 20px;
+  list-style-type: disc;
+  li {
+    color: #5a76aa; /* Primary color */
+    &:not(:last-of-type) {
+      margin-bottom: 0.3125rem;
+    }
+  }
+}
+
+.component-preview {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #dee2e6;
+  border-width: 2px 2px 0 2px;
+  border-radius: 0.25rem 0.25rem 0 0;
+  &:last-of-type {
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+
+.demo-viewport {
+  position: relative;
+  height: 21.25rem;
+  padding: 0;
+  .acl-global-header_container {
+    position: absolute;
+  }
+}
+
+pre {
+  background-color: #f8f9fa; /* Light grey background for code */
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #dee2e6;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  color: #d63384; /* Slightly pinkish text for code */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .docs-container {
+    flex-direction: column;
+  }
+
+  .docs-sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .docs-main {
+    padding: 1rem;
+  }
+}
+
+/* 추가된 복사 버튼 스타일링 */
+.action-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #fdfdfd;
+}
+.copy-button {
+  background-color: #fdfdfd;
+  color: #425a73;
+  line-height: 1.2;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-left: 1px solid #e6e6e6;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.copy-button:hover {
+  background-color: $primary01;
+}
+
+/* 코드 블록 스타일 */
+pre[class*="language-"]:after,
+pre[class*="language-"]:before {
+  content: none !important;
+}
+pre[class*=language-]>code {
+  border-left: 0 !important;
+  box-shadow: none !important;
+}
+.code-block {
+  position: relative;
+  border: 2px solid #dee2e6;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+pre {
+  background-color: #f8f9fa !important; /* Prism.js에서 사용되는 기본 배경색 */
+  padding: 1rem;
+  margin: 0 !important;
+  border: 0 !important;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  color: #f8f8f2; /* Prism.js에서 사용되는 기본 텍스트 색상 */
+}
+
+
+// Color
+.palette-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.color-palette p {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #47546C;
+}
+.color-palette ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  border-radius: 5px;
+  li {
+    &:first-of-type {
+      border-radius: 5px 5px 0 0;
+    }
+    &:last-of-type {
+      border-radius: 0 0 5px 5px;
+    }
+  }
+}
+
+.color-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+  &:nth-of-type(1),
+  &:nth-of-type(2),
+  &:nth-of-type(3),
+  &:nth-of-type(4),
+  &:nth-of-type(5),
+  &:nth-of-type(6) {
+    color: #333;
+  }
+
+  &:nth-of-type(7),
+  &:nth-of-type(8),
+  &:nth-of-type(9),
+  &:nth-of-type(10) {
+    color: #fff;
+  }
+}
+
+.color-item .hex-button {
+  display: none;
+  background: none;
+  border: none;
+  color: currentColor;
+  cursor: pointer;
+}
+
+/* Hex 버튼은 li가 hover되었을 때 나타남 */
+.color-item:hover .hex-button {
+  display: inline-block;
+}
+
+/* 툴팁 스타일 */
+.tooltip {
+  position: absolute;
+  top: -50%;
+  background-color: #1C283E;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.tooltip.hex {
+  right: 0;
+}
+
+// Icons
+.docs-icon {
+  display: flex;
+  flex-wrap: wrap;
+  &-list {
+    list-style: none;
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+    figcaption {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #425a73;
+    }
+  }
+}
+
+// Release note
+.release-notes {
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: .875rem;
+  color: #5876a3;
+  line-height: 1.5;
+}
+.release-notes h2 {
+  margin-bottom: .5rem;
+  font-size: 1.8125rem;
+  font-weight: 200;
+}
+.release-notes h3 {
+  margin-top: 0 !important;
+  margin-bottom: .5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #000;
+}
+.release-notes ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style: disc;
+}
+.release-notes code {
+  color: #000;
+}

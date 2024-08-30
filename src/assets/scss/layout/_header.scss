@@ -1,0 +1,191 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// assistive
+.acl-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+}
+
+// Global Header
+.acl-global {
+  &-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: $bg-light-blue;
+    padding: 1.2813rem 1rem;
+    height: 5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  
+    // Global Header Container
+    &_container {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      
+      .acl-assistive-text {
+        &_focus {
+          top: 0;
+          color: #5e5e5e;
+          background: #fff;
+        }
+      }
+    }
+  
+    // Global Header Item
+    &__item {
+      // padding: 0 1rem;
+      
+      &--center {
+        flex: 1;
+        padding-right: 17.5rem;
+      }
+    }
+
+    // flex
+    &--flex {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      gap: 2.5rem;
+    }
+    
+    // Global Header Logo
+    &__logo {
+      width: 12.5rem;
+      height: 2.5rem;
+      font-size: 1.375rem;
+      font-weight: 700;
+      line-height: 1.4;
+      color: $primary10;
+    }
+
+    // Global Header Logo
+    &__time {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 104px;
+
+      .acl-text {
+        font-size: 1rem;
+        line-height: 1.4;
+        font-weight: 500;
+        color: $text03;
+      }
+    }
+
+    // Console Header
+    &_console {
+      padding: 1.2813rem 5rem;
+    }
+  }
+
+  // Global Header Actions
+  &-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.25rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+
+    // Actions Item
+    &__item {
+      color: $text04;
+    }
+  }
+
+  // Global Header Controls
+  &-controls {
+
+    .acl-form-element__control {
+      width: 320px;
+    }
+  }
+
+  &__text {
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 140%;
+    color: $text01;
+  }
+}
+
+
+// Page Headers
+.acl-page-header {
+  width: 100%;
+  height: fit-content;
+  background-color: $white;
+  
+  // page header row
+  &__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+
+  // Actions: 전체선택
+  &__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    align-items: center;
+    gap: 0.25rem;
+
+    .acl-form-element__label {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 140%;
+      color: $text01;
+    }
+  }
+
+  // Controls: 검색,필터,새로고침
+  &__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    align-items: center;
+    gap: 0.625rem;
+    height: 100%;
+  }
+  &__control {
+    display: inline-flex;
+    margin-left: .25rem;
+  }
+
+  // Mete
+  &__meta {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 140%;
+    color: $text01;
+  }
+}

@@ -1,0 +1,413 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+// Input
+input {
+  [type="checkbox"],
+  [type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+}
+
+// 기본 Input 스타일
+.acl-form-element {
+  position: relative;
+  min-width: 0;
+
+  &__label {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    display: inline-block;
+    color: $text04;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.375rem;
+  }
+
+  &__control {
+    clear: left;
+    position: relative;
+
+    .acl-checkbox,
+    .acl-radio {
+      display: block;
+    }
+  }
+
+  // helper text
+  &__help,
+  &__helper {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 0.375rem;
+    display: block;
+  }
+
+  &__legend {
+    font-weight: 700;
+  }
+}
+
+// 기본 Input
+.acl-input {
+  padding-top: 0;
+  padding-right: 0.625rem;
+  padding-bottom: 0;
+  padding-left: 0.625rem;
+  width: 100%;
+  min-height: calc(2.5rem + 2px);
+  line-height: 2.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: $white;
+  font-size: 0.9375rem;
+  color: $text01;
+  -webkit-transition: border 0.1s linear, background-color 0.1s linear;
+  transition: border 0.1s linear, background-color 0.1s linear;
+  display: inline-block;
+
+  &:focus-visible {
+    outline: 1px solid $primary06;
+    // box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+  }
+
+  &-outline {
+    border-color: $gray03;
+    background-color: transparent;
+  }
+
+  // Disabled Style
+  &[disabled] {
+    background-color: $gray03;
+    border-color: $gray03;
+    cursor: not-allowed;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // datetimepickr
+  &_date {
+    font-weight: 500;
+    color: $text01;
+  }
+}
+
+::placeholder {
+  color: $text05;
+  font-weight: 500;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color: $text05;
+  font-weight: 500;
+  opacity: 1;
+}
+
+// Text Input Error
+.acl-has-error {
+  border-color: $red;
+
+  .acl-input {
+    border-color: $red;
+    background-clip: padding-box;
+
+    &:focus {
+      box-shadow: 0;
+    }
+    &:focus-visible {
+      box-shadow: 0 0 0 2px #0b5cab;
+    }
+  }
+
+  .acl-form-element__label,
+  .acl-form-element__help,
+  .acl-required {
+    color: $red;
+  }
+}
+
+// Text Input With Icon
+.acl-input-has-icon {
+  position: relative;
+  color: $text01;
+  border-bottom: 1px solid $gray04;
+  border-radius: 0;
+
+  .acl-button_icon:not(button) {
+    pointer-events: none;
+  }
+
+  // Text Input Icon on the right
+  &_right {
+    .acl-button_icon {
+      right: 0.75rem;
+    }
+
+    .acl-input {
+      padding-right: 3rem;
+      background-color: transparent;
+    }
+  }
+
+  // Text Input With Icon
+  .acl-button_icon {
+    // 24px
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    border: 0;
+    z-index: 2;
+  }
+
+  // Text Input With Icon :foucs
+  .acl-input {
+    border-radius: 0;
+    &:focus-visible {
+      outline: 0;
+      // The syntax is box-shadow: offset-x | offset-y | blur-radius | color
+      box-shadow: 0 1px 0 $primary06;
+    }
+  }
+}
+
+// 기본 Checkbox
+.acl-checkbox {
+  display: inline-block;
+  position: relative;
+
+  [type="checkbox"] {
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    pointer-events: auto;
+  }
+
+  .acl-checkbox__label,
+  .acl-form-element__label {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 18px;
+    gap: 0.5rem;
+  }
+  .acl-form-element__label {
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+
+  // checkbox icon
+  .acl-checkbox_faux {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    border: 1px solid $gray06;
+    background-color: transparent;
+    -webkit-transition: border 0.1s linear, background-color 0.1s linear;
+    transition: border 0.1s linear, background-color 0.1s linear;
+
+    .acl-icon {
+      display: none;
+      width: 0.75rem;
+      height: 0.625rem;
+      transition: 0.1s linear;
+    }
+  }
+
+  // Checked Style
+  [type="checkbox"]:checked + .acl-checkbox__label .acl-checkbox_faux,
+  [type="checkbox"]:checked + .acl-checkbox_faux,
+  [type="checkbox"]:checked ~ .acl-checkbox_faux {
+    color: $white;
+    border-color: $primary06;
+    background-color: $primary06;
+
+    .acl-icon {
+      display: block;
+    }
+  }
+}
+
+// Checkbox Focus Style
+.acl-checkbox [type="checkbox"]:focus-visible + .acl-checkbox__label .acl-checkbox_faux,
+.acl-checkbox [type="checkbox"]:focus-visible + .acl-checkbox_faux,
+.acl-checkbox [type="checkbox"]:focus-visible ~ .acl-checkbox_faux {
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+}
+
+.acl-form-element
+  .acl-checkbox
+  [type="checkbox"]
+  + .acl-checkbox__label
+  .acl-checkbox_faux,
+.acl-form-element .acl-checkbox [type="checkbox"] + .acl-checkbox_faux,
+.acl-form-element .acl-checkbox [type="checkbox"] ~ .acl-checkbox_faux {
+  margin-right: 0.5rem;
+}
+
+// Radio
+.acl-radio {
+  // Radio Button Group
+  &_button-group {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 0.5469rem;
+  }
+
+  // Radio Button
+  &_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+
+    .acl-radio_faux {
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    [type="radio"] {
+      width: 1px;
+      height: 1px;
+      border: 0;
+      clip: rect(0 0 0 0);
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+    }
+
+    // Radio Button label
+    &__label {
+      padding: 0.5rem 1rem;
+      font-size: 15px;
+      line-height: 1.5;
+      font-weight: 500;
+      color: $text05;
+      background-color: $white;
+      border-radius: 0.375rem;
+      cursor: pointer;
+
+      &:focus-visible {
+        box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+      }
+    }
+
+    [type="radio"]:checked + .acl-radio_button__label,
+    [type="radio"]:checked + .acl-radio_faux,
+    [type="radio"]:checked ~ .acl-radio_faux {
+      background-color: $primary06;
+      color: $white;
+    }
+  }
+}
+
+// Radio Button hover focus
+// .acl-radio_button [type="radio"]:checked + .acl-radio--button__label:focus,
+// .acl-radio_button [type="radio"]:checked + .acl-radio--button__label:hover,
+// .acl-radio_button [type="radio"]:checked + .acl-radio_button__label:focus,
+// .acl-radio_button [type="radio"]:checked + .acl-radio_button__label:hover,
+// .acl-radio_button [type="radio"]:checked + .acl-radio_faux:focus,
+// .acl-radio_button [type="radio"]:checked + .acl-radio_faux:hover,
+// .acl-radio_button [type="radio"]:checked ~ .acl-radio_faux:focus,
+// .acl-radio_button [type="radio"]:checked ~ .acl-radio_faux:hover {
+//   -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+//   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+//   z-index: 1;
+// }
+
+.acl-radio_button [type="radio"]:focus-visible + .acl-radio_button__label,
+.acl-radio_button [type="radio"]:focus-visible + .acl-radio_faux,
+.acl-radio_button [type="radio"]:focus-visible ~ .acl-radio_faux {
+  -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+  z-index: 1;
+}
+
+
+// 기본 Select
+.acl-select_container {
+  position: relative;
+  color: $gray10;
+
+  .acl-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0);
+    transition: .5s;
+  }
+}
+
+.acl-select {
+  height: calc(2.5rem + 2px);
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid $gray04;
+  background-color: transparent;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: $text05;
+  appearance: none; /* 기본 브라우저 스타일 제거 */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url('arrow-icon.png'); /* 화살표 이미지 경로 설정 */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* 화살표 이미지 위치 조정 */
+  background-size: 16px; /* 화살표 이미지 크기 조정 */
+  transition: border .1s linear, background-color .1s linear;
+}
+
+.acl-select_container .acl-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-left: 1rem;
+  padding-right: 2.5rem;
+}
+
+.acl-select:active,
+.acl-select:focus {
+  outline: 0;
+  box-shadow: none;
+  background-color: transparent;
+  color: $text01;
+
+  &+.acl-icon {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+}
+

@@ -1,0 +1,153 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// 기본 버튼 스타일 (Block)
+.acl-button {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 150%;
+  // 사이즈
+  @include button-size(0.5rem 1.25rem, 1rem, 0.5rem); // padding, font, border-radius
+  // 스타일
+  @include button-style (transparent, transparent, $text04, transparent, transparent, $primary06);
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;  // 기본 스타일 제거
+  white-space: normal;        // 기본 텍스트 흐름 유지
+  -webkit-user-select: none;  // 웹킷 브라우저에서 텍스트 선택 비활성화
+  -moz-user-select: none;     // Firefox 브라우저에서 텍스트 선택 비활성화
+  -ms-user-select: none;      // Internet Explorer/Edge에서 텍스트 선택 비활성화
+  user-select: none;          // 표준 브라우저에서 텍스트 선택 비활성화
+  text-decoration: none;
+  // transition 시작
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+  // button sizing
+  &_small {
+    min-width: 180px;
+    @include button-size(0.375rem 1rem, 0.8125rem, 0.5rem); // ($padding, $font-size, $border-radius) 
+  }
+
+  &_large {
+    min-width: 180px;
+    @include button-size(0.75rem 1.5rem, 1rem, 0.5rem);
+  }
+
+  &_x-large {
+    min-width: 180px;
+    @include button-size(1.25rem 1.5rem, 1rem, 0.5rem);
+  }
+
+  // button variations
+  &_primary {
+    font-weight: 700;
+    @include button-style ($primary06, transparent, $white, $primary08, transparent , $white);
+  }
+
+  &_secondary {
+    font-weight: 700;
+    @include button-style ($primary04, transparent, $white, $primary08, transparent , $white);
+  }
+
+  &_destructive {
+    @include button-style ($red, transparent, $white, $red, transparent , $white);
+  }
+
+  // Outline Buttons
+  &_outline {
+    font-weight: 700;
+    @include button-style (transparent, $gray04, $gray07, transparent, $primary08, $primary08);
+
+
+    &-primary {
+      font-weight: 700;
+      @include button-style ($white, $primary06, $primary06, $white, $primary08 , $primary08);
+    }
+
+    &-secondary {
+      font-weight: 700;
+      @include button-style ($white, $primary04, $primary04, $white, $primary08 , $primary08);
+    }
+  }
+
+  &:disabled,
+  &[disabled] {
+    background-color: transparent;
+    border-color: transparent;
+    color: $gray05;
+    // cursor: not-allowed;
+    cursor: default;
+  }
+
+
+  // 아이콘 버튼 스타일
+  &_icon {
+    padding: 0;
+    line-height: 1;
+    vertical-align: middle;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+
+    // 아이콘 테두리
+    &-border {
+      width: 2.5rem;
+      height: 2.5rem;
+      line-height: 1;
+      vertical-align: middle;
+      -webkit-transition: border .15s linear;
+      transition: border .15s linear;
+      // border: 1px solid currentColor;
+      border-radius: 999px;
+      .acl-button__icon {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+    }
+
+    // 아이콘 버튼의 사이즈
+    &-xx-small {
+      // 16px
+      width: 1rem;
+      height: 1rem;
+    }
+    &-x-small {
+      // 20px
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    &-small {
+      // 24px
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    &-large {
+      // 40px
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+
+  &__icon {
+    // 32px
+    width: 2rem;
+    height: 2rem;
+  }
+
+  // button with icon
+  .acl-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+}
