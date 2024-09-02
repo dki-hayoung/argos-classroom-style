@@ -1,7 +1,6 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
-
-// Input
+/*----------------------
+  Input
+----------------------*/
 input {
   [type="checkbox"],
   [type="radio"] {
@@ -26,7 +25,9 @@ select:-moz-autofill {
   background-color: #fff !important; /* 배경색 덮어쓰기 */
 }
 
-// 기본 Input 스타일
+/*----------------------
+  Form Element
+----------------------*/
 .form-element {
   position: relative;
   min-width: 0;
@@ -37,10 +38,9 @@ select:-moz-autofill {
     -ms-hyphens: auto;
     hyphens: auto;
     display: inline-block;
-    color: var(--color-text-04);
-    font-size: 0.875rem;
-    font-weight: 700;
     margin-bottom: 0.375rem;
+    color: var(--color-text-04);
+    @include font-sub-title-01;
   }
 
   &__control {
@@ -68,7 +68,9 @@ select:-moz-autofill {
   }
 }
 
-// 기본 Input
+/*----------------------
+  Text Input
+----------------------*/
 .input {
   padding-top: 0;
   padding-right: 0.625rem;
@@ -112,7 +114,9 @@ select:-moz-autofill {
     }
   }
 
-  // datetimepickr
+  /*----------------------
+    Datetime Picker
+  ----------------------*/
   &_date {
     font-weight: 500;
     color: var(--color-text-01);
@@ -201,7 +205,9 @@ select:-moz-autofill {
   }
 }
 
-// 기본 Checkbox
+/*----------------------
+  Checkbox
+----------------------*/
 .checkbox {
   display: inline-block;
   position: relative;
@@ -290,7 +296,9 @@ select:-moz-autofill {
   margin-right: 0.5rem;
 }
 
-// Radio
+/*----------------------
+  Radio
+----------------------*/
 .radio {
   // Radio Button Group
   &_button-group {
@@ -351,20 +359,6 @@ select:-moz-autofill {
   }
 }
 
-// Radio Button hover focus
-// .radio_button [type="radio"]:checked + .radio--button__label:focus,
-// .radio_button [type="radio"]:checked + .radio--button__label:hover,
-// .radio_button [type="radio"]:checked + .radio_button__label:focus,
-// .radio_button [type="radio"]:checked + .radio_button__label:hover,
-// .radio_button [type="radio"]:checked + .radio_faux:focus,
-// .radio_button [type="radio"]:checked + .radio_faux:hover,
-// .radio_button [type="radio"]:checked ~ .radio_faux:focus,
-// .radio_button [type="radio"]:checked ~ .radio_faux:hover {
-//   -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
-//   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
-//   z-index: 1;
-// }
-
 .radio_button [type="radio"]:focus-visible + .radio_button__label,
 .radio_button [type="radio"]:focus-visible + .radio_faux,
 .radio_button [type="radio"]:focus-visible ~ .radio_faux {
@@ -373,8 +367,9 @@ select:-moz-autofill {
   z-index: 1;
 }
 
-
-// 기본 Select
+/*----------------------
+  Select
+----------------------*/
 .select_container {
   position: relative;
   color: var(--color-gray-10);

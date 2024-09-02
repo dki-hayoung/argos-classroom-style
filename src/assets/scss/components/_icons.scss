@@ -1,6 +1,6 @@
-@import '../abstracts/variables';
-
-// 아이콘 컨테이너 스타일
+/*----------------------
+  Icon
+----------------------*/
 .icon-container {
   display: inline-block;
   border-radius: $icon-radius-border; // SCSS 변수 사용

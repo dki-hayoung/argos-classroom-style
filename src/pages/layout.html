@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
+    <title>Classroom</title>
     <link rel="stylesheet" href="../assets/css/main.css">
   <!-- flatpickr -->
   <link rel="stylesheet" href="../lib/flatpickr/flatpickr.min.css">
@@ -64,76 +64,13 @@ header {
 }
 
 .main-content {
-    padding: 32px 68px;
+    padding: 32px 0 0;
     overflow-y: auto; /* Y축 스크롤 */
     flex: 1; /* 남은 공간을 모두 차지 */
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 }
-
-.cards-container {
-    display: grid;
-    grid-gap: 24px 16px;
-    overflow-x: auto; /* 가로 스크롤 */
-    flex: 1; /* 남은 공간을 모두 차지 */
-    align-items: start; /* 그리드 아이템이 셀 상단에 위치하도록 */
-    grid-auto-rows: min-content; /* 각 행의 높이를 카드 내용에 맞춤 */
-}
-
-/* 카드 아이템 스타일링 */
-.card-item {
-    background-color: #ccc;
-    width: 100%;
-    min-width: 280px; /* 카드의 최소 너비 */
-    aspect-ratio: 280 / 187; /* 카드의 비율 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* 콘텐츠가 카드 영역을 넘어가지 않도록 설정 */
-}
-
-/* 카드 호버 효과 */
-.card-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* 기본 설정: 화면 너비가 1920px 이상일 때 */
-@media (min-width: 1920px) {
-    .cards-container {
-        grid-template-columns: repeat(6, minmax(280px, 1fr));
-    }
-}
-
-/* snb가 열렸을 때 */
-.snb:not(.closed) ~ .main-content .cards-container {
-    grid-template-columns: repeat(5, minmax(280px, 1fr));
-}
-
-/* 1280px ~ 1919px일 때 */
-@media (max-width: 1919px) and (min-width: 1280px) {
-    .cards-container {
-        grid-template-columns: repeat(6, minmax(280px, 1fr));
-    }
-
-    /* snb가 열렸을 때 */
-    .snb:not(.closed) ~ .main-content .cards-container {
-        grid-template-columns: repeat(5, minmax(280px, 1fr));
-    }
-}
-
-/* 1280px 미만일 때 */
-@media (max-width: 1279px) {
-    .cards-container {
-        grid-template-columns: repeat(5, minmax(280px, 1fr));
-        overflow-x: auto;
-    }
-}
-
 
     </style>
 </head>
@@ -178,7 +115,7 @@ header {
                 <li class="tabs__item" title="채팅" role="presentation">
                   <a class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-1" id="tab-1__item">
                     <span class="icon-container current-color" title="chat icon">
-                      <svg class="icon icon_large">
+                      <svg class="icon">
                         <use xlink:href="../assets/images/icons/symbols.svg#chat"></use>
                       </svg>
                     </span>
@@ -188,7 +125,7 @@ header {
                 <li class="tabs__item" title="학생" role="presentation">
                   <a class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-2" id="tab-2__item">
                     <span class="icon-container current-color" title="student icon">
-                      <svg class="icon icon_large">
+                      <svg class="icon">
                         <use xlink:href="../assets/images/icons/symbols.svg#student"></use>
                       </svg>
                     </span>
@@ -198,7 +135,7 @@ header {
                 <li class="tabs__item is-active" title="정보" role="presentation">
                   <a class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-3" id="tab-3__item">
                     <span class="icon-container current-color" title="info icon">
-                      <svg class="icon icon_large">
+                      <svg class="icon">
                         <use xlink:href="../assets/images/icons/symbols.svg#info"></use>
                       </svg>
                     </span>
@@ -211,6 +148,20 @@ header {
               <div id="tab-3" class="tabs__content show" role="tabpanel" aria-labelledby="tab-3__item">
                 <h3 class="snb-tit">
                   수업 코드
+                  <div class="btn-group">
+                    <button class="button button_icon button_icon-x-small" title="Share Icon">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use xlink:href="../assets/images/icons/symbols.svg#share"></use>
+                      </svg>
+                      <span class="assistive-text">새 창</span>
+                    </button>
+                    <button class="button button_icon button_icon-x-small" title="Print Icon">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use xlink:href="../assets/images/icons/symbols.svg#print"></use>
+                      </svg>
+                      <span class="assistive-text">인쇄</span>
+                    </button>
+                  </div>
                 </h3>
                 <div class="code code_small">
                   <img src="../assets/images/temp/QR_code_sample.png" alt="수업 코드의 QR code" class="code_qr">
@@ -220,6 +171,7 @@ header {
                     <em>1234</em>
                   </div>
                 </div>
+                <p class="snb-desc">학생이 Argos Classroom앱에서 수업 코드로 접속할 수 있습니다.</p>
                 <h3 class="snb-tit">
                   수업 정보
                 </h3>
@@ -270,9 +222,15 @@ header {
                     </span>
                   </div>
                 </fieldset>
-                <div class="form-element"><label class="form-element__label" for="text-input-id-0">Input Label</label>
+                <div class="form-element"><label class="form-element__label" for="text-input-id-0">수업 시작 일시</label>
                   <div class="form-element__control">
-                    <input type="text" id="datepicker" placeholder="Select Date/Time" data-input class="input input_date">
+                    <input type="text" id="datepicker" placeholder="YYYY-MM-DD HH:mm:SS" data-input class="input input_date">
+                  </div>
+                </div>
+                <div class="form-element">
+                  <label class="form-element__label" for="text-input-id-2">수업 설명</label>
+                  <div class="form-element__control">
+                    <input id="text-input-id-2" placeholder="수업 설명을 입력해 주세요." type="text" class="input" value="">
                   </div>
                 </div>
               </div>
@@ -280,46 +238,488 @@ header {
           </div>
         </aside>
         <main class="main-content">
-            <div class="cards-container">
-                <div class="card-item">Card 1</div>
-                <div class="card-item">Card 2</div>
-                <div class="card-item">Card 3</div>
-                <div class="card-item">Card 4</div>
-                <div class="card-item">Card 5</div>
-                <div class="card-item">Card 6</div>
-                <div class="card-item">Card 7</div>
-                <div class="card-item">Card 8</div>
-                <div class="card-item">Card 9</div>
-                <div class="card-item">Card 10</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <div class="card-item">Card 11</div>
-                <!-- 더 많은 카드들... -->
+          <div class="page-header page-header__row">
+            <div class="page-header__actions">
+              <div class="page-header__control">
+                <div class="checkbox">
+                  <input type="checkbox" name="options" id="checkbox-unique-id-1" value="checkbox-unique-id-1"
+                    checked="" />
+                  <label class="checkbox__label" for="checkbox-unique-id-1">
+                    <span class="checkbox_faux"><svg class="icon"><use xlink:href="../assets/images/icons/symbols.svg#check"></use></svg></span>
+                    <span class="form-element__label">전체선택</span>
+                  </label>
+                </div>
+              </div>
+              <div class="page-header__meta item-count">
+                <em class="primary06">1</em>/15
+              </div>
             </div>
+            <div class="page-header__controls">
+              <div class="page-header__control">
+                <div class="form-element">
+                  <label class="blind" for="text-input-id-0">학생 번호 이름 검색</label>
+                  <div class="form-element__control input-has-icon input-has-icon_right">
+                    <input type="text" id="text-input-id-0" placeholder="학생 번호 이름을 입력하세요." class="input" />
+                    <button class="button button_icon" title="Menu Icon">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use xlink:href="../assets/images/icons/symbols.svg#search"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="page-header__control">
+                <button class="button button_outline button_icon button_icon-border" title="Reset Icon">
+                  <svg class="button__icon" aria-hidden="true">
+                    <use xlink:href="../assets/images/icons/symbols.svg#reset"></use>
+                  </svg>
+                  <span class="assistive-text">Reset</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <section class="cards-container">
+            <article class="card-item">
+              <video autoplay>
+                <source src="../assets/video/sample_horizon.mp4" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small pin" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article>
+            <article class="card-item active">
+              <video autoplay>
+                <source src="../assets/video/sample_vertical.mp4" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article>
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <article class="card-item">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge warning">공유중</div>
+                </div>
+              </div>
+            </article> 
+            <!-- 더 많은 카드들... -->
+          </section>
+          <nav class="toolbar">
+            <button class="button button_icon button_tool">
+              <i class="icon-bg myshare"></i>
+              <span class="btn-text">내 화면 공유</span>
+            </button>
+            <button class="button button_icon button_tool">
+              <i class="icon-bg maximize"></i>
+              <span class="btn-text">크게보기</span>
+            </button>
+            <button class="button button_icon button_tool">
+              <i class="icon-bg user_edit"></i>
+              <span class="btn-text">학생 화면 공유</span>
+            </button>
+            <button class="button button_icon button_tool">
+              <i class="icon-bg link"></i>
+              <span class="btn-text">URL 실행</span>
+            </button>
+            <button class="button button_icon button_tool">
+              <i class="icon-bg mobile"></i>
+              <span class="btn-text">앱 실행</span>
+            </button>
+            <button class="button button_icon button_tool">
+              <i class="icon-bg message"></i>
+              <span class="btn-text">메시지 전송</span>
+            </button>
+            <button class="button button_icon button_tool">
+              <i class="icon-bg lock"></i>
+              <span class="btn-text">화면 잠금/해제</span>
+            </button>
+            <button class="button button_icon button_tool">
+              <i class="icon-bg pin"></i>
+              <span class="btn-text">상단 고정/해제</span>
+            </button>
+          </nav>
         </main>
     </div>
 
-    <script src="script.js"></script>
-    <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const snb = document.querySelector('.snb');
-    const toggleButton = document.getElementById('toggle-snb');
-
-    toggleButton.addEventListener('click', function () {
-        snb.classList.toggle('closed');
-    });
-});
-
-    </script>
 </body>
+<script src="../assets/js/actions.js"></script>
 <script src="../assets/js/tabs.js"></script>
 <script src="../assets/js/datetimepicker.js"></script>
 <!-- Include jQuery -->

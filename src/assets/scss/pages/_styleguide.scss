@@ -1,14 +1,3 @@
-/* Reset some default styles */
-body,
-h2,
-ul,
-li,
-a {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Global styles */
 body {
   background-color: #f8f9fa; /* Light grey background */
@@ -468,35 +457,6 @@ code {
 .radius-chip:hover {
   transform: scale(1.05);
 }
-
-.radius-1 {
-  border-radius: var(--radius-1);
-}
-
-.radius-2 {
-  border-radius: var(--radius-2);
-}
-
-.radius-3 {
-  border-radius: var(--radius-3);
-}
-
-.radius-4 {
-  border-radius: var(--radius-4);
-}
-
-.radius-5 {
-  border-radius: var(--radius-5);
-}
-
-.radius-6 {
-  border-radius: var(--radius-6);
-}
-
-.radius-circle {
-  border-radius: var(--radius-circle);
-}
-
 
 // Typography
 .typography-group {

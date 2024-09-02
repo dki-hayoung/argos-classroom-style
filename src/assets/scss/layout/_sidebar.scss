@@ -1,17 +1,30 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
-
+/*----------------------
+  SNB
+----------------------*/
 .snb-tit {
-  //styleName: Title-02-B;
-  font-family: Pretendard;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 25.2px;
-  letter-spacing: -0.003em;
-  text-align: left;
   padding-bottom: 10px;
+  text-align: left;
+  color: var(--color-text-01);
+  @include flex-space-between;
+  @include font-title-02-b;
   
   &:not(:first-of-type) {
     margin-top: 40px;
   }
+
+  .btn-group {
+    gap: 0.625rem;
+  }
+}
+
+.snb {
+  .form-element {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.snb-desc {
+  margin-top: 8px;
+  color: var(--color-text-04);
+  @include font-caption-01-m;
 }

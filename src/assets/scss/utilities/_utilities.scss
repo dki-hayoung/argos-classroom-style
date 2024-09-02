@@ -1,29 +1,40 @@
-@import '../abstracts/variables';
-
-// flex
-$alignments: (
-  "center", 
-  "space-between", 
-  "space-around", 
-  "space-evenly", 
-  "flex-start", 
-  "flex-end"
-);
- 
-@each $align in $alignments {
-  .justify-#{$align} {
-    justify-content: #{$align};
-  }
- 
-  .items-#{$align} {
-    align-items: #{$align};
-  }
- 
-  .justify-items-#{$align} {
-    justify-items: #{$align};
-  }
- 
-  .content-#{$align} {
-    align-content: #{$align};
-  }
+.flex-start {
+  @include flex-start;
 }
+.flex-end {
+  @include flex-end;
+}
+
+/* Border Radius */
+.radius-1 {
+  border-radius: var(--radius-1);
+}
+
+.radius-2 {
+  border-radius: var(--radius-2);
+}
+
+.radius-3 {
+  border-radius: var(--radius-3);
+}
+
+.radius-4 {
+  border-radius: var(--radius-4);
+}
+
+.radius-5 {
+  border-radius: var(--radius-5);
+}
+
+.radius-6 {
+  border-radius: var(--radius-6);
+}
+
+.radius-circle {
+  border-radius: var(--radius-circle);
+}
+
+.radius-pill {
+  border-radius: var(--radius-pill);
+}
+

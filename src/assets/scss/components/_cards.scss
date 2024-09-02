@@ -1,72 +1,128 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
-
-/* 기본 스타일 */
-.card-wrap {
-  container-type: inline-size; /* 컨테이너 쿼리 적용 */
-  container-name: card-layout; /* 컨테이너 이름 설정 */
-}
-// 1280px 미만에서는 minimum 3열
-.card-inner {
+/*----------------------
+  Cards
+----------------------*/
+.cards-container {
   display: grid;
-  -webkit-column-gap: 16px;
-  column-gap: 16px;
-  row-gap: 24px;
-  grid-template-columns: repeat(5, minmax(280px, 1fr));
-  overflow-x: auto;
+  grid-gap: 24px 16px;
+  overflow-x: auto; /* 가로 스크롤 */
+  flex: 1; /* 남은 공간을 모두 차지 */
+  align-items: start; /* 그리드 아이템이 셀 상단에 위치하도록 */
+  grid-auto-rows: min-content; /* 각 행의 높이를 카드 내용에 맞춤 */
+  padding: 0 68px 32px;
 }
 
-.card {
-  display: flex;
-  background-color: var(--color-blue-01);
-  padding: 0.8rem;
+/* 카드 아이템 스타일링 */
+.card-item {
   width: 100%;
-  height: auto;
-  min-height: 187px;
-  border-radius: 0.625rem;
-  aspect-ratio: 3/2;
-}
+  min-width: 280px; /* 카드의 최소 너비 */
+  aspect-ratio: 280 / 187; /* 카드의 비율 */
+  border-radius: var(--radius-2);
+  box-sizing: border-box;
+  border: 4px solid #fff;
+  transition: 0.3s ease;
+  background-color: var(--color-black);
+  overflow: hidden; /* 콘텐츠가 카드 영역을 넘어가지 않도록 설정 */
+  position: relative;
 
-// 1280px 이상에서는 auto-fill로 3열부터 늘어나게 되는 미디어 쿼리
-@media screen and (min-width: 1280px) {
-  .card-inner {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  video {
+    width: 100%;
+    height: 100%;
+  }
+  video[poster] { 
+    /* 포스터 이미지의 크기를 비디오 영상에 꽉차도록 */
+    height:100%;
+    width:100%;
+  }
+
+  /* active */
+  &:hover,
+  &:focus,
+  &.active {
+    border-color: var(--color-yellow);
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.1 );
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .card-control {
+      visibility: visible;
+    }
   }
 }
 
-/* 컨테이너 쿼리 사용할 경우 주석 해제: 컨테이너의 너비에 따라 열 수를 변경 */
+.card-controls {
+  @include flex-space-between($direction: column);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--color-white);
+  z-index: 2;
+}
 
-// 1280 x 1024
-// @container card-layout (min-width: 824px) {
-//   .card-inner {
-//     grid-template-columns: repeat(3, minmax(0, 1fr));
-//   }
-// }
-// 1366 x 768 (노트북)
-// @container card-layout (min-width: 910px) {
-//   .card-inner {
-//     grid-template-columns: repeat(4, minmax(0, 1fr));
-//   }
-// }
+.card-control {
+  width: 100%;
+  gap: 10px;
+  padding: 13px;
+  visibility: hidden;
+}
 
-// 1600 x 900
-// @container card-layout (min-width: 1144px) {
-//   .card-inner {
-//     grid-template-columns: repeat(4, minmax(0, 1fr));
-//   }
-// }
+.card-meta {
+  width: 100%;
+  gap: 8px;
+}
 
-// 1920 x 1080 (기준 해상도)
-// @container card-layout (min-width: 1464px) {
-//   .card-inner {
-//     grid-template-columns: repeat(5, minmax(0, 1fr));
-//   }
-// }
+.name {
+  padding: 8px 16px;
+  color: var(--color-white);
+  border-radius: 0 var( --radius-1) 0 0;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  @include font-title-01-b;
+}
 
+/* 기본 설정: 화면 너비가 1920px 이상일 때 */
+@media (min-width: 1920px) {
+  .cards-container {
+      grid-template-columns: repeat(6, minmax(280px, 1fr));
+  }
+}
 
+/* snb가 열렸을 때 */
+.snb:not(.closed) ~ .main-content .cards-container {
+  grid-template-columns: repeat(5, minmax(280px, 1fr));
+}
 
+/* 1280px ~ 1919px일 때 */
+@media (max-width: 1919px) and (min-width: 1280px) {
+  .cards-container {
+      grid-template-columns: repeat(6, minmax(280px, 1fr));
+  }
 
-// QR Code _ Image 또는 Canvas
+  /* snb가 열렸을 때 */
+  .snb:not(.closed) ~ .main-content .cards-container {
+      grid-template-columns: repeat(5, minmax(280px, 1fr));
+  }
+}
+
+/* 1280px 미만일 때 */
+@media (max-width: 1279px) {
+  .cards-container {
+      grid-template-columns: repeat(5, minmax(280px, 1fr));
+      overflow-x: auto;
+  }
+}
+
+/*----------------------
+  QR Code :Image 또는 Canvas
+----------------------*/
 .code {
   display: flex;
   gap: 1.5rem;

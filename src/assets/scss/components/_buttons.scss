@@ -1,7 +1,6 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
-
-// 기본 버튼 스타일 (Block)
+/*----------------------
+  Button
+----------------------*/
 .button {
   position: relative;
   display: -webkit-inline-box;
@@ -16,7 +15,7 @@
   // 사이즈
   @include button-size(0.5rem 1.25rem, 1rem, 0.5rem); // padding, font, border-radius
   // 스타일
-  @include button-style (transparent, transparent, var(--color-text-04), transparent, transparent, var(--color-blue-06));
+  @include button-style (transparent, transparent, currentColor, transparent, transparent, var(--color-blue-06));
   cursor: pointer;
   text-align: center;
   -webkit-appearance: none;  // 기본 스타일 제거
@@ -87,7 +86,9 @@
   }
 
 
-  // 아이콘 버튼 스타일
+  /*----------------------
+    Icon Buttons
+  ----------------------*/
   &_icon {
     padding: 0;
     line-height: 1;
@@ -150,4 +151,115 @@
     height: 1rem;
   }
 
+  /*----------------------
+    Button toolbar
+  ----------------------*/
+  &_tool {
+    flex-direction: column;
+    gap: 4px;
+    color: var(--color-gray-07);
+  }
+
+  .icon-bg {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s ease;
+
+    &.myshare {
+      background-image: url('../images/icons/myshare_off.svg');
+    }
+
+    &.mobile {
+      background-image: url('../images/icons/mobile_off.svg');
+    }
+    
+    &.link {
+      background-image: url('../images/icons/link_off.svg');
+    }
+    
+    &.file {
+      background-image: url('../images/icons/file_off.svg');
+    }
+    
+    &.lock {
+      background-image: url('../images/icons/lock_off.svg');
+    }
+    
+    &.user_edit {
+      background-image: url('../images/icons/user_edit_off.svg');
+    }
+    
+    &.pin {
+      background-image: url('../images/icons/pin_off.svg');
+    }
+    
+    &.message {
+      background-image: url('../images/icons/message_off.svg');
+    }
+    
+    &.maximize {
+      background-image: url('../images/icons/maximize_off.svg');
+    }
+
+  }
+
+  &:hover,
+  &:focus {
+    .btn-text {
+      color: var(--color-blue-06);
+    }
+
+    .myshare {
+      background-image: url('../images/icons/myshare_on.svg');
+    }
+
+    .mobile {
+      background-image: url('../images/icons/mobile_on.svg');
+    }
+  
+    .link {
+      background-image: url('../images/icons/link_on.svg');
+    }
+  
+    .file {
+      background-image: url('../images/icons/file_on.svg');
+    }
+  
+    .lock {
+      background-image: url('../images/icons/lock_on.svg');
+    }
+  
+    .user_edit {
+      background-image: url('../images/icons/user_edit_on.svg');
+    }
+  
+    .pin {
+      background-image: url('../images/icons/pin_on.svg');
+    }
+  
+    .message {
+      background-image: url('../images/icons/message_on.svg');
+    }
+  
+    .maximize {
+      background-image: url('../images/icons/maximize_on.svg');
+    }
+  }
+}
+
+.btn-text {
+  @include font-body-01-m;
+  color: var(--color-text-03);
+  transition: 0.3s ease;
+}
+
+/*----------------------
+  Button Group
+----------------------*/
+.btn-group {
+  display: inline-flex;
 }

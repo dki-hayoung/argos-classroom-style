@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*----------------------
+  Root Variables
+----------------------*/
 :root {
   /* Black & White */
   --color-white: #FFFFFF;
@@ -143,453 +146,20 @@
   --radius-5: 1.5rem; /* 24px */
   --radius-6: 2.5rem; /* 40px */
   --radius-circle: 100%; /* 100% to make a perfect circle */
+  --radius-pill: 999px; /* pill-shaped */
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
+/*----------------------
+  Icons Variables
+----------------------*/
 /* Typography Mixins */
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-/* Typography Mixins */
+/*----------------------
+  Reset
+----------------------*/
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Eric Meyer’s Reset CSS */
@@ -639,6 +209,9 @@ input, button, textarea {
   line-height: inherit;
 }
 
+/*----------------------
+  Pretendard Font
+----------------------*/
 @font-face {
   font-family: "Pretendard";
   src: url("../fonts/Pretendard-ExtraLight.woff2") format("woff2"), url("../fonts/Pretendard-ExtraLight.woff") format("woff");
@@ -663,7 +236,9 @@ input, button, textarea {
   font-weight: 700;
   font-style: normal;
 }
-/* Typography Classes */
+/*----------------------
+  Typography Classes
+----------------------*/
 .heading-04 {
   font-size: var(--font-heading-04-size);
   font-weight: var(--font-heading-04-weight);
@@ -797,304 +372,10 @@ input, button, textarea {
   letter-spacing: var(--font-label-01-m-letter-spacing);
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-/* Typography Mixins */
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -1103,6 +384,9 @@ body {
   line-height: 1.5;
 }
 
+/*----------------------
+  Accessibility
+----------------------*/
 .blind {
   position: absolute;
   width: 1px;
@@ -1114,314 +398,6 @@ body {
   border: 0;
 }
 
-.grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.grid__item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc(33.333% - 1rem);
-          flex: 1 1 calc(33.333% - 1rem);
-}
-
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-/* Typography Mixins */
 .assistive-text {
   position: absolute !important;
   margin: -1px !important;
@@ -1435,18 +411,25 @@ body {
   white-space: nowrap !important;
 }
 
-.global-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.grid {
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.grid__item {
+  flex: 1 1 calc(33.333% - 1rem);
+}
+
+/*----------------------
+  Global Header
+----------------------*/
+.global-header {
+  display: flex;
   justify-content: space-between;
   background: var(--bg-light-blue);
   padding: 1.2813rem 1rem;
   height: 5rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .global-header_container {
@@ -1462,31 +445,20 @@ body {
   background: #fff;
 }
 .global-header__item.left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto; /* A는 좌측 끝 */
+  flex: 0 1 auto; /* A는 좌측 끝 */
 }
 .global-header__item.center {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .global-header__item.right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto; /* C는 우측 끝 */
+  flex: 0 1 auto; /* C는 우측 끝 */
 }
 .global-header--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex: 1;
+  justify-content: flex-end;
   gap: 2.5rem;
 }
 .global-header__logo {
@@ -1498,12 +470,8 @@ body {
   color: var(--color-blue-10);
 }
 .global-header__time {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 8px;
 }
 .global-header__time .text {
@@ -1516,16 +484,10 @@ body {
   padding: 1.2813rem 5rem;
 }
 .global-actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1.25rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .global-actions__item {
   color: var(--color-text-04);
@@ -1540,31 +502,24 @@ body {
   color: var(--color-text-01);
 }
 
+/*----------------------
+  Page Headers
+----------------------*/
 .page-header {
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding: 0 68px 32px;
   background-color: var(--color-white);
 }
 .page-header__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .page-header__actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 0%;
   flex: 1 1 0%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 0.25rem;
 }
 .page-header__actions .form-element__label {
@@ -1574,663 +529,117 @@ body {
   color: var(--color-text-01);
 }
 .page-header__controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: none;
   flex: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 0.625rem;
   height: 100%;
 }
 .page-header__control {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 0.25rem;
 }
 .page-header__meta {
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 140%;
+  font-size: var(--font-title-02-m-size);
+  font-weight: var(--font-title-02-m-weight);
+  line-height: var(--font-title-02-m-line-height);
+  letter-spacing: var(--font-title-02-m-letter-spacing);
   color: var(--color-text-01);
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-/* Typography Mixins */
-.snb-tit {
-  font-family: Pretendard;
-  font-size: 18px;
+.item-count em {
   font-weight: 700;
-  line-height: 25.2px;
-  letter-spacing: -0.003em;
-  text-align: left;
+  color: var(--color-blue-06);
+}
+
+/*----------------------
+  Bottom Toolbar
+----------------------*/
+.toolbar {
+  display: block;
+  width: 100%;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  background-color: var(--bg-white);
+  border-top: 1px solid var(--color-gray-03);
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+}
+
+/*----------------------
+  SNB
+----------------------*/
+.snb-tit {
   padding-bottom: 10px;
+  text-align: left;
+  color: var(--color-text-01);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: var(--font-title-02-b-size);
+  font-weight: var(--font-title-02-b-weight);
+  line-height: var(--font-title-02-b-line-height);
+  letter-spacing: var(--font-title-02-b-letter-spacing);
 }
 .snb-tit:not(:first-of-type) {
   margin-top: 40px;
 }
-
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
+.snb-tit .btn-group {
+  gap: 0.625rem;
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
+.snb .form-element {
+  margin-bottom: 1.5rem;
 }
 
-/* Typography Mixins */
+.snb-desc {
+  margin-top: 8px;
+  color: var(--color-text-04);
+  font-size: var(--font-caption-01-m-size);
+  font-weight: var(--font-caption-01-m-weight);
+  line-height: var(--font-caption-01-m-line-height);
+  letter-spacing: var(--font-caption-01-m-letter-spacing);
+}
+
+/*----------------------
+  Button
+----------------------*/
 .button {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-weight: 500;
   line-height: 150%;
   padding: 0.5rem 1.25rem;
   font-size: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   background-color: transparent;
   border: 1px solid transparent;
-  color: var(--color-text-04);
+  color: currentColor;
   cursor: pointer;
   text-align: center;
   -webkit-appearance: none;
   white-space: normal;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  /*----------------------
+    Icon Buttons
+  ----------------------*/
+  /*----------------------
+    Button toolbar
+  ----------------------*/
 }
 .button:hover, .button:focus {
   background-color: transparent;
@@ -2239,8 +648,7 @@ body {
   outline: none;
 }
 .button:focus-visible {
-  -webkit-box-shadow: 0 0 0 2px #0b5cab;
-          box-shadow: 0 0 0 2px #0b5cab;
+  box-shadow: 0 0 0 2px #0b5cab;
 }
 .button_small {
   min-width: 180px;
@@ -2248,7 +656,6 @@ body {
   font-size: 0.8125rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 .button_large {
@@ -2257,7 +664,6 @@ body {
   font-size: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 .button_x-large {
@@ -2266,7 +672,6 @@ body {
   font-size: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 .button_primary {
@@ -2282,8 +687,7 @@ body {
   outline: none;
 }
 .button_primary:focus-visible {
-  -webkit-box-shadow: 0 0 0 2px #0b5cab;
-          box-shadow: 0 0 0 2px #0b5cab;
+  box-shadow: 0 0 0 2px #0b5cab;
 }
 .button_secondary {
   font-weight: 700;
@@ -2298,8 +702,7 @@ body {
   outline: none;
 }
 .button_secondary:focus-visible {
-  -webkit-box-shadow: 0 0 0 2px #0b5cab;
-          box-shadow: 0 0 0 2px #0b5cab;
+  box-shadow: 0 0 0 2px #0b5cab;
 }
 .button_destructive {
   background-color: var(--color-red);
@@ -2313,8 +716,7 @@ body {
   outline: none;
 }
 .button_destructive:focus-visible {
-  -webkit-box-shadow: 0 0 0 2px #0b5cab;
-          box-shadow: 0 0 0 2px #0b5cab;
+  box-shadow: 0 0 0 2px #0b5cab;
 }
 .button_outline {
   font-weight: 700;
@@ -2329,8 +731,7 @@ body {
   outline: none;
 }
 .button_outline:focus-visible {
-  -webkit-box-shadow: 0 0 0 2px #0b5cab;
-          box-shadow: 0 0 0 2px #0b5cab;
+  box-shadow: 0 0 0 2px #0b5cab;
 }
 .button_outline-primary {
   font-weight: 700;
@@ -2345,8 +746,7 @@ body {
   outline: none;
 }
 .button_outline-primary:focus-visible {
-  -webkit-box-shadow: 0 0 0 2px #0b5cab;
-          box-shadow: 0 0 0 2px #0b5cab;
+  box-shadow: 0 0 0 2px #0b5cab;
 }
 .button_outline-secondary {
   font-weight: 700;
@@ -2361,8 +761,7 @@ body {
   outline: none;
 }
 .button_outline-secondary:focus-visible {
-  -webkit-box-shadow: 0 0 0 2px #0b5cab;
-          box-shadow: 0 0 0 2px #0b5cab;
+  box-shadow: 0 0 0 2px #0b5cab;
 }
 .button:disabled, .button[disabled] {
   background-color: transparent;
@@ -2374,10 +773,7 @@ body {
   padding: 0;
   line-height: 1;
   vertical-align: middle;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 .button_icon-border {
@@ -2385,7 +781,6 @@ body {
   height: 2.5rem;
   line-height: 1;
   vertical-align: middle;
-  -webkit-transition: border 0.15s linear;
   transition: border 0.15s linear;
   border-radius: 999px;
 }
@@ -2417,346 +812,220 @@ body {
   width: 1rem;
   height: 1rem;
 }
-
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
+.button_tool {
+  flex-direction: column;
+  gap: 4px;
+  color: var(--color-gray-07);
+}
+.button .icon-bg {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s ease;
+}
+.button .icon-bg.myshare {
+  background-image: url("../images/icons/myshare_off.svg");
+}
+.button .icon-bg.mobile {
+  background-image: url("../images/icons/mobile_off.svg");
+}
+.button .icon-bg.link {
+  background-image: url("../images/icons/link_off.svg");
+}
+.button .icon-bg.file {
+  background-image: url("../images/icons/file_off.svg");
+}
+.button .icon-bg.lock {
+  background-image: url("../images/icons/lock_off.svg");
+}
+.button .icon-bg.user_edit {
+  background-image: url("../images/icons/user_edit_off.svg");
+}
+.button .icon-bg.pin {
+  background-image: url("../images/icons/pin_off.svg");
+}
+.button .icon-bg.message {
+  background-image: url("../images/icons/message_off.svg");
+}
+.button .icon-bg.maximize {
+  background-image: url("../images/icons/maximize_off.svg");
+}
+.button:hover .btn-text, .button:focus .btn-text {
+  color: var(--color-blue-06);
+}
+.button:hover .myshare, .button:focus .myshare {
+  background-image: url("../images/icons/myshare_on.svg");
+}
+.button:hover .mobile, .button:focus .mobile {
+  background-image: url("../images/icons/mobile_on.svg");
+}
+.button:hover .link, .button:focus .link {
+  background-image: url("../images/icons/link_on.svg");
+}
+.button:hover .file, .button:focus .file {
+  background-image: url("../images/icons/file_on.svg");
+}
+.button:hover .lock, .button:focus .lock {
+  background-image: url("../images/icons/lock_on.svg");
+}
+.button:hover .user_edit, .button:focus .user_edit {
+  background-image: url("../images/icons/user_edit_on.svg");
+}
+.button:hover .pin, .button:focus .pin {
+  background-image: url("../images/icons/pin_on.svg");
+}
+.button:hover .message, .button:focus .message {
+  background-image: url("../images/icons/message_on.svg");
+}
+.button:hover .maximize, .button:focus .maximize {
+  background-image: url("../images/icons/maximize_on.svg");
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
+.btn-text {
+  font-size: var(--font-body-01-m-size);
+  font-weight: var(--font-body-01-m-weight);
+  line-height: var(--font-body-01-m-line-height);
+  letter-spacing: var(--font-body-01-m-letter-spacing);
+  color: var(--color-text-03);
+  transition: 0.3s ease;
 }
 
-/* Typography Mixins */
-/* 기본 스타일 */
-.card-wrap {
-  container-type: inline-size; /* 컨테이너 쿼리 적용 */
-  container-name: card-layout; /* 컨테이너 이름 설정 */
+/*----------------------
+  Button Group
+----------------------*/
+.btn-group {
+  display: inline-flex;
 }
 
-.card-inner {
+/*----------------------
+  Cards
+----------------------*/
+.cards-container {
   display: grid;
-  -webkit-column-gap: 16px;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-  row-gap: 24px;
-  grid-template-columns: repeat(5, minmax(280px, 1fr));
-  overflow-x: auto;
+  grid-gap: 24px 16px;
+  overflow-x: auto; /* 가로 스크롤 */
+  flex: 1; /* 남은 공간을 모두 차지 */
+  align-items: start; /* 그리드 아이템이 셀 상단에 위치하도록 */
+  grid-auto-rows: min-content; /* 각 행의 높이를 카드 내용에 맞춤 */
+  padding: 0 68px 32px;
 }
 
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: var(--color-blue-01);
-  padding: 0.8rem;
+/* 카드 아이템 스타일링 */
+.card-item {
   width: 100%;
-  height: auto;
-  min-height: 187px;
-  border-radius: 0.625rem;
-  aspect-ratio: 3/2;
+  min-width: 280px; /* 카드의 최소 너비 */
+  aspect-ratio: 280/187; /* 카드의 비율 */
+  border-radius: var(--radius-2);
+  box-sizing: border-box;
+  border: 4px solid #fff;
+  transition: 0.3s ease;
+  background-color: var(--color-black);
+  overflow: hidden; /* 콘텐츠가 카드 영역을 넘어가지 않도록 설정 */
+  position: relative;
+  /* active */
+}
+.card-item video {
+  width: 100%;
+  height: 100%;
+}
+.card-item video[poster] {
+  /* 포스터 이미지의 크기를 비디오 영상에 꽉차도록 */
+  height: 100%;
+  width: 100%;
+}
+.card-item:hover, .card-item:focus, .card-item.active {
+  border-color: var(--color-yellow);
+}
+.card-item:hover::after, .card-item:focus::after, .card-item.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-item:hover .card-control, .card-item:focus .card-control, .card-item.active .card-control {
+  visibility: visible;
 }
 
-@media screen and (min-width: 1280px) {
-  .card-inner {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+.card-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--color-white);
+  z-index: 2;
+}
+
+.card-control {
+  width: 100%;
+  gap: 10px;
+  padding: 13px;
+  visibility: hidden;
+}
+
+.card-meta {
+  width: 100%;
+  gap: 8px;
+}
+
+.name {
+  padding: 8px 16px;
+  color: var(--color-white);
+  border-radius: 0 var(--radius-1) 0 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: var(--font-title-01-b-size);
+  font-weight: var(--font-title-01-b-weight);
+  line-height: var(--font-title-01-b-line-height);
+  letter-spacing: var(--font-title-01-b-letter-spacing);
+}
+
+/* 기본 설정: 화면 너비가 1920px 이상일 때 */
+@media (min-width: 1920px) {
+  .cards-container {
+    grid-template-columns: repeat(6, minmax(280px, 1fr));
   }
 }
-/* 컨테이너 쿼리 사용할 경우 주석 해제: 컨테이너의 너비에 따라 열 수를 변경 */
+/* snb가 열렸을 때 */
+.snb:not(.closed) ~ .main-content .cards-container {
+  grid-template-columns: repeat(5, minmax(280px, 1fr));
+}
+
+/* 1280px ~ 1919px일 때 */
+@media (max-width: 1919px) and (min-width: 1280px) {
+  .cards-container {
+    grid-template-columns: repeat(6, minmax(280px, 1fr));
+  }
+  /* snb가 열렸을 때 */
+  .snb:not(.closed) ~ .main-content .cards-container {
+    grid-template-columns: repeat(5, minmax(280px, 1fr));
+  }
+}
+/* 1280px 미만일 때 */
+@media (max-width: 1279px) {
+  .cards-container {
+    grid-template-columns: repeat(5, minmax(280px, 1fr));
+    overflow-x: auto;
+  }
+}
+/*----------------------
+  QR Code :Image 또는 Canvas
+----------------------*/
 .code {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 2.5rem 0;
   border-radius: 1rem;
   background-color: var(--color-white);
@@ -2768,19 +1037,10 @@ body {
   height: 4.5rem;
 }
 .code_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .code_text span {
   display: block;
@@ -2816,302 +1076,11 @@ body {
   color: var(--color-text-01);
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-/* Typography Mixins */
+/*----------------------
+  Input
+----------------------*/
 input [type=checkbox],
 input [type=radio] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -3132,6 +1101,9 @@ select:-moz-autofill {
   background-color: #fff !important; /* 배경색 덮어쓰기 */
 }
 
+/*----------------------
+  Form Element
+----------------------*/
 .form-element {
   position: relative;
   min-width: 0;
@@ -3139,14 +1111,15 @@ select:-moz-autofill {
 .form-element__label {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  -ms-hyphens: auto;
   -webkit-hyphens: auto;
           hyphens: auto;
   display: inline-block;
-  color: var(--color-text-04);
-  font-size: 0.875rem;
-  font-weight: 700;
   margin-bottom: 0.375rem;
+  color: var(--color-text-04);
+  font-size: var(--font-sub-title-01-size);
+  font-weight: var(--font-sub-title-01-weight);
+  line-height: var(--font-sub-title-01-line-height);
+  letter-spacing: var(--font-sub-title-01-letter-spacing);
 }
 .form-element__control {
   clear: left;
@@ -3167,6 +1140,9 @@ select:-moz-autofill {
   font-weight: 700;
 }
 
+/*----------------------
+  Text Input
+----------------------*/
 .input {
   padding-top: 0;
   padding-right: 0.625rem;
@@ -3180,9 +1156,11 @@ select:-moz-autofill {
   background-color: var(--color-white);
   font-size: 0.9375rem;
   color: var(--color-text-01);
-  -webkit-transition: border 0.1s linear, background-color 0.1s linear;
   transition: border 0.1s linear, background-color 0.1s linear;
   display: inline-block;
+  /*----------------------
+    Datetime Picker
+  ----------------------*/
 }
 .input:focus-visible {
   outline: 1px solid var(--color-blue-06);
@@ -3197,7 +1175,6 @@ select:-moz-autofill {
   cursor: not-allowed;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 .input[disabled]:active, .input[disabled]:focus {
@@ -3208,25 +1185,7 @@ select:-moz-autofill {
   color: var(--color-text-01);
 }
 
-::-webkit-input-placeholder {
-  color: var(--color-text-05-disabled);
-  font-weight: 500;
-  opacity: 1;
-}
-
 ::-moz-placeholder {
-  color: var(--color-text-05-disabled);
-  font-weight: 500;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: var(--color-text-05-disabled);
-  font-weight: 500;
-  opacity: 1;
-}
-
-::-ms-input-placeholder {
   color: var(--color-text-05-disabled);
   font-weight: 500;
   opacity: 1;
@@ -3252,12 +1211,10 @@ select:-moz-autofill {
   background-clip: padding-box;
 }
 .has-error .input:focus {
-  -webkit-box-shadow: 0;
-          box-shadow: 0;
+  box-shadow: 0;
 }
 .has-error .input:focus-visible {
-  -webkit-box-shadow: 0 0 0 2px #0b5cab;
-          box-shadow: 0 0 0 2px #0b5cab;
+  box-shadow: 0 0 0 2px #0b5cab;
 }
 .has-error .form-element__label,
 .has-error .form-element__help,
@@ -3286,8 +1243,7 @@ select:-moz-autofill {
   height: 1.5rem;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   line-height: 1;
   border: 0;
   z-index: 2;
@@ -3297,10 +1253,12 @@ select:-moz-autofill {
 }
 .input-has-icon .input:focus-visible {
   outline: 0;
-  -webkit-box-shadow: 0 1px 0 var(--color-blue-06);
-          box-shadow: 0 1px 0 var(--color-blue-06);
+  box-shadow: 0 1px 0 var(--color-blue-06);
 }
 
+/*----------------------
+  Checkbox
+----------------------*/
 .checkbox {
   display: inline-block;
   position: relative;
@@ -3318,12 +1276,8 @@ select:-moz-autofill {
 }
 .checkbox .checkbox__label,
 .checkbox .form-element__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   vertical-align: middle;
   font-size: 18px;
   gap: 0.5rem;
@@ -3336,30 +1290,21 @@ select:-moz-autofill {
 .checkbox .checkbox_faux {
   width: 1.25rem;
   height: 1.25rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   vertical-align: middle;
   border-radius: 0.25rem;
   border: 1px solid var(--color-gray-06);
   background-color: transparent;
-  -webkit-transition: border 0.1s linear, background-color 0.1s linear;
   transition: border 0.1s linear, background-color 0.1s linear;
 }
 .checkbox .checkbox_faux .icon {
   display: none;
   width: 0.75rem;
   height: 0.625rem;
-  -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
 }
 .checkbox [type=checkbox]:checked + .checkbox__label .checkbox_faux,
@@ -3380,8 +1325,7 @@ select:-moz-autofill {
 .checkbox [type=checkbox]:focus-visible ~ .checkbox_faux {
   outline: 0;
   outline-offset: 0;
-  -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
-          box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
 }
 
 .form-element .checkbox [type=checkbox] + .checkbox__label .checkbox_faux,
@@ -3390,15 +1334,14 @@ select:-moz-autofill {
   margin-right: 0.5rem;
 }
 
+/*----------------------
+  Radio
+----------------------*/
 .radio_button-group {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   gap: 0.5469rem;
 }
 .radio_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0;
   border: 0;
@@ -3430,8 +1373,7 @@ select:-moz-autofill {
   cursor: pointer;
 }
 .radio_button__label:focus-visible {
-  -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
-          box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
 }
 .radio_button [type=radio]:checked + .radio_button__label,
 .radio_button [type=radio]:checked + .radio_faux,
@@ -3443,11 +1385,13 @@ select:-moz-autofill {
 .radio_button [type=radio]:focus-visible + .radio_button__label,
 .radio_button [type=radio]:focus-visible + .radio_faux,
 .radio_button [type=radio]:focus-visible ~ .radio_faux {
-  -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
   z-index: 1;
 }
 
+/*----------------------
+  Select
+----------------------*/
 .select_container {
   position: relative;
   color: var(--color-gray-10);
@@ -3456,9 +1400,7 @@ select:-moz-autofill {
   position: absolute;
   right: 12px;
   top: 50%;
-  -webkit-transform: translateY(-50%) rotate(0);
-          transform: translateY(-50%) rotate(0);
-  -webkit-transition: 0.5s;
+  transform: translateY(-50%) rotate(0);
   transition: 0.5s;
 }
 
@@ -3478,7 +1420,6 @@ select:-moz-autofill {
   background-repeat: no-repeat;
   background-position: right 10px center; /* 화살표 이미지 위치 조정 */
   background-size: 16px; /* 화살표 이미지 크기 조정 */
-  -webkit-transition: border 0.1s linear, background-color 0.1s linear;
   transition: border 0.1s linear, background-color 0.1s linear;
 }
 
@@ -3492,163 +1433,18 @@ select:-moz-autofill {
 .select:active,
 .select:focus {
   outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: transparent;
   color: var(--color-text-01);
 }
 .select:active + .icon,
 .select:focus + .icon {
-  -webkit-transform: translateY(-50%) rotate(-180deg);
-          transform: translateY(-50%) rotate(-180deg);
+  transform: translateY(-50%) rotate(-180deg);
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
+/*----------------------
+  Icon
+----------------------*/
 .icon-container {
   display: inline-block;
   border-radius: 0.25rem;
@@ -3701,172 +1497,27 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
+/*----------------------
+  Tabs
+----------------------*/
 .tabs {
   display: block;
   width: 100%;
 }
 .tabs__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
   border-bottom: 1px solid var(--color-white);
 }
 .tabs__item {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--color-gray-07);
   position: relative;
   padding: 0 0.75rem 0 0.75rem;
   margin-bottom: -3px;
+  color: var(--color-gray-07);
+  font-size: var(--font-title-01-b-size);
+  font-weight: var(--font-title-01-b-weight);
+  line-height: var(--font-title-01-b-line-height);
+  letter-spacing: var(--font-title-01-b-letter-spacing);
 }
 .tabs__item:after {
   display: block;
@@ -3877,7 +1528,6 @@ svg:not(:root) {
   height: 2px;
   position: absolute;
   background-color: none;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .tabs__item.active, .tabs__item.is-active {
@@ -3893,7 +1543,6 @@ svg:not(:root) {
 }
 .tabs__item:hover, .tabs__item:focus {
   text-decoration: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
   color: var(--color-blue-06);
   font-weight: 700;
@@ -3903,6 +1552,10 @@ svg:not(:root) {
 }
 .tabs__item:hover .tabs__label, .tabs__item:focus .tabs__label {
   color: var(--color-gray-10);
+}
+.tabs__item .icon {
+  width: 2rem;
+  height: 2rem;
 }
 .tabs__link {
   max-width: 100%;
@@ -3921,7 +1574,6 @@ svg:not(:root) {
 }
 .tabs__link:hover, .tabs__link:focus {
   text-decoration: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
   color: currentColor;
 }
@@ -3930,29 +1582,16 @@ svg:not(:root) {
   padding: 0.75rem 0 0.75rem 0;
 }
 .tabs_flex .tabs__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .tabs_flex li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .tabs__with-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 0.25rem;
   height: auto;
   padding: 1rem 0;
@@ -3970,299 +1609,9 @@ svg:not(:root) {
   display: none !important;
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
-}
-
-/* Typography Mixins */
+/*----------------------
+  Toast
+----------------------*/
 .toast_container {
   position: fixed;
   width: 100%;
@@ -4277,11 +1626,7 @@ svg:not(:root) {
 }
 
 .toast {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   color: var(--color-white);
@@ -4291,8 +1636,6 @@ svg:not(:root) {
   padding: 1rem 2rem;
   min-width: 21.5rem;
   text-align: left;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   font-size: 1rem;
   font-weight: 500;
@@ -4305,24 +1648,63 @@ svg:not(:root) {
 }
 .toast_dismissible {
   min-width: 26rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .toast_dismissible .button__icon {
   color: var(--color-white);
 }
 
-/* Reset some default styles */
-body,
-h2,
-ul,
-li,
-a {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+/*----------------------
+  Badges
+----------------------*/
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  font-size: var(--font-caption-02-b-size);
+  font-weight: var(--font-caption-02-b-weight);
+  line-height: var(--font-caption-02-b-line-height);
+  letter-spacing: var(--font-caption-02-b-letter-spacing);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+.badge.default {
+  color: var(--color-text-01);
+  border-color: var(--color-gray-02);
+  background-color: var(--color-gray-02);
+}
+.badge.darker {
+  color: var(--color-white);
+  border-color: var(--color-gray-09);
+  background-color: var(--color-gray-09);
+}
+.badge.lightest {
+  color: var(--color-text-01);
+  border-color: var(--color-gray-09);
+  background-color: var(--color-gray-01);
+}
+.badge.warning {
+  color: var(--color-text-01);
+  background-color: var(--color-yellow);
+}
+.badge.error {
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
+.badge.success {
+  color: var(--color-white);
+  background-color: green;
+}
+.badge.count {
+  padding: 0 0.25rem;
+  font-size: var(--font-label-01-m-size);
+  font-weight: var(--font-label-01-m-weight);
+  line-height: var(--font-label-01-m-line-height);
+  letter-spacing: var(--font-label-01-m-letter-spacing);
+  line-height: 1rem;
+  color: var(--color-white);
+  background-color: var(--color-red);
 }
 
 /* Global styles */
@@ -4333,8 +1715,6 @@ body {
 
 /* Catalog container layout */
 .docs-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
 }
@@ -4355,12 +1735,8 @@ body {
   text-align: center;
 }
 .docs-logo i {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 0.625rem;
   font-size: 2.5rem;
 }
@@ -4381,7 +1757,6 @@ body {
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .docs-sidebar a.active {
@@ -4395,9 +1770,7 @@ body {
 
 /* Main content area styles */
 .docs-main {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   background-color: #ffffff; /* White background for main content */
   overflow-y: auto;
 }
@@ -4407,18 +1780,12 @@ body {
   background-color: #f4f6f9;
 }
 .component-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
 .component-header li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 10px;
   list-style: none;
   font-size: 0.75rem;
@@ -4526,10 +1893,7 @@ code {
 /* Media query for responsive design */
 @media (max-width: 768px) {
   .docs-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .docs-sidebar {
     width: 100%;
@@ -4541,15 +1905,9 @@ code {
 }
 /* 추가된 복사 버튼 스타일링 */
 .action-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   padding: 0;
   border-bottom: 1px solid #e6e6e6;
   background-color: #fdfdfd;
@@ -4578,8 +1936,7 @@ pre[class*=language-]:before {
 
 pre[class*=language-] > code {
   border-left: 0 !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .code-block {
@@ -4603,15 +1960,9 @@ code {
 }
 
 .palette-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -4637,19 +1988,12 @@ code {
 }
 
 .color-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   position: relative;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .color-item button {
@@ -4698,7 +2042,6 @@ code {
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   z-index: 10;
 }
@@ -4708,29 +2051,17 @@ code {
 }
 
 .docs-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .docs-icon-list {
   list-style: none;
 }
 .docs-icon-list figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 6.25rem;
   height: 6.25rem;
 }
@@ -4773,11 +2104,8 @@ code {
 }
 
 .color-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 14px 0 40px;
 }
@@ -4787,34 +2115,20 @@ code {
   height: 100px;
   background-color: #ddd;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   border-radius: 8px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 0.75rem;
   font-weight: 500;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .color-chip:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .radius-group {
@@ -4827,85 +2141,35 @@ code {
 
 .radius-chip {
   aspect-ratio: 1/1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: 0.75rem;
   color: var(--color-gray-08);
   border: 1px solid var(--color-gray-04);
   background-color: #fff;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .radius-chip:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.radius-1 {
-  border-radius: var(--radius-1);
-}
-
-.radius-2 {
-  border-radius: var(--radius-2);
-}
-
-.radius-3 {
-  border-radius: var(--radius-3);
-}
-
-.radius-4 {
-  border-radius: var(--radius-4);
-}
-
-.radius-5 {
-  border-radius: var(--radius-5);
-}
-
-.radius-6 {
-  border-radius: var(--radius-6);
-}
-
-.radius-circle {
-  border-radius: var(--radius-circle);
+  transform: scale(1.05);
 }
 
 .typography-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
 
 .font-item {
   display: grid;
-  grid-template-columns: minmax(-webkit-max-content, 100px) 1fr;
   grid-template-columns: minmax(max-content, 100px) 1fr;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 10px;
 }
 
@@ -4959,273 +2223,49 @@ code {
   font-size: var(--font-body-02-b-size);
 }
 
-:root {
-  /* Black & White */
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  /* Grayscale */
-  --color-gray-10: #141426;
-  --color-gray-09: #1C283E;
-  --color-gray-08: #47546C;
-  --color-gray-07: #6F7C94;
-  --color-gray-06: #8A93A2;
-  --color-gray-05: #AAB0BB;
-  --color-gray-04: #C6CAD1;
-  --color-gray-03: #D9DBE0;
-  --color-gray-02: #EDF1F1;
-  --color-gray-01: #F9FAFA;
-  /* Primary Color */
-  --color-blue-10: #0F2D63;
-  --color-blue-09: #143B81;
-  --color-blue-08: #1A4CA7;
-  --color-blue-07: #2161D6;
-  --color-blue-06: #246BEB;
-  --color-blue-05: #5089EF;
-  --color-blue-04: #6C9CF2;
-  --color-blue-03: #9ABBF6;
-  --color-blue-02: #BBD1F9;
-  --color-blue-01: #E9F0FD;
-  /* Text Color */
-  --color-text-01: #141426;
-  --color-text-02: #1C283E;
-  --color-text-03: #47546C;
-  --color-text-04: #6F7C94;
-  --color-text-05-disabled: #8A93A2;
-  /* Background Color */
-  --bg-white: #FFFFFF;
-  --bg-blue: #DDEBFF;
-  --bg-light-blue: #E7EDF6;
-  /* System Color */
-  --color-red: #da1218;
-  --color-badge-red: #ee0000;
-  --color-yellow: #f0d400;
-  /* Typography Variables */
-  --font-heading-04-size: 28px;
-  --font-heading-04-size-rem: 1.75rem;
-  --font-heading-04-weight: 700;
-  --font-heading-04-line-height: 140%;
-  --font-heading-04-letter-spacing: -0.3%;
-  --font-heading-03-size: 24px;
-  --font-heading-03-size-rem: 1.5rem;
-  --font-heading-03-weight: 700;
-  --font-heading-03-line-height: 140%;
-  --font-heading-03-letter-spacing: -0.3%;
-  --font-heading-02-size: 22px;
-  --font-heading-02-size-rem: 1.25rem;
-  --font-heading-02-weight: 700;
-  --font-heading-02-line-height: 140%;
-  --font-heading-02-letter-spacing: -0.3%;
-  --font-heading-01-size: 20px;
-  --font-heading-01-size-rem: 1.25rem;
-  --font-heading-01-weight: 700;
-  --font-heading-01-line-height: 140%;
-  --font-heading-01-letter-spacing: -0.3%;
-  --font-title-02-b-size: 18px;
-  --font-title-02-b-size-rem: 1.125rem;
-  --font-title-02-b-weight: 700;
-  --font-title-02-b-line-height: 140%;
-  --font-title-02-b-letter-spacing: -0.3%;
-  --font-title-02-m-size: 18px;
-  --font-title-02-m-size-rem: 1.125rem;
-  --font-title-02-m-weight: 500;
-  --font-title-02-m-line-height: 140%;
-  --font-title-02-m-letter-spacing: -0.3%;
-  --font-title-01-b-size: 16px;
-  --font-title-01-b-size-rem: 1rem;
-  --font-title-01-b-weight: 700;
-  --font-title-01-b-line-height: 140%;
-  --font-title-01-b-letter-spacing: -0.3%;
-  --font-title-01-m-size: 16px;
-  --font-title-01-m-size-rem: 1rem;
-  --font-title-01-m-weight: 500;
-  --font-title-01-m-line-height: 140%;
-  --font-title-01-m-letter-spacing: -0.3%;
-  --font-sub-title-01-size: 14px;
-  --font-sub-title-01-size-rem: 0.875rem;
-  --font-sub-title-01-weight: 700;
-  --font-sub-title-01-line-height: 140%;
-  --font-sub-title-01-letter-spacing: -0.3%;
-  --font-body-02-b-size: 16px;
-  --font-body-02-b-size-rem: 1.125rem;
-  --font-body-02-b-weight: 700;
-  --font-body-02-b-line-height: 150%;
-  --font-body-02-b-letter-spacing: -0.3%;
-  --font-body-02-m-size: 16px;
-  --font-body-02-m-size-rem: 1.125rem;
-  --font-body-02-m-weight: 500;
-  --font-body-02-m-line-height: 150%;
-  --font-body-02-m-letter-spacing: -0.3%;
-  --font-body-01-b-size: 15px;
-  --font-body-01-b-size-rem: 1rem;
-  --font-body-01-b-weight: 700;
-  --font-body-01-b-line-height: 150%;
-  --font-body-01-b-letter-spacing: -0.3%;
-  --font-body-01-m-size: 15px;
-  --font-body-01-m-size-rem: 1rem;
-  --font-body-01-m-weight: 500;
-  --font-body-01-m-line-height: 150%;
-  --font-body-01-m-letter-spacing: -0.3%;
-  --font-caption-02-b-size: 14px;
-  --font-caption-02-b-size-rem: 0.875rem;
-  --font-caption-02-b-weight: 700;
-  --font-caption-02-b-line-height: 150%;
-  --font-caption-02-b-letter-spacing: -0.3%;
-  --font-caption-02-m-size: 14px;
-  --font-caption-02-m-size-rem: 0.875rem;
-  --font-caption-02-m-weight: 500;
-  --font-caption-02-m-line-height: 150%;
-  --font-caption-02-m-letter-spacing: -0.3%;
-  --font-caption-01-b-size: 13px;
-  --font-caption-01-b-size-rem: 0.75rem;
-  --font-caption-01-b-weight: 700;
-  --font-caption-01-b-line-height: 150%;
-  --font-caption-01-b-letter-spacing: -0.3%;
-  --font-caption-01-m-size: 13px;
-  --font-caption-01-m-size-rem: 0.75rem;
-  --font-caption-01-m-weight: 500;
-  --font-caption-01-m-line-height: 150%;
-  --font-caption-01-m-letter-spacing: -0.3%;
-  --font-label-01-b-size: 12px;
-  --font-label-01-b-size-rem: 0.75rem;
-  --font-label-01-b-weight: 700;
-  --font-label-01-b-line-height: 150%;
-  --font-label-01-b-letter-spacing: -0.3%;
-  --font-label-01-m-size: 12px;
-  --font-label-01-m-size-rem: 0.75rem;
-  --font-label-01-m-weight: 500;
-  --font-label-01-m-line-height: 150%;
-  --font-label-01-m-letter-spacing: -0.3%;
-  /* Border Radius Variables */
-  --radius-1: 0.5rem; /* 8px */
-  --radius-2: 0.75rem; /* 12px */
-  --radius-3: 1rem; /* 16px */
-  --radius-4: 1.25rem; /* 20px */
-  --radius-5: 1.5rem; /* 24px */
-  --radius-6: 2.5rem; /* 40px */
-  --radius-circle: 100%; /* 100% to make a perfect circle */
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
 }
 
-.justify-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
 }
 
-.items-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* Border Radius */
+.radius-1 {
+  border-radius: var(--radius-1);
 }
 
-.justify-items-center {
-  justify-items: center;
+.radius-2 {
+  border-radius: var(--radius-2);
 }
 
-.content-center {
-  -ms-flex-line-pack: center;
-      align-content: center;
+.radius-3 {
+  border-radius: var(--radius-3);
 }
 
-.justify-space-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.radius-4 {
+  border-radius: var(--radius-4);
 }
 
-.items-space-between {
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+.radius-5 {
+  border-radius: var(--radius-5);
 }
 
-.justify-items-space-between {
-  justify-items: space-between;
+.radius-6 {
+  border-radius: var(--radius-6);
 }
 
-.content-space-between {
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+.radius-circle {
+  border-radius: var(--radius-circle);
 }
 
-.justify-space-around {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.items-space-around {
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
-}
-
-.justify-items-space-around {
-  justify-items: space-around;
-}
-
-.content-space-around {
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
-
-.justify-space-evenly {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.items-space-evenly {
-  -webkit-box-align: space-evenly;
-      -ms-flex-align: space-evenly;
-          align-items: space-evenly;
-}
-
-.justify-items-space-evenly {
-  justify-items: space-evenly;
-}
-
-.content-space-evenly {
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
-}
-
-.justify-flex-start {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.items-flex-start {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.justify-items-flex-start {
-  justify-items: flex-start;
-}
-
-.content-flex-start {
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-}
-
-.justify-flex-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.items-flex-end {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.justify-items-flex-end {
-  justify-items: flex-end;
-}
-
-.content-flex-end {
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+.radius-pill {
+  border-radius: var(--radius-pill);
 }/*# sourceMappingURL=main.css.map */

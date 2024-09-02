@@ -1,21 +1,6 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
-
-// assistive
-.assistive-text {
-  position: absolute !important;
-  margin: -1px !important;
-  border: 0 !important;
-  padding: 0 !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  text-transform: none !important;
-  white-space: nowrap !important;
-}
-
-// Global Header
+/*----------------------
+  Global Header
+----------------------*/
 .global {
   &-header {
     display: -webkit-box;
@@ -136,11 +121,13 @@
   }
 }
 
-
-// Page Headers
+/*----------------------
+  Page Headers
+----------------------*/
 .page-header {
   width: 100%;
   height: fit-content;
+  padding: 0 68px 32px;
   background-color: var(--color-white);
   
   // page header row
@@ -189,9 +176,14 @@
 
   // Mete
   &__meta {
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 140%;
+    @include font-title-02-m;
     color: var(--color-text-01);
+  }
+}
+
+.item-count {
+  em {
+    font-weight: 700;
+    color: var(--color-blue-06);
   }
 }

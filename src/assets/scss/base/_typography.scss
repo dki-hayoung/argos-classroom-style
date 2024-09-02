@@ -1,4 +1,6 @@
-// Pretendard 폰트 페이스 정의
+/*----------------------
+  Pretendard Font
+----------------------*/
 @font-face {
   font-family: 'Pretendard';
   src: url('../fonts/Pretendard-ExtraLight.woff2') format('woff2'),
@@ -31,7 +33,9 @@
   font-style: normal;
 }
 
-/* Typography Classes */
+/*----------------------
+  Typography Classes
+----------------------*/
 .heading-04 {
   @include font-heading-04;
 }

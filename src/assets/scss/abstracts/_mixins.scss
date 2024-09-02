@@ -1,15 +1,51 @@
-@import 'variables';
-
-// _mixins.scss
-
 // 1. 레이아웃 및 Flexbox 믹스인
 
 // Flexbox 설정 믹스인
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+// flex-center: 가로(row) 또는 세로(column)로 Flexbox 아이템을 중앙 정렬
 @mixin flex-center($direction: row) {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: $direction;
+}
+
+// flex-space-between: 아이템들이 컨테이너 안에서 양쪽 끝을 기준으로 동일한 간격을 두고 정렬
+@mixin flex-space-between($direction: row) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// flex-start: 아이템들이 컨테이너의 시작점에 정렬
+@mixin flex-start($direction: row) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// flex-end: 아이템들이 컨테이너의 끝점에 정렬
+@mixin flex-end($direction: row) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// flex-wrap: 아이템들이 컨테이너의 너비를 초과할 경우 다음 줄로 이동하며 래핑
+@mixin flex-wrap($direction: row, $wrap: wrap) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
 }
 
 // 그리드 설정 믹스인
@@ -253,11 +289,3 @@
     outline-offset: 2px;
   }
 }
-
-// 7. Animation 믹스인
-
-// Transition 믹스인
-@mixin transition($properties: all, $duration: 0.3s, $ease: ease) {
-  transition: $properties $duration $ease;
-}
-

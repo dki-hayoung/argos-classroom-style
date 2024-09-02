@@ -18,6 +18,7 @@
       <h1 class="docs-logo"><i>💠</i>Argos Classroom<br>Design System</h1>
       <ul>
         <li><a href="#" data-component="token">Design Tokens</a></li>
+        <li><a href="#" data-component="badge">Badges</a></li>
         <li><a href="#" data-component="toast">Toast</a></li>
         <li><a href="#" data-component="button">Buttons</a></li>
         <li><a href="#" data-component="select">Select</a></li>
@@ -137,6 +138,10 @@
               <span>radius-circle</span>
               <span>100%</span>
             </div>
+            <div class="radius-chip radius-pill">
+              <span>radius-pill</span>
+              <span>999px</span>
+            </div>
           </div>
 
           <!-- Typography -->
@@ -226,6 +231,47 @@
             </div>
           </div>
       
+        </section>
+      </div>
+
+      <div id="badge-component" class="component-section">
+        <section class="component-header">
+          <h2>Badges</h2>
+          <ul>
+            <li>HTML/CSS: Dev Ready</li>
+            <li>PC only</li>
+          </ul>
+        </section>
+        <section class="component-main">
+          <h3>Colors</h3>
+          <div class="component-preview">
+            <!-- <span class="badge default">Default Badge</span>
+            <span class="badge darker">Darker Badge</span>
+            <span class="badge lightest">Lightest Badge</span> -->
+            <!-- <span class="badge success">Success Badge</span> -->
+            <span class="badge warning">Warning Badge</span>
+            <span class="badge error">Error Badge</span>
+          </div>
+          <div class="code-block">
+            <div class="action-bar"><button class="copy-button">Copy</button></div>
+            <pre><code class="language-html">
+&lt;span class=&quot;badge warning&quot;&gt;Warning Badge&lt;/span&gt;
+&lt;span class=&quot;badge error&quot;&gt;Error Badge&lt;/span&gt;
+            </code></pre>
+          </div>
+
+          <h3>Count</h3>
+          <div class="component-preview">
+            <span class="badge count">24</span>
+            <span class="badge count">999+</span>
+          </div>
+          <div class="code-block">
+            <div class="action-bar"><button class="copy-button">Copy</button></div>
+            <pre><code class="language-html">
+&lt;span class=&quot;badge count&quot;&gt;24&lt;/span&gt;
+&lt;span class=&quot;badge count&quot;&gt;999+&lt;/span&gt;
+            </code></pre>
+          </div>
         </section>
       </div>
 
@@ -691,7 +737,7 @@
                 class="assistive-text assistive-text_focus">Skip to Navigation</a> <a href="#"
                 class="assistive-text assistive-text_focus">Skip to Main Content</a>
               <div class="global-header">
-                <div class="global-header__item">
+                <div class="global-header__item left">
                   <ul class="global-actions">
                     <li class="global-actions__item"><button class="button button_icon"
                         title="Menu Icon"><svg class="button__icon" aria-hidden="true">
@@ -699,7 +745,7 @@
                         </svg> <span class="assistive-text">Menu</span></button></li>
                   </ul>
                 </div>
-                <div class="global-header__item">
+                <div class="global-header__item center">
                   <ul class="global-actions">
                     <li class="global-actions__item">
                       <div class="global__text">Arogos의 수학 수업</div>
@@ -710,7 +756,7 @@
                         </svg></button></li>
                   </ul>
                 </div>
-                <div class="global-header__item">
+                <div class="global-header__item right">
                   <ul class="global-actions">
                     <li class="global-header__time"></li>
                     <li class="global-actions__item"><button class="button button_secondary"><svg
@@ -738,7 +784,7 @@
                 class="assistive-text assistive-text_focus">Skip to Navigation</a> <a href="#"
                 class="assistive-text assistive-text_focus">Skip to Main Content</a>
               <div class="global-header">
-                <div class="global-header__item">
+                <div class="global-header__item left">
                   <ul class="global-actions">
                     <li class="global-actions__item"><button class="button button_icon"
                         title="Menu Icon"><svg class="button__icon" aria-hidden="true">
@@ -746,7 +792,7 @@
                         </svg> <span class="assistive-text">Menu</span></button></li>
                   </ul>
                 </div>
-                <div class="global-header__item">
+                <div class="global-header__item center">
                   <ul class="global-actions">
                     <li class="global-actions__item">
                       <div class="global__text">Arogos의 수학 수업</div>
@@ -757,7 +803,7 @@
                         </svg></button></li>
                   </ul>
                 </div>
-                <div class="global-header__item">
+                <div class="global-header__item right">
                   <ul class="global-actions">
                     <li class="global-header__time"><svg class="icon icon_x-small gray07">
                         <use xlink:href="../assets/images/icons/symbols.svg#time"></use>
@@ -787,7 +833,7 @@
                 class="assistive-text assistive-text_focus">Skip to Navigation</a> <a href="#"
                 class="assistive-text assistive-text_focus">Skip to Main Content</a>
               <div class="global-header">
-                <div class="global-header__item">
+                <div class="global-header__item left">
                   <ul class="global-actions">
                     <li class="global-actions__item"><button class="button button_icon"
                         title="Menu Icon"><svg class="button__icon" aria-hidden="true">
@@ -795,7 +841,7 @@
                         </svg> <span class="assistive-text">Menu</span></button></li>
                   </ul>
                 </div>
-                <div class="global-header__item global-header__item--center">
+                <div class="global-header__item center">
                   <ul class="global-actions">
                     <li class="global-actions__item">
                       <div class="global__text">Arogos의 수학 수업</div>
@@ -1740,6 +1786,38 @@
                 </figure>
               </li>
               <li class="docs-icon-list">
+                <figure><span class="icon-container icon-share" title="Share icon"><svg
+                      class="icon icon-default">
+                      <use xlink:href="../assets/images/icons/symbols.svg#share"></use>
+                    </svg></span>
+                  <figcaption>share</figcaption>
+                </figure>
+              </li>
+              <li class="docs-icon-list">
+                <figure><span class="icon-container icon-print" title="Print icon"><svg
+                      class="icon icon-default">
+                      <use xlink:href="../assets/images/icons/symbols.svg#print"></use>
+                    </svg></span>
+                  <figcaption>print</figcaption>
+                </figure>
+              </li>
+              <li class="docs-icon-list">
+                <figure><span class="icon-container icon-pin" title="Pin icon"><svg
+                      class="icon icon-default">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg></span>
+                  <figcaption>pin_fill</figcaption>
+                </figure>
+              </li>
+              <li class="docs-icon-list">
+                <figure><span class="icon-container icon-more" title="More icon"><svg
+                      class="icon icon-default">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg></span>
+                  <figcaption>more</figcaption>
+                </figure>
+              </li>
+              <li class="docs-icon-list">
                 <figure><span class="icon-container icon-user-edit" title="User edit icon"><svg
                       class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#user_edit"></use>
@@ -1975,7 +2053,144 @@
           </ul>
         </section>
         <section class="component-main">
-          <h3>View Cards</h3>
+          <h3>Card Item</h3>
+          <div class="component-preview">
+            <div style="width: 280px;">
+              <article class="card-item">
+                <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                  <source src="" type="video/mp4">
+                </video>
+                <div class="card-controls">
+                  <div class="card-control flex-end">
+                    <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                      </svg>
+                      <span class="assistive-text">상단고정</span>
+                    </button>
+                    <button class="button button_icon button_icon-x-small" title="More Icon">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                      </svg>
+                      <span class="assistive-text">더보기</span>
+                    </button>
+                  </div>
+                  <div class="card-meta flex-start">
+                    <div class="name">김나나</div>
+                    <div class="badge warning">공유중</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="code-block">
+            <div class="action-bar"><button class="copy-button">Copy</button></div>
+            <pre><code class="language-html">
+&lt;article class=&quot;card-item&quot;&gt;
+  &lt;video height=&quot;100%&quot; poster=&quot;../assets/images/temp/video_sample.png&quot; autoplay&gt;
+    &lt;source src=&quot;&quot; type=&quot;video/mp4&quot;&gt;
+  &lt;/video&gt;
+  &lt;div class=&quot;card-controls&quot;&gt;
+    &lt;div class=&quot;card-control flex-end&quot;&gt;
+      &lt;button class=&quot;button button_icon button_icon-x-small&quot; title=&quot;Pin Icon&quot;&gt;
+        &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+          &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#pin_fill&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;assistive-text&quot;&gt;상단고정&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button class=&quot;button button_icon button_icon-x-small&quot; title=&quot;More Icon&quot;&gt;
+        &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+          &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#more&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;assistive-text&quot;&gt;더보기&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-meta flex-start&quot;&gt;
+      &lt;div class=&quot;name&quot;&gt;김나나&lt;/div&gt;
+      &lt;div class=&quot;badge warning&quot;&gt;공유중&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;            
+            </code></pre>
+          </div>
+
+          <h3>States</h3>
+          <h4>Active</h4>
+          <p class="docs-desc">클릭 시 <code class="doc">.active</code> 추가 </p>
+          <div class="component-preview">
+            <div style="width: 280px;">
+              <article class="card-item active">
+                <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                  <source src="" type="video/mp4">
+                </video>
+                <div class="card-controls">
+                  <div class="card-control flex-end">
+                    <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                      </svg>
+                      <span class="assistive-text">상단고정</span>
+                    </button>
+                    <button class="button button_icon button_icon-x-small" title="More Icon">
+                      <svg class="button__icon" aria-hidden="true">
+                        <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                      </svg>
+                      <span class="assistive-text">더보기</span>
+                    </button>
+                  </div>
+                  <div class="card-meta flex-start">
+                    <div class="name">김나나</div>
+                    <div class="badge warning">공유중</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="code-block">
+            <div class="action-bar"><button class="copy-button">Copy</button></div>
+            <pre><code class="language-html">
+&lt;article class=&quot;card-item active&quot;&gt;
+...
+&lt;/article&gt;    
+            </code></pre>
+          </div>
+
+          <h4>수업중</h4>
+          <p class="docs-desc">수업 중 badge의 클래스 <code class="doc">.error</code>로 변경 </p>
+          <div class="component-preview">
+            <article class="card-item active" style="width: 280px;">
+              <video height="100%" poster="../assets/images/temp/video_sample.png" autoplay>
+                <source src="" type="video/mp4">
+              </video>
+              <div class="card-controls">
+                <div class="card-control flex-end">
+                  <button class="button button_icon button_icon-x-small" title="Pin Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#pin_fill"></use>
+                    </svg>
+                    <span class="assistive-text">상단고정</span>
+                  </button>
+                  <button class="button button_icon button_icon-x-small" title="More Icon">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#more"></use>
+                    </svg>
+                    <span class="assistive-text">더보기</span>
+                  </button>
+                </div>
+                <div class="card-meta flex-start">
+                  <div class="name">김나나</div>
+                  <div class="badge error">수업중</div>
+                </div>
+              </div>
+            </article> 
+          </div>
+          <div class="code-block">
+            <div class="action-bar"><button class="copy-button">Copy</button></div>
+            <pre><code class="language-html">
+            </code></pre>
+          </div>
+
+          <h3>View Cards(삭제)</h3>
           <p class="docs-desc">썸네일 뷰로 기기를 각각 표시하며 1행에 6개 기기 화면 배치</p>
           <ul class="docs-list">
             <li>1920 x 1080 (기준 해상도)에서는 6열 배치</li>
@@ -1983,58 +2198,10 @@
             <li>1280px 미만에서는 가로 스크롤 생김</li>
           </ul>
           <div class="component-preview">
-            <div class="card-wrap">
-              <div class="card-inner">
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-                <div class="card">
-                  <div class="card-title">Card Title</div>
-                  <div class="card-content">This is some card content.</div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class="card"&gt;
-  &lt;div class="card-title"&gt;Card Title&lt;/div&gt;
-  &lt;div class="card-content"&gt;This is some card content.&lt;/div&gt;
-&lt;/div&gt;
             </code></pre>
           </div>
         </section>
@@ -2232,6 +2399,7 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
   <script src="../assets/js/styleguide.js"></script>
+  <script src="../assets/js/actions.js"></script>
   <script src="../assets/js/tabs.js"></script>
   <script src="../assets/js/datetimepicker.js"></script>
   <!-- Include jQuery -->
