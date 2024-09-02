@@ -60,6 +60,141 @@
   letter-spacing: $letter-spacing;
 }
 
+// 20040901 추가
+/* Typography Mixins */
+@mixin font-heading-04 {
+  font-size: var(--font-heading-04-size);
+  font-weight: var(--font-heading-04-weight);
+  line-height: var(--font-heading-04-line-height);
+  letter-spacing: var(--font-heading-04-letter-spacing);
+}
+
+@mixin font-heading-03 {
+  font-size: var(--font-heading-03-size);
+  font-weight: var(--font-heading-03-weight);
+  line-height: var(--font-heading-03-line-height);
+  letter-spacing: var(--font-heading-03-letter-spacing);
+}
+
+@mixin font-heading-02 {
+  font-size: var(--font-heading-02-size);
+  font-weight: var(--font-heading-02-weight);
+  line-height: var(--font-heading-02-line-height);
+  letter-spacing: var(--font-heading-02-letter-spacing);
+}
+
+@mixin font-heading-01 {
+  font-size: var(--font-heading-01-size);
+  font-weight: var(--font-heading-01-weight);
+  line-height: var(--font-heading-01-line-height);
+  letter-spacing: var(--font-heading-01-letter-spacing);
+}
+
+@mixin font-title-02-b {
+  font-size: var(--font-title-02-b-size);
+  font-weight: var(--font-title-02-b-weight);
+  line-height: var(--font-title-02-b-line-height);
+  letter-spacing: var(--font-title-02-b-letter-spacing);
+}
+
+@mixin font-title-02-m {
+  font-size: var(--font-title-02-m-size);
+  font-weight: var(--font-title-02-m-weight);
+  line-height: var(--font-title-02-m-line-height);
+  letter-spacing: var(--font-title-02-m-letter-spacing);
+}
+
+@mixin font-title-01-b {
+  font-size: var(--font-title-01-b-size);
+  font-weight: var(--font-title-01-b-weight);
+  line-height: var(--font-title-01-b-line-height);
+  letter-spacing: var(--font-title-01-b-letter-spacing);
+}
+
+@mixin font-title-01-m {
+  font-size: var(--font-title-01-m-size);
+  font-weight: var(--font-title-01-m-weight);
+  line-height: var(--font-title-01-m-line-height);
+  letter-spacing: var(--font-title-01-m-letter-spacing);
+}
+
+@mixin font-sub-title-01 {
+  font-size: var(--font-sub-title-01-size);
+  font-weight: var(--font-sub-title-01-weight);
+  line-height: var(--font-sub-title-01-line-height);
+  letter-spacing: var(--font-sub-title-01-letter-spacing);
+}
+
+@mixin font-body-02-b {
+  font-size: var(--font-body-02-b-size);
+  font-weight: var(--font-body-02-b-weight);
+  line-height: var(--font-body-02-b-line-height);
+  letter-spacing: var(--font-body-02-b-letter-spacing);
+}
+
+@mixin font-body-02-m {
+  font-size: var(--font-body-02-m-size);
+  font-weight: var(--font-body-02-m-weight);
+  line-height: var(--font-body-02-m-line-height);
+  letter-spacing: var(--font-body-02-m-letter-spacing);
+}
+
+@mixin font-body-01-b {
+  font-size: var(--font-body-01-b-size);
+  font-weight: var(--font-body-01-b-weight);
+  line-height: var(--font-body-01-b-line-height);
+  letter-spacing: var(--font-body-01-b-letter-spacing);
+}
+
+@mixin font-body-01-m {
+  font-size: var(--font-body-01-m-size);
+  font-weight: var(--font-body-01-m-weight);
+  line-height: var(--font-body-01-m-line-height);
+  letter-spacing: var(--font-body-01-m-letter-spacing);
+}
+
+@mixin font-caption-02-b {
+  font-size: var(--font-caption-02-b-size);
+  font-weight: var(--font-caption-02-b-weight);
+  line-height: var(--font-caption-02-b-line-height);
+  letter-spacing: var(--font-caption-02-b-letter-spacing);
+}
+
+@mixin font-caption-02-m {
+  font-size: var(--font-caption-02-m-size);
+  font-weight: var(--font-caption-02-m-weight);
+  line-height: var(--font-caption-02-m-line-height);
+  letter-spacing: var(--font-caption-02-m-letter-spacing);
+}
+
+@mixin font-caption-01-b {
+  font-size: var(--font-caption-01-b-size);
+  font-weight: var(--font-caption-01-b-weight);
+  line-height: var(--font-caption-01-b-line-height);
+  letter-spacing: var(--font-caption-01-b-letter-spacing);
+}
+
+@mixin font-caption-01-m {
+  font-size: var(--font-caption-01-m-size);
+  font-weight: var(--font-caption-01-m-weight);
+  line-height: var(--font-caption-01-m-line-height);
+  letter-spacing: var(--font-caption-01-m-letter-spacing);
+}
+
+@mixin font-label-01-b {
+  font-size: var(--font-label-01-b-size);
+  font-weight: var(--font-label-01-b-weight);
+  line-height: var(--font-label-01-b-line-height);
+  letter-spacing: var(--font-label-01-b-letter-spacing);
+}
+
+@mixin font-label-01-m {
+  font-size: var(--font-label-01-m-size);
+  font-weight: var(--font-label-01-m-weight);
+  line-height: var(--font-label-01-m-line-height);
+  letter-spacing: var(--font-label-01-m-letter-spacing);
+}
+
 
 // Text Truncate 믹스인
 @mixin text-truncate($lines: 1) {

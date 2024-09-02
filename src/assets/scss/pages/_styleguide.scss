@@ -170,7 +170,7 @@ h4 + .docs-desc {
   position: relative;
   height: 21.25rem;
   padding: 0;
-  .acl-global-header_container {
+  .global-header_container {
     position: absolute;
   }
 }
@@ -226,7 +226,7 @@ code {
 }
 
 .copy-button:hover {
-  background-color: $primary01;
+  background-color: var(--color-blue-01);
 }
 
 /* 코드 블록 스타일 */
@@ -409,4 +409,158 @@ code {
 }
 .release-notes code {
   color: #000;
+}
+
+// color token
+.color-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 40px;
+}
+
+.color-chip {
+  width: 150px;
+  height: 100px;
+  background-color: #ddd;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.color-chip:hover {
+  transform: scale(1.05);
+}
+
+// border-radius token
+.radius-group {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr var(--sds-g-sizing-9);
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.radius-chip {
+  // width: 100px;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-gray-08);
+  border: 1px solid var(--color-gray-04);
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.radius-chip:hover {
+  transform: scale(1.05);
+}
+
+.radius-1 {
+  border-radius: var(--radius-1);
+}
+
+.radius-2 {
+  border-radius: var(--radius-2);
+}
+
+.radius-3 {
+  border-radius: var(--radius-3);
+}
+
+.radius-4 {
+  border-radius: var(--radius-4);
+}
+
+.radius-5 {
+  border-radius: var(--radius-5);
+}
+
+.radius-6 {
+  border-radius: var(--radius-6);
+}
+
+.radius-circle {
+  border-radius: var(--radius-circle);
+}
+
+
+// Typography
+.typography-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.font-item {
+  display: grid;
+  grid-template-columns: minmax(-webkit-max-content, 100px) 1fr;
+  grid-template-columns: minmax(max-content, 100px) 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.font-item span {
+  font-size: 0.875rem;
+  color: var(--color-gray-08);
+  margin-bottom: 5px;
+  &:first-of-type {
+    text-align: right;
+  }
+}
+
+/* Typography Tokens */
+.font-heading-04 p {
+  font-size: var(--font-heading-04-size);
+}
+
+.font-heading-03 p {
+  font-size: var(--font-heading-03-size);
+}
+
+.font-heading-02 p {
+  font-size: var(--font-heading-02-size);
+}
+
+.font-heading-01 p {
+  font-size: var(--font-heading-01-size);
+}
+
+.font-title-02-b p {
+  font-size: var(--font-title-02-b-size);
+}
+
+.font-title-02-m p {
+  font-size: var(--font-title-02-m-size);
+}
+
+.font-title-01-b p {
+  font-size: var(--font-title-01-b-size);
+}
+
+.font-title-01-m p {
+  font-size: var(--font-title-01-m-size);
+}
+
+.font-sub-title-01 p {
+  font-size: var(--font-sub-title-01-size);
+}
+
+.font-body-02-b p {
+  font-size: var(--font-body-02-b-size);
 }

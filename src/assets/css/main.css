@@ -1,8 +1,595 @@
 @charset "UTF-8";
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+/* Typography Mixins */
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+/* Typography Mixins */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Eric Meyer’s Reset CSS */
@@ -76,66 +663,438 @@ input, button, textarea {
   font-weight: 700;
   font-style: normal;
 }
+/* Typography Classes */
+.heading-04 {
+  font-size: var(--font-heading-04-size);
+  font-weight: var(--font-heading-04-weight);
+  line-height: var(--font-heading-04-line-height);
+  letter-spacing: var(--font-heading-04-letter-spacing);
+}
+
+.heading-03 {
+  font-size: var(--font-heading-03-size);
+  font-weight: var(--font-heading-03-weight);
+  line-height: var(--font-heading-03-line-height);
+  letter-spacing: var(--font-heading-03-letter-spacing);
+}
+
+.heading-02 {
+  font-size: var(--font-heading-02-size);
+  font-weight: var(--font-heading-02-weight);
+  line-height: var(--font-heading-02-line-height);
+  letter-spacing: var(--font-heading-02-letter-spacing);
+}
+
+.heading-01 {
+  font-size: var(--font-heading-01-size);
+  font-weight: var(--font-heading-01-weight);
+  line-height: var(--font-heading-01-line-height);
+  letter-spacing: var(--font-heading-01-letter-spacing);
+}
+
+.title-02-b {
+  font-size: var(--font-title-02-b-size);
+  font-weight: var(--font-title-02-b-weight);
+  line-height: var(--font-title-02-b-line-height);
+  letter-spacing: var(--font-title-02-b-letter-spacing);
+}
+
+.title-02-m {
+  font-size: var(--font-title-02-m-size);
+  font-weight: var(--font-title-02-m-weight);
+  line-height: var(--font-title-02-m-line-height);
+  letter-spacing: var(--font-title-02-m-letter-spacing);
+}
+
+.title-01-b {
+  font-size: var(--font-title-01-b-size);
+  font-weight: var(--font-title-01-b-weight);
+  line-height: var(--font-title-01-b-line-height);
+  letter-spacing: var(--font-title-01-b-letter-spacing);
+}
+
+.title-01-m {
+  font-size: var(--font-title-01-m-size);
+  font-weight: var(--font-title-01-m-weight);
+  line-height: var(--font-title-01-m-line-height);
+  letter-spacing: var(--font-title-01-m-letter-spacing);
+}
+
+.sub-title-01 {
+  font-size: var(--font-sub-title-01-size);
+  font-weight: var(--font-sub-title-01-weight);
+  line-height: var(--font-sub-title-01-line-height);
+  letter-spacing: var(--font-sub-title-01-letter-spacing);
+}
+
 .body-02-b {
-  font-size: 1.125rem;
-  font-weight: bold;
-  line-height: 160%;
-  letter-spacing: -0.3%;
+  font-size: var(--font-body-02-b-size);
+  font-weight: var(--font-body-02-b-weight);
+  line-height: var(--font-body-02-b-line-height);
+  letter-spacing: var(--font-body-02-b-letter-spacing);
 }
 
 .body-02-m {
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.3%;
+  font-size: var(--font-body-02-m-size);
+  font-weight: var(--font-body-02-m-weight);
+  line-height: var(--font-body-02-m-line-height);
+  letter-spacing: var(--font-body-02-m-letter-spacing);
 }
 
 .body-01-b {
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 150%;
-  letter-spacing: -0.3%;
+  font-size: var(--font-body-01-b-size);
+  font-weight: var(--font-body-01-b-weight);
+  line-height: var(--font-body-01-b-line-height);
+  letter-spacing: var(--font-body-01-b-letter-spacing);
 }
 
 .body-01-m {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.3%;
+  font-size: var(--font-body-01-m-size);
+  font-weight: var(--font-body-01-m-weight);
+  line-height: var(--font-body-01-m-line-height);
+  letter-spacing: var(--font-body-01-m-letter-spacing);
 }
 
 .caption-02-b {
-  font-size: 0.875rem;
-  font-weight: bold;
-  line-height: 150%;
-  letter-spacing: -0.3%;
+  font-size: var(--font-caption-02-b-size);
+  font-weight: var(--font-caption-02-b-weight);
+  line-height: var(--font-caption-02-b-line-height);
+  letter-spacing: var(--font-caption-02-b-letter-spacing);
 }
 
 .caption-02-m {
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.3%;
+  font-size: var(--font-caption-02-m-size);
+  font-weight: var(--font-caption-02-m-weight);
+  line-height: var(--font-caption-02-m-line-height);
+  letter-spacing: var(--font-caption-02-m-letter-spacing);
 }
 
 .caption-01-b {
-  font-size: 0.75rem;
-  font-weight: bold;
-  line-height: 160%;
-  letter-spacing: -0.3%;
+  font-size: var(--font-caption-01-b-size);
+  font-weight: var(--font-caption-01-b-weight);
+  line-height: var(--font-caption-01-b-line-height);
+  letter-spacing: var(--font-caption-01-b-letter-spacing);
 }
 
 .caption-01-m {
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.3%;
+  font-size: var(--font-caption-01-m-size);
+  font-weight: var(--font-caption-01-m-weight);
+  line-height: var(--font-caption-01-m-line-height);
+  letter-spacing: var(--font-caption-01-m-letter-spacing);
 }
 
+.label-01-b {
+  font-size: var(--font-label-01-b-size);
+  font-weight: var(--font-label-01-b-weight);
+  line-height: var(--font-label-01-b-line-height);
+  letter-spacing: var(--font-label-01-b-letter-spacing);
+}
+
+.label-01-m {
+  font-size: var(--font-label-01-m-size);
+  font-weight: var(--font-label-01-m-weight);
+  line-height: var(--font-label-01-m-line-height);
+  letter-spacing: var(--font-label-01-m-letter-spacing);
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+/* Typography Mixins */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -155,17 +1114,315 @@ body {
   border: 0;
 }
 
-.acl-grid {
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1rem;
 }
 
-.acl-grid__item {
-  flex: 1 1 calc(33.333% - 1rem);
+.grid__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(33.333% - 1rem);
+          flex: 1 1 calc(33.333% - 1rem);
 }
 
-.acl-assistive-text {
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+/* Typography Mixins */
+.assistive-text {
   position: absolute !important;
   margin: -1px !important;
   border: 0 !important;
@@ -178,315 +1435,1282 @@ body {
   white-space: nowrap !important;
 }
 
-.acl-global-header {
+.global-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #E7EDF6;
+  background: var(--bg-light-blue);
   padding: 1.2813rem 1rem;
   height: 5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
-.acl-global-header_container {
-  position: fixed;
+.global-header_container {
+  position: sticky;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 100;
 }
-.acl-global-header_container .acl-assistive-text_focus {
+.global-header_container .assistive-text_focus {
   top: 0;
   color: #5e5e5e;
   background: #fff;
 }
-.acl-global-header__item--center {
-  flex: 1;
-  padding-right: 17.5rem;
+.global-header__item.left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto; /* A는 좌측 끝 */
 }
-.acl-global-header--flex {
+.global-header__item.center {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.global-header__item.right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto; /* C는 우측 끝 */
+}
+.global-header--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1;
-  justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   gap: 2.5rem;
 }
-.acl-global-header__logo {
+.global-header__logo {
   width: 12.5rem;
   height: 2.5rem;
   font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.4;
-  color: #0F2D63;
+  color: var(--color-blue-10);
 }
-.acl-global-header__time {
+.global-header__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
-  min-width: 104px;
 }
-.acl-global-header__time .acl-text {
+.global-header__time .text {
   font-size: 1rem;
   line-height: 1.4;
   font-weight: 500;
-  color: #47546C;
+  color: var(--color-text-03);
 }
-.acl-global-header_console {
+.global-header_console {
   padding: 1.2813rem 5rem;
 }
-.acl-global-actions {
+.global-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1.25rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.acl-global-actions__item {
-  color: #6F7C94;
+.global-actions__item {
+  color: var(--color-text-04);
 }
-.acl-global-controls .acl-form-element__control {
+.global-controls .form-element__control {
   width: 320px;
 }
-.acl-global__text {
+.global__text {
   font-size: 1.375rem;
   font-weight: 500;
   line-height: 140%;
-  color: #141426;
+  color: var(--color-text-01);
 }
 
-.acl-page-header {
+.page-header {
   width: 100%;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
-.acl-page-header__row {
+.page-header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.acl-page-header__actions {
+.page-header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
   flex: 1 1 0%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.25rem;
 }
-.acl-page-header__actions .acl-form-element__label {
+.page-header__actions .form-element__label {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 140%;
-  color: #141426;
+  color: var(--color-text-01);
 }
-.acl-page-header__controls {
+.page-header__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
   flex: none;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.625rem;
   height: 100%;
 }
-.acl-page-header__control {
+.page-header__control {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 0.25rem;
 }
-.acl-page-header__meta {
+.page-header__meta {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 140%;
-  color: #141426;
+  color: var(--color-text-01);
 }
 
-.acl-button {
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+/* Typography Mixins */
+.snb-tit {
+  font-family: Pretendard;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  letter-spacing: -0.003em;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.snb-tit:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+/* Typography Mixins */
+.button {
   position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 500;
   line-height: 150%;
   padding: 0.5rem 1.25rem;
   font-size: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #6F7C94;
+  color: var(--color-text-04);
   cursor: pointer;
   text-align: center;
   -webkit-appearance: none;
   white-space: normal;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   text-decoration: none;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
-.acl-button:hover, .acl-button:focus {
+.button:hover, .button:focus {
   background-color: transparent;
   border-color: transparent;
-  color: #246BEB;
+  color: var(--color-blue-06);
   outline: none;
 }
-.acl-button:focus-visible {
-  box-shadow: 0 0 0 2px #0b5cab;
+.button:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #0b5cab;
+          box-shadow: 0 0 0 2px #0b5cab;
 }
-.acl-button_small {
+.button_small {
   min-width: 180px;
   padding: 0.375rem 1rem;
   font-size: 0.8125rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-.acl-button_large {
+.button_large {
   min-width: 180px;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-.acl-button_x-large {
+.button_x-large {
   min-width: 180px;
   padding: 1.25rem 1.5rem;
   font-size: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-.acl-button_primary {
+.button_primary {
   font-weight: 700;
-  background-color: #246BEB;
+  background-color: var(--color-blue-06);
   border: 1px solid transparent;
-  color: #fff;
+  color: var(--color-white);
 }
-.acl-button_primary:hover, .acl-button_primary:focus {
-  background-color: #1A4CA7;
+.button_primary:hover, .button_primary:focus {
+  background-color: var(--color-blue-08);
   border-color: transparent;
-  color: #fff;
+  color: var(--color-white);
   outline: none;
 }
-.acl-button_primary:focus-visible {
-  box-shadow: 0 0 0 2px #0b5cab;
+.button_primary:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #0b5cab;
+          box-shadow: 0 0 0 2px #0b5cab;
 }
-.acl-button_secondary {
+.button_secondary {
   font-weight: 700;
-  background-color: #6C9CF2;
+  background-color: var(--color-blue-04);
   border: 1px solid transparent;
-  color: #fff;
+  color: var(--color-white);
 }
-.acl-button_secondary:hover, .acl-button_secondary:focus {
-  background-color: #1A4CA7;
+.button_secondary:hover, .button_secondary:focus {
+  background-color: var(--color-blue-08);
   border-color: transparent;
-  color: #fff;
+  color: var(--color-white);
   outline: none;
 }
-.acl-button_secondary:focus-visible {
-  box-shadow: 0 0 0 2px #0b5cab;
+.button_secondary:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #0b5cab;
+          box-shadow: 0 0 0 2px #0b5cab;
 }
-.acl-button_destructive {
-  background-color: #DA1E28;
+.button_destructive {
+  background-color: var(--color-red);
   border: 1px solid transparent;
-  color: #fff;
+  color: var(--color-white);
 }
-.acl-button_destructive:hover, .acl-button_destructive:focus {
-  background-color: #DA1E28;
+.button_destructive:hover, .button_destructive:focus {
+  background-color: var(--color-red);
   border-color: transparent;
-  color: #fff;
+  color: var(--color-white);
   outline: none;
 }
-.acl-button_destructive:focus-visible {
-  box-shadow: 0 0 0 2px #0b5cab;
+.button_destructive:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #0b5cab;
+          box-shadow: 0 0 0 2px #0b5cab;
 }
-.acl-button_outline {
+.button_outline {
   font-weight: 700;
   background-color: transparent;
-  border: 1px solid #C6CAD1;
-  color: #6F7C94;
+  border: 1px solid var(--color-gray-04);
+  color: var(--color-gray-07);
 }
-.acl-button_outline:hover, .acl-button_outline:focus {
+.button_outline:hover, .button_outline:focus {
   background-color: transparent;
-  border-color: #1A4CA7;
-  color: #1A4CA7;
+  border-color: var(--color-blue-08);
+  color: var(--color-blue-08);
   outline: none;
 }
-.acl-button_outline:focus-visible {
-  box-shadow: 0 0 0 2px #0b5cab;
+.button_outline:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #0b5cab;
+          box-shadow: 0 0 0 2px #0b5cab;
 }
-.acl-button_outline-primary {
+.button_outline-primary {
   font-weight: 700;
-  background-color: #fff;
-  border: 1px solid #246BEB;
-  color: #246BEB;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-blue-06);
+  color: var(--color-blue-06);
 }
-.acl-button_outline-primary:hover, .acl-button_outline-primary:focus {
-  background-color: #fff;
-  border-color: #1A4CA7;
-  color: #1A4CA7;
+.button_outline-primary:hover, .button_outline-primary:focus {
+  background-color: var(--color-white);
+  border-color: var(--color-blue-08);
+  color: var(--color-blue-08);
   outline: none;
 }
-.acl-button_outline-primary:focus-visible {
-  box-shadow: 0 0 0 2px #0b5cab;
+.button_outline-primary:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #0b5cab;
+          box-shadow: 0 0 0 2px #0b5cab;
 }
-.acl-button_outline-secondary {
+.button_outline-secondary {
   font-weight: 700;
-  background-color: #fff;
-  border: 1px solid #6C9CF2;
-  color: #6C9CF2;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-blue-04);
+  color: var(--color-blue-04);
 }
-.acl-button_outline-secondary:hover, .acl-button_outline-secondary:focus {
-  background-color: #fff;
-  border-color: #1A4CA7;
-  color: #1A4CA7;
+.button_outline-secondary:hover, .button_outline-secondary:focus {
+  background-color: var(--color-white);
+  border-color: var(--color-blue-08);
+  color: var(--color-blue-08);
   outline: none;
 }
-.acl-button_outline-secondary:focus-visible {
-  box-shadow: 0 0 0 2px #0b5cab;
+.button_outline-secondary:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #0b5cab;
+          box-shadow: 0 0 0 2px #0b5cab;
 }
-.acl-button:disabled, .acl-button[disabled] {
+.button:disabled, .button[disabled] {
   background-color: transparent;
   border-color: transparent;
-  color: #AAB0BB;
+  color: var(--color-gray-05);
   cursor: default;
 }
-.acl-button_icon {
+.button_icon {
   padding: 0;
   line-height: 1;
   vertical-align: middle;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
-.acl-button_icon-border {
+.button_icon-border {
   width: 2.5rem;
   height: 2.5rem;
   line-height: 1;
   vertical-align: middle;
+  -webkit-transition: border 0.15s linear;
   transition: border 0.15s linear;
   border-radius: 999px;
 }
-.acl-button_icon-border .acl-button__icon {
+.button_icon-border .button__icon {
   width: 1.25rem;
   height: 1.25rem;
 }
-.acl-button_icon-xx-small {
+.button_icon-xx-small {
   width: 1rem;
   height: 1rem;
 }
-.acl-button_icon-x-small {
+.button_icon-x-small {
   width: 1.25rem;
   height: 1.25rem;
 }
-.acl-button_icon-small {
+.button_icon-small {
   width: 1.5rem;
   height: 1.5rem;
 }
-.acl-button_icon-large {
+.button_icon-large {
   width: 2.5rem;
   height: 2.5rem;
 }
-.acl-button__icon {
+.button__icon {
   width: 2rem;
   height: 2rem;
 }
-.acl-button .acl-icon {
+.button .icon {
   width: 1rem;
   height: 1rem;
 }
 
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+/* Typography Mixins */
 /* 기본 스타일 */
 .card-wrap {
   container-type: inline-size; /* 컨테이너 쿼리 적용 */
@@ -495,16 +2719,19 @@ body {
 
 .card-inner {
   display: grid;
+  -webkit-column-gap: 16px;
   -moz-column-gap: 16px;
        column-gap: 16px;
   row-gap: 24px;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  grid-template-columns: repeat(5, minmax(280px, 1fr));
   overflow-x: auto;
 }
 
-.acl-card {
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  background-color: #E9F0FD;
+  background-color: var(--color-blue-01);
   padding: 0.8rem;
   width: 100%;
   height: auto;
@@ -519,102 +2746,428 @@ body {
   }
 }
 /* 컨테이너 쿼리 사용할 경우 주석 해제: 컨테이너의 너비에 따라 열 수를 변경 */
-.acl-code {
+.code {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1.5rem;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2.5rem 0;
   border-radius: 1rem;
-  background-color: #fff;
-  color: #47546C;
+  background-color: var(--color-white);
+  color: var(--color-text-03);
 }
-.acl-code_qr {
+.code_qr {
   display: block;
   width: 4.5rem;
   height: 4.5rem;
 }
-.acl-code_text {
+.code_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.acl-code_text span {
+.code_text span {
   display: block;
   font-size: 0.9375rem;
   font-weight: 500;
   line-height: 150%;
   letter-spacing: -0.3%;
 }
-.acl-code_text em {
+.code_text em {
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 140%;
   letter-spacing: -0.3%;
-  color: #141426;
+  color: var(--color-text-01);
 }
-.acl-code--blue {
-  background-color: #E9F0FD;
+.code--blue {
+  background-color: var(--color-blue-01);
 }
-.acl-code_small {
+.code_small {
   gap: 1.25rem;
   padding: 1.25rem 0;
   border-radius: 0.75rem;
 }
-.acl-code_small .acl-code_qr {
+.code_small .code_qr {
   width: 3.375rem;
   height: 3.375rem;
 }
-.acl-code_small .acl-code_text span {
+.code_small .code_text span {
   font-size: 0.8125rem;
 }
-.acl-code_small .acl-code_text em {
+.code_small .code_text em {
   font-size: 1.25rem;
-  color: #141426;
+  color: var(--color-text-01);
 }
 
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+/* Typography Mixins */
 input [type=checkbox],
 input [type=radio] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
 
-.acl-form-element {
+/* Chrome, Safari, Edge */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important; /* 배경색 덮어쓰기 */
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important; /* 배경색 덮어쓰기 방지 */
+}
+
+/* Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill,
+select:-moz-autofill {
+  background-color: #fff !important; /* 배경색 덮어쓰기 */
+}
+
+.form-element {
   position: relative;
   min-width: 0;
 }
-.acl-form-element__label {
+.form-element__label {
   overflow-wrap: break-word;
   word-wrap: break-word;
+  -ms-hyphens: auto;
   -webkit-hyphens: auto;
           hyphens: auto;
   display: inline-block;
-  color: #6F7C94;
+  color: var(--color-text-04);
   font-size: 0.875rem;
   font-weight: 700;
   margin-bottom: 0.375rem;
 }
-.acl-form-element__control {
+.form-element__control {
   clear: left;
   position: relative;
 }
-.acl-form-element__control .acl-checkbox,
-.acl-form-element__control .acl-radio {
+.form-element__control .checkbox,
+.form-element__control .radio {
   display: block;
 }
-.acl-form-element__help, .acl-form-element__helper {
+.form-element__help, .form-element__helper {
   font-size: 0.8125rem;
   line-height: 1.5;
   font-weight: 500;
   margin-top: 0.375rem;
   display: block;
 }
-.acl-form-element__legend {
+.form-element__legend {
   font-weight: 700;
 }
 
-.acl-input {
+.input {
   padding-top: 0;
   padding-right: 0.625rem;
   padding-bottom: 0;
@@ -624,111 +3177,135 @@ input [type=radio] {
   line-height: 2.5rem;
   border: 1px solid transparent;
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: var(--color-white);
   font-size: 0.9375rem;
-  color: #141426;
+  color: var(--color-text-01);
+  -webkit-transition: border 0.1s linear, background-color 0.1s linear;
   transition: border 0.1s linear, background-color 0.1s linear;
   display: inline-block;
 }
-.acl-input:focus-visible {
-  outline: 1px solid #246BEB;
+.input:focus-visible {
+  outline: 1px solid var(--color-blue-06);
 }
-.acl-input-outline {
-  border-color: #D9DBE0;
+.input-outline {
+  border-color: var(--color-gray-03);
   background-color: transparent;
 }
-.acl-input[disabled] {
-  background-color: #D9DBE0;
-  border-color: #D9DBE0;
+.input[disabled] {
+  background-color: var(--color-gray-03);
+  border-color: var(--color-gray-03);
   cursor: not-allowed;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
-.acl-input[disabled]:active, .acl-input[disabled]:focus {
+.input[disabled]:active, .input[disabled]:focus {
   outline: none;
 }
-.acl-input_date {
+.input_date {
   font-weight: 500;
-  color: #141426;
+  color: var(--color-text-01);
+}
+
+::-webkit-input-placeholder {
+  color: var(--color-text-05-disabled);
+  font-weight: 500;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: #8A93A2;
+  color: var(--color-text-05-disabled);
+  font-weight: 500;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: var(--color-text-05-disabled);
+  font-weight: 500;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: var(--color-text-05-disabled);
   font-weight: 500;
   opacity: 1;
 }
 
 ::placeholder {
-  color: #8A93A2;
+  color: var(--color-text-05-disabled);
   font-weight: 500;
   opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-  color: #8A93A2;
+  color: var(--color-text-05-disabled);
   font-weight: 500;
   opacity: 1;
 }
 
-.acl-has-error {
-  border-color: #DA1E28;
+.has-error {
+  border-color: var(--color-red);
 }
-.acl-has-error .acl-input {
-  border-color: #DA1E28;
+.has-error .input {
+  border-color: var(--color-red);
   background-clip: padding-box;
 }
-.acl-has-error .acl-input:focus {
-  box-shadow: 0;
+.has-error .input:focus {
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
 }
-.acl-has-error .acl-input:focus-visible {
-  box-shadow: 0 0 0 2px #0b5cab;
+.has-error .input:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #0b5cab;
+          box-shadow: 0 0 0 2px #0b5cab;
 }
-.acl-has-error .acl-form-element__label,
-.acl-has-error .acl-form-element__help,
-.acl-has-error .acl-required {
-  color: #DA1E28;
+.has-error .form-element__label,
+.has-error .form-element__help,
+.has-error .required {
+  color: var(--color-red);
 }
 
-.acl-input-has-icon {
+.input-has-icon {
   position: relative;
-  color: #141426;
-  border-bottom: 1px solid #C6CAD1;
+  color: var(--color-text-01);
+  border-bottom: 1px solid var(--color-gray-04);
   border-radius: 0;
 }
-.acl-input-has-icon .acl-button_icon:not(button) {
+.input-has-icon .button_icon:not(button) {
   pointer-events: none;
 }
-.acl-input-has-icon_right .acl-button_icon {
+.input-has-icon_right .button_icon {
   right: 0.75rem;
 }
-.acl-input-has-icon_right .acl-input {
+.input-has-icon_right .input {
   padding-right: 3rem;
   background-color: transparent;
 }
-.acl-input-has-icon .acl-button_icon {
+.input-has-icon .button_icon {
   width: 1.5rem;
   height: 1.5rem;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   line-height: 1;
   border: 0;
   z-index: 2;
 }
-.acl-input-has-icon .acl-input {
+.input-has-icon .input {
   border-radius: 0;
 }
-.acl-input-has-icon .acl-input:focus-visible {
+.input-has-icon .input:focus-visible {
   outline: 0;
-  box-shadow: 0 1px 0 #246BEB;
+  -webkit-box-shadow: 0 1px 0 var(--color-blue-06);
+          box-shadow: 0 1px 0 var(--color-blue-06);
 }
 
-.acl-checkbox {
+.checkbox {
   display: inline-block;
   position: relative;
 }
-.acl-checkbox [type=checkbox] {
+.checkbox [type=checkbox] {
   width: 1px;
   height: 1px;
   border: 0;
@@ -739,82 +3316,100 @@ input [type=radio] {
   position: absolute;
   pointer-events: auto;
 }
-.acl-checkbox .acl-checkbox__label,
-.acl-checkbox .acl-form-element__label {
+.checkbox .checkbox__label,
+.checkbox .form-element__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   vertical-align: middle;
   font-size: 18px;
   gap: 0.5rem;
 }
-.acl-checkbox .acl-form-element__label {
+.checkbox .form-element__label {
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 0;
 }
-.acl-checkbox .acl-checkbox_faux {
+.checkbox .checkbox_faux {
   width: 1.25rem;
   height: 1.25rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   vertical-align: middle;
   border-radius: 0.25rem;
-  border: 1px solid #8A93A2;
+  border: 1px solid var(--color-gray-06);
   background-color: transparent;
+  -webkit-transition: border 0.1s linear, background-color 0.1s linear;
   transition: border 0.1s linear, background-color 0.1s linear;
 }
-.acl-checkbox .acl-checkbox_faux .acl-icon {
+.checkbox .checkbox_faux .icon {
   display: none;
   width: 0.75rem;
   height: 0.625rem;
+  -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
 }
-.acl-checkbox [type=checkbox]:checked + .acl-checkbox__label .acl-checkbox_faux,
-.acl-checkbox [type=checkbox]:checked + .acl-checkbox_faux,
-.acl-checkbox [type=checkbox]:checked ~ .acl-checkbox_faux {
-  color: #fff;
-  border-color: #246BEB;
-  background-color: #246BEB;
+.checkbox [type=checkbox]:checked + .checkbox__label .checkbox_faux,
+.checkbox [type=checkbox]:checked + .checkbox_faux,
+.checkbox [type=checkbox]:checked ~ .checkbox_faux {
+  color: var(--color-white);
+  border-color: var(--color-blue-06);
+  background-color: var(--color-blue-06);
 }
-.acl-checkbox [type=checkbox]:checked + .acl-checkbox__label .acl-checkbox_faux .acl-icon,
-.acl-checkbox [type=checkbox]:checked + .acl-checkbox_faux .acl-icon,
-.acl-checkbox [type=checkbox]:checked ~ .acl-checkbox_faux .acl-icon {
+.checkbox [type=checkbox]:checked + .checkbox__label .checkbox_faux .icon,
+.checkbox [type=checkbox]:checked + .checkbox_faux .icon,
+.checkbox [type=checkbox]:checked ~ .checkbox_faux .icon {
   display: block;
 }
 
-.acl-checkbox [type=checkbox]:focus-visible + .acl-checkbox__label .acl-checkbox_faux,
-.acl-checkbox [type=checkbox]:focus-visible + .acl-checkbox_faux,
-.acl-checkbox [type=checkbox]:focus-visible ~ .acl-checkbox_faux {
+.checkbox [type=checkbox]:focus-visible + .checkbox__label .checkbox_faux,
+.checkbox [type=checkbox]:focus-visible + .checkbox_faux,
+.checkbox [type=checkbox]:focus-visible ~ .checkbox_faux {
   outline: 0;
   outline-offset: 0;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+  -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+          box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
 }
 
-.acl-form-element .acl-checkbox [type=checkbox] + .acl-checkbox__label .acl-checkbox_faux,
-.acl-form-element .acl-checkbox [type=checkbox] + .acl-checkbox_faux,
-.acl-form-element .acl-checkbox [type=checkbox] ~ .acl-checkbox_faux {
+.form-element .checkbox [type=checkbox] + .checkbox__label .checkbox_faux,
+.form-element .checkbox [type=checkbox] + .checkbox_faux,
+.form-element .checkbox [type=checkbox] ~ .checkbox_faux {
   margin-right: 0.5rem;
 }
 
-.acl-radio_button-group {
+.radio_button-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   gap: 0.5469rem;
 }
-.acl-radio_button {
+.radio_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   border: 0;
   border-radius: 0;
   background-clip: padding-box;
 }
-.acl-radio_button .acl-radio_faux {
+.radio_button .radio_faux {
   text-align: center;
   vertical-align: middle;
 }
-.acl-radio_button [type=radio] {
+.radio_button [type=radio] {
   width: 1px;
   height: 1px;
   border: 0;
@@ -824,54 +3419,58 @@ input [type=radio] {
   padding: 0;
   position: absolute;
 }
-.acl-radio_button__label {
+.radio_button__label {
   padding: 0.5rem 1rem;
   font-size: 15px;
   line-height: 1.5;
   font-weight: 500;
-  color: #8A93A2;
-  background-color: #fff;
+  color: var(--color-text-05-disabled);
+  background-color: var(--color-white);
   border-radius: 0.375rem;
   cursor: pointer;
 }
-.acl-radio_button__label:focus-visible {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+.radio_button__label:focus-visible {
+  -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
+          box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
 }
-.acl-radio_button [type=radio]:checked + .acl-radio_button__label,
-.acl-radio_button [type=radio]:checked + .acl-radio_faux,
-.acl-radio_button [type=radio]:checked ~ .acl-radio_faux {
-  background-color: #246BEB;
-  color: #fff;
+.radio_button [type=radio]:checked + .radio_button__label,
+.radio_button [type=radio]:checked + .radio_faux,
+.radio_button [type=radio]:checked ~ .radio_faux {
+  background-color: var(--color-blue-06);
+  color: var(--color-white);
 }
 
-.acl-radio_button [type=radio]:focus-visible + .acl-radio_button__label,
-.acl-radio_button [type=radio]:focus-visible + .acl-radio_faux,
-.acl-radio_button [type=radio]:focus-visible ~ .acl-radio_faux {
+.radio_button [type=radio]:focus-visible + .radio_button__label,
+.radio_button [type=radio]:focus-visible + .radio_faux,
+.radio_button [type=radio]:focus-visible ~ .radio_faux {
+  -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b5cab;
   z-index: 1;
 }
 
-.acl-select_container {
+.select_container {
   position: relative;
-  color: #141426;
+  color: var(--color-gray-10);
 }
-.acl-select_container .acl-icon {
+.select_container .icon {
   position: absolute;
   right: 12px;
   top: 50%;
-  transform: translateY(-50%) rotate(0);
+  -webkit-transform: translateY(-50%) rotate(0);
+          transform: translateY(-50%) rotate(0);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.acl-select {
+.select {
   height: calc(2.5rem + 2px);
   width: 100%;
   border: 0;
-  border-bottom: 1px solid #C6CAD1;
+  border-bottom: 1px solid var(--color-gray-04);
   background-color: transparent;
   font-size: 0.9375rem;
   font-weight: 500;
-  color: #8A93A2;
+  color: var(--color-text-05-disabled);
   appearance: none; /* 기본 브라우저 스타일 제거 */
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -879,73 +3478,222 @@ input [type=radio] {
   background-repeat: no-repeat;
   background-position: right 10px center; /* 화살표 이미지 위치 조정 */
   background-size: 16px; /* 화살표 이미지 크기 조정 */
+  -webkit-transition: border 0.1s linear, background-color 0.1s linear;
   transition: border 0.1s linear, background-color 0.1s linear;
 }
 
-.acl-select_container .acl-select {
+.select_container .select {
   -moz-appearance: none;
   -webkit-appearance: none;
   padding-left: 1rem;
   padding-right: 2.5rem;
 }
 
-.acl-select:active,
-.acl-select:focus {
+.select:active,
+.select:focus {
   outline: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: transparent;
-  color: #141426;
+  color: var(--color-text-01);
 }
-.acl-select:active + .acl-icon,
-.acl-select:focus + .acl-icon {
-  transform: translateY(-50%) rotate(-180deg);
+.select:active + .icon,
+.select:focus + .icon {
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+          transform: translateY(-50%) rotate(-180deg);
 }
 
-.acl-icon-container {
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+.icon-container {
   display: inline-block;
   border-radius: 0.25rem;
   line-height: 1;
   background-color: transparent;
 }
 
-.acl-icon {
+.icon {
   width: 1.5rem;
   height: 1.5rem;
   color: currentColor;
 }
-.acl-icon-default {
-  color: #6F7C94;
+.icon-default {
+  color: var(--color-gray-07);
 }
-.acl-icon-success {
-  color: #246BEB;
+.icon-success {
+  color: var(--color-blue-06);
 }
-.acl-icon-error {
-  color: #DA1E28;
+.icon-error {
+  color: var(--color-red);
 }
-.acl-icon_x-small {
+.icon_x-small {
   width: 1rem;
   height: 1rem;
 }
-.acl-icon_small {
+.icon_small {
   width: 1.25rem;
   height: 1.25rem;
 }
-.acl-icon_large {
+.icon_large {
   width: 2rem;
   height: 2rem;
 }
-.acl-icon_x-large {
+.icon_x-large {
   width: 2.5rem;
   height: 2.5rem;
 }
-.acl-icon_left {
+.icon_left {
   margin-right: 0.25rem;
 }
-.acl-icon_right {
+.icon_right {
   margin-left: 0.25rem;
 }
 
-.acl-current-color .acl-icon {
+.current-color .icon {
   color: currentColor;
 }
 
@@ -953,24 +3701,174 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-.acl-tabs {
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+.tabs {
   display: block;
   width: 100%;
 }
-.acl-tabs__nav {
+.tabs__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--color-white);
 }
-.acl-tabs__item {
+.tabs__item {
   font-size: 1rem;
   font-weight: 500;
-  color: #6F7C94;
+  color: var(--color-gray-07);
   position: relative;
   padding: 0 0.75rem 0 0.75rem;
   margin-bottom: -3px;
 }
-.acl-tabs__item:after {
+.tabs__item:after {
   display: block;
   content: "";
   bottom: 0;
@@ -979,32 +3877,34 @@ svg:not(:root) {
   height: 2px;
   position: absolute;
   background-color: none;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.acl-tabs__item.acl-active, .acl-tabs__item.acl-is-active {
-  color: #246BEB;
+.tabs__item.active, .tabs__item.is-active {
+  color: var(--color-blue-06);
   font-weight: 700;
 }
-.acl-tabs__item.acl-active:after, .acl-tabs__item.acl-is-active:after {
+.tabs__item.active:after, .tabs__item.is-active:after {
   background-color: currentColor;
   height: 2px;
 }
-.acl-tabs__item.acl-active .acl-tabs__label, .acl-tabs__item.acl-is-active .acl-tabs__label {
-  color: #141426;
+.tabs__item.active .tabs__label, .tabs__item.is-active .tabs__label {
+  color: var(--color-gray-10);
 }
-.acl-tabs__item:hover, .acl-tabs__item:focus {
+.tabs__item:hover, .tabs__item:focus {
   text-decoration: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
-  color: #246BEB;
+  color: var(--color-blue-06);
   font-weight: 700;
 }
-.acl-tabs__item:hover:after, .acl-tabs__item:focus:after {
+.tabs__item:hover:after, .tabs__item:focus:after {
   background-color: currentColor;
 }
-.acl-tabs__item:hover .acl-tabs__label, .acl-tabs__item:focus .acl-tabs__label {
-  color: #141426;
+.tabs__item:hover .tabs__label, .tabs__item:focus .tabs__label {
+  color: var(--color-gray-10);
 }
-.acl-tabs__link {
+.tabs__link {
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1019,41 +3919,398 @@ svg:not(:root) {
   text-transform: inherit;
   z-index: 1;
 }
-.acl-tabs__link:hover, .acl-tabs__link:focus {
+.tabs__link:hover, .tabs__link:focus {
   text-decoration: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   color: currentColor;
 }
-.acl-tabs__content {
+.tabs__content {
   position: relative;
   padding: 0.75rem 0 0.75rem 0;
 }
-.acl-tabs_flex .acl-tabs__nav {
+.tabs_flex .tabs__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-.acl-tabs_flex li {
-  flex: 1;
+.tabs_flex li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
-.acl-tabs__with-icon {
+.tabs__with-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 0.25rem;
   height: auto;
   padding: 1rem 0;
   line-height: 1.4;
 }
-.acl-tabs__label {
-  color: #6F7C94;
+.tabs__label {
+  color: var(--color-gray-07);
 }
 
-.acl-show {
+.show {
   display: block;
 }
 
-.acl-hide {
+.hide {
   display: none !important;
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
+/* Typography Mixins */
+.toast_container {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.toast {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  color: var(--color-white);
+  background: none;
+  background-color: var(--color-black);
+  border-radius: 0.75rem;
+  padding: 1rem 2rem;
+  min-width: 21.5rem;
+  text-align: left;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.003em;
+}
+.toast em {
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+.toast_dismissible {
+  min-width: 26rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.toast_dismissible .button__icon {
+  color: var(--color-white);
 }
 
 /* Reset some default styles */
@@ -1064,7 +4321,8 @@ li,
 a {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Global styles */
@@ -1075,6 +4333,8 @@ body {
 
 /* Catalog container layout */
 .docs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100vh;
 }
@@ -1095,8 +4355,12 @@ body {
   text-align: center;
 }
 .docs-logo i {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 0.625rem;
   font-size: 2.5rem;
 }
@@ -1117,6 +4381,7 @@ body {
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .docs-sidebar a.active {
@@ -1130,7 +4395,9 @@ body {
 
 /* Main content area styles */
 .docs-main {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   background-color: #ffffff; /* White background for main content */
   overflow-y: auto;
 }
@@ -1140,12 +4407,18 @@ body {
   background-color: #f4f6f9;
 }
 .component-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
 .component-header li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   list-style: none;
   font-size: 0.75rem;
@@ -1232,7 +4505,7 @@ h4 + .docs-desc {
   height: 21.25rem;
   padding: 0;
 }
-.demo-viewport .acl-global-header_container {
+.demo-viewport .global-header_container {
   position: absolute;
 }
 
@@ -1253,7 +4526,10 @@ code {
 /* Media query for responsive design */
 @media (max-width: 768px) {
   .docs-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .docs-sidebar {
     width: 100%;
@@ -1265,9 +4541,15 @@ code {
 }
 /* 추가된 복사 버튼 스타일링 */
 .action-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   border-bottom: 1px solid #e6e6e6;
   background-color: #fdfdfd;
@@ -1285,7 +4567,7 @@ code {
 }
 
 .copy-button:hover {
-  background-color: #E9F0FD;
+  background-color: var(--color-blue-01);
 }
 
 /* 코드 블록 스타일 */
@@ -1296,7 +4578,8 @@ pre[class*=language-]:before {
 
 pre[class*=language-] > code {
   border-left: 0 !important;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .code-block {
@@ -1320,9 +4603,15 @@ code {
 }
 
 .palette-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -1348,12 +4637,19 @@ code {
 }
 
 .color-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   position: relative;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .color-item button {
@@ -1402,6 +4698,7 @@ code {
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   z-index: 10;
 }
@@ -1411,17 +4708,29 @@ code {
 }
 
 .docs-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .docs-icon-list {
   list-style: none;
 }
 .docs-icon-list figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 6.25rem;
   height: 6.25rem;
 }
@@ -1463,112 +4772,349 @@ code {
   color: #000;
 }
 
-.gray01 {
-  color: #F9FAFA;
+.color-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 40px;
 }
 
-.gray02 {
-  color: #EDEFF1;
+.color-chip {
+  width: 150px;
+  height: 100px;
+  background-color: #ddd;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.75rem;
+  font-weight: 500;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.gray03 {
-  color: #D9DBE0;
+.color-chip:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
-.gray04 {
-  color: #C6CAD1;
+.radius-group {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr var(--sds-g-sizing-9);
+  gap: 1rem;
+  margin-top: 20px;
 }
 
-.gray05 {
-  color: #AAB0BB;
+.radius-chip {
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-gray-08);
+  border: 1px solid var(--color-gray-04);
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.gray06 {
-  color: #8A93A2;
+.radius-chip:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
-.gray07 {
-  color: #6F7C94;
+.radius-1 {
+  border-radius: var(--radius-1);
 }
 
-.gray08 {
-  color: #47546C;
+.radius-2 {
+  border-radius: var(--radius-2);
 }
 
-.gray09 {
-  color: #1C283E;
+.radius-3 {
+  border-radius: var(--radius-3);
 }
 
-.gray10 {
-  color: #141426;
+.radius-4 {
+  border-radius: var(--radius-4);
 }
 
-.primary01 {
-  color: #E9F0FD;
+.radius-5 {
+  border-radius: var(--radius-5);
 }
 
-.primary02 {
-  color: #BBD1F9;
+.radius-6 {
+  border-radius: var(--radius-6);
 }
 
-.primary03 {
-  color: #9ABBF6;
+.radius-circle {
+  border-radius: var(--radius-circle);
 }
 
-.primary04 {
-  color: #6C9CF2;
+.typography-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.primary05 {
-  color: #5089EF;
+.font-item {
+  display: grid;
+  grid-template-columns: minmax(-webkit-max-content, 100px) 1fr;
+  grid-template-columns: minmax(max-content, 100px) 1fr;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
 }
 
-.primary06 {
-  color: #246BEB;
+.font-item span {
+  font-size: 0.875rem;
+  color: var(--color-gray-08);
+  margin-bottom: 5px;
+}
+.font-item span:first-of-type {
+  text-align: right;
 }
 
-.primary07 {
-  color: #2161D6;
+/* Typography Tokens */
+.font-heading-04 p {
+  font-size: var(--font-heading-04-size);
 }
 
-.primary08 {
-  color: #1A4CA7;
+.font-heading-03 p {
+  font-size: var(--font-heading-03-size);
 }
 
-.primary09 {
-  color: #143B81;
+.font-heading-02 p {
+  font-size: var(--font-heading-02-size);
 }
 
-.primary10 {
-  color: #0F2D63;
+.font-heading-01 p {
+  font-size: var(--font-heading-01-size);
 }
 
-.text01 {
-  color: #141426;
+.font-title-02-b p {
+  font-size: var(--font-title-02-b-size);
 }
 
-.text02 {
-  color: #1C283E;
+.font-title-02-m p {
+  font-size: var(--font-title-02-m-size);
 }
 
-.text03 {
-  color: #47546C;
+.font-title-01-b p {
+  font-size: var(--font-title-01-b-size);
 }
 
-.text04 {
-  color: #6F7C94;
+.font-title-01-m p {
+  font-size: var(--font-title-01-m-size);
 }
 
-.text05 {
-  color: #8A93A2;
+.font-sub-title-01 p {
+  font-size: var(--font-sub-title-01-size);
+}
+
+.font-body-02-b p {
+  font-size: var(--font-body-02-b-size);
+}
+
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+  /* Border Radius Variables */
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.75rem; /* 12px */
+  --radius-3: 1rem; /* 16px */
+  --radius-4: 1.25rem; /* 20px */
+  --radius-5: 1.5rem; /* 24px */
+  --radius-6: 2.5rem; /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
 }
 
 .justify-center {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .items-center {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .justify-items-center {
@@ -1576,15 +5122,20 @@ code {
 }
 
 .content-center {
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .justify-space-between {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .items-space-between {
-  align-items: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
 }
 
 .justify-items-space-between {
@@ -1592,15 +5143,19 @@ code {
 }
 
 .content-space-between {
-  align-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 .justify-space-around {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .items-space-around {
-  align-items: space-around;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
 }
 
 .justify-items-space-around {
@@ -1608,15 +5163,20 @@ code {
 }
 
 .content-space-around {
-  align-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 .justify-space-evenly {
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .items-space-evenly {
-  align-items: space-evenly;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
 }
 
 .justify-items-space-evenly {
@@ -1624,15 +5184,20 @@ code {
 }
 
 .content-space-evenly {
-  align-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
 }
 
 .justify-flex-start {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .items-flex-start {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .justify-items-flex-start {
@@ -1640,15 +5205,20 @@ code {
 }
 
 .content-flex-start {
-  align-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .justify-flex-end {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .items-flex-end {
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .justify-items-flex-end {
@@ -1656,5 +5226,6 @@ code {
 }
 
 .content-flex-end {
-  align-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
 }/*# sourceMappingURL=main.css.map */

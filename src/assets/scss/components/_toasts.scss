@@ -1,0 +1,57 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.toast_container {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.toast {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  color: var(--color-white);
+  background: none;
+  background-color: var(--color-black);
+  border-radius: 0.75rem;
+  padding: 1rem 2rem;
+  min-width: 21.5rem;
+  text-align: left;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.003em;
+  
+  em {
+    font-weight: 700;
+    margin-right: 0.25rem;
+  }
+
+  // 닫기 버튼이 있는 토스트
+  &_dismissible {
+    min-width: 26rem;
+    justify-content: space-between;
+    
+    .button__icon {
+      color: var(--color-white);
+    }
+  }
+
+}
+
+

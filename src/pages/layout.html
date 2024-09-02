@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+  <!-- flatpickr -->
+  <link rel="stylesheet" href="../lib/flatpickr/flatpickr.min.css">
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+#toggle-snb {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex: 1; /* 남은 공간을 모두 차지 */
+    min-height: calc(100vh - 80px); /* 헤더 높이를 뺀 전체 높이 */
+    overflow: hidden; /* 컨테이너의 오버플로우 방지 */
+}
+
+.snb {
+    width: 320px;
+    /* padding: 0 30px; */
+    background-color: #E7EDF6;
+    overflow: hidden;
+    transition: transform 0.3s ease, width 0.3s ease;
+    position: relative;
+    flex-shrink: 0; /* flexbox에서 width 고정 */
+}
+
+.snb .snb-cont {
+  transform: translateX(0);
+}
+.snb .tabs__content {
+  padding: 30px;
+}
+
+.snb.closed {
+    transform: translateX(-100%);
+    width: 0;
+}
+
+.snb.closed .snb-cont {
+    transform: translateX(-100%);
+    opacity: 0;
+    /* width: 0; */
+}
+
+.main-content {
+    padding: 32px 68px;
+    overflow-y: auto; /* Y축 스크롤 */
+    flex: 1; /* 남은 공간을 모두 차지 */
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-container {
+    display: grid;
+    grid-gap: 24px 16px;
+    overflow-x: auto; /* 가로 스크롤 */
+    flex: 1; /* 남은 공간을 모두 차지 */
+    align-items: start; /* 그리드 아이템이 셀 상단에 위치하도록 */
+    grid-auto-rows: min-content; /* 각 행의 높이를 카드 내용에 맞춤 */
+}
+
+/* 카드 아이템 스타일링 */
+.card-item {
+    background-color: #ccc;
+    width: 100%;
+    min-width: 280px; /* 카드의 최소 너비 */
+    aspect-ratio: 280 / 187; /* 카드의 비율 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* 콘텐츠가 카드 영역을 넘어가지 않도록 설정 */
+}
+
+/* 카드 호버 효과 */
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 기본 설정: 화면 너비가 1920px 이상일 때 */
+@media (min-width: 1920px) {
+    .cards-container {
+        grid-template-columns: repeat(6, minmax(280px, 1fr));
+    }
+}
+
+/* snb가 열렸을 때 */
+.snb:not(.closed) ~ .main-content .cards-container {
+    grid-template-columns: repeat(5, minmax(280px, 1fr));
+}
+
+/* 1280px ~ 1919px일 때 */
+@media (max-width: 1919px) and (min-width: 1280px) {
+    .cards-container {
+        grid-template-columns: repeat(6, minmax(280px, 1fr));
+    }
+
+    /* snb가 열렸을 때 */
+    .snb:not(.closed) ~ .main-content .cards-container {
+        grid-template-columns: repeat(5, minmax(280px, 1fr));
+    }
+}
+
+/* 1280px 미만일 때 */
+@media (max-width: 1279px) {
+    .cards-container {
+        grid-template-columns: repeat(5, minmax(280px, 1fr));
+        overflow-x: auto;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+  <header class="global-header_container"><a href="#" class="assistive-text assistive-text_focus">Skip to Navigation</a> <a href="#" class="assistive-text assistive-text_focus">Skip to Main Content</a>
+    <div class="global-header">
+      <div class="global-header__item left">
+        <ul class="global-actions">
+          <li class="global-actions__item"><button id="toggle-snb" class="button button_icon" title="Menu Icon"><svg class="button__icon" aria-hidden="true">
+                <use xlink:href="../assets/images/icons/symbols.svg#menu_on"></use>
+              </svg> <span class="assistive-text">Menu</span></button></li>
+        </ul>
+      </div>
+      <div class="global-header__item center">
+        <ul class="global-actions">
+          <li class="global-actions__item">
+            <div class="global__text">Arogos의 수학 수업</div>
+          </li>
+          <li class="global-actions__item"><button class="button button_outline-primary">수업코드 :
+              1234 <svg class="icon icon_x-small icon_right">
+                <use xlink:href="../assets/images/icons/symbols.svg#arrow_right"></use>
+              </svg></button></li>
+        </ul>
+      </div>
+      <div class="global-header__item right">
+        <ul class="global-actions">
+          <li class="global-header__time"><svg class="icon icon_x-small gray07">
+              <use xlink:href="../assets/images/icons/symbols.svg#time"></use>
+            </svg> <span class="text">00 : 45 : 01</span></li>
+          <li class="global-actions__item"><button class="button button_secondary"><svg class="icon icon_small icon_left">
+                <use xlink:href="../assets/images/icons/symbols.svg#export"></use>
+              </svg>수업 종료</button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+    <div class="container">
+        <aside class="snb">
+          <div class="snb-cont">
+            <div class="tabs tabs_flex">
+              <ul class="tabs__nav" role="tablist">
+                <li class="tabs__item" title="채팅" role="presentation">
+                  <a class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-1" id="tab-1__item">
+                    <span class="icon-container current-color" title="chat icon">
+                      <svg class="icon icon_large">
+                        <use xlink:href="../assets/images/icons/symbols.svg#chat"></use>
+                      </svg>
+                    </span>
+                    <b class="tabs__label">채팅</b>
+                  </a>
+                </li>
+                <li class="tabs__item" title="학생" role="presentation">
+                  <a class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-2" id="tab-2__item">
+                    <span class="icon-container current-color" title="student icon">
+                      <svg class="icon icon_large">
+                        <use xlink:href="../assets/images/icons/symbols.svg#student"></use>
+                      </svg>
+                    </span>
+                    <b class="tabs__label">학생</b>
+                  </a>
+                </li>
+                <li class="tabs__item is-active" title="정보" role="presentation">
+                  <a class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-3" id="tab-3__item">
+                    <span class="icon-container current-color" title="info icon">
+                      <svg class="icon icon_large">
+                        <use xlink:href="../assets/images/icons/symbols.svg#info"></use>
+                      </svg>
+                    </span>
+                    <b class="tabs__label">정보</b>
+                  </a>
+                </li>
+              </ul>
+              <div id="tab-1" class="tabs__content hide" role="tabpanel" aria-labelledby="tab-1__item">Item One Content</div>
+              <div id="tab-2" class="tabs__content hide" role="tabpanel" aria-labelledby="tab-2__item">Item Two Content</div>
+              <div id="tab-3" class="tabs__content show" role="tabpanel" aria-labelledby="tab-3__item">
+                <h3 class="snb-tit">
+                  수업 코드
+                </h3>
+                <div class="code code_small">
+                  <img src="../assets/images/temp/QR_code_sample.png" alt="수업 코드의 QR code" class="code_qr">
+                  <p class="body-02-b">or</p>
+                  <div class="code_text">
+                    <span>수업 코드</span>
+                    <em>1234</em>
+                  </div>
+                </div>
+                <h3 class="snb-tit">
+                  수업 정보
+                </h3>
+                <div class="form-element">
+                  <label class="form-element__label" for="text-input-id-0">수업 이름</label>
+                  <div class="form-element__control">
+                    <input id="text-input-id-0" placeholder="과학수업" type="text" class="input" value="">
+                  </div>
+                </div>
+                <div class="form-element">
+                  <label class="form-element__label" for="text-input-id-1">과목</label>
+                  <div class="form-element__control">
+                    <input id="text-input-id-1" placeholder="과목을 입력해 주세요." type="text" class="input" value="">
+                  </div>
+                </div>
+                <fieldset class="form-element">
+                  <legend class="form-element__legend form-element__label">요일</legend>
+                  <div class="radio_button-group">
+                    <span class="button radio_button">
+                      <input type="radio" name="example-unique-name-197" id="example-unique-id-199" value="monday">
+                      <label class="radio_button__label" for="example-unique-id-199">
+                        <span class="radio_faux">월</span>
+                      </label>
+                    </span>
+                    <span class="button radio_button">
+                      <input type="radio" name="example-unique-name-197" id="example-unique-id-200" value="tuesday">
+                      <label class="radio_button__label" for="example-unique-id-200">
+                        <span class="radio_faux">화</span>
+                      </label>
+                    </span>
+                    <span class="button radio_button">
+                      <input type="radio" name="example-unique-name-197" id="example-unique-id-201" value="wednesday">
+                      <label class="radio_button__label" for="example-unique-id-201">
+                        <span class="radio_faux">수</span>
+                      </label>
+                    </span>
+                    <span class="button radio_button">
+                      <input type="radio" name="example-unique-name-197" id="example-unique-id-202" value="thursday">
+                      <label class="radio_button__label" for="example-unique-id-202">
+                        <span class="radio_faux">목</span>
+                      </label>
+                    </span>
+                    <span class="button radio_button">
+                      <input type="radio" name="example-unique-name-197" id="example-unique-id-203" value="friday">
+                      <label class="radio_button__label" for="example-unique-id-203">
+                        <span class="radio_faux">금</span>
+                      </label>
+                    </span>
+                  </div>
+                </fieldset>
+                <div class="form-element"><label class="form-element__label" for="text-input-id-0">Input Label</label>
+                  <div class="form-element__control">
+                    <input type="text" id="datepicker" placeholder="Select Date/Time" data-input class="input input_date">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <main class="main-content">
+            <div class="cards-container">
+                <div class="card-item">Card 1</div>
+                <div class="card-item">Card 2</div>
+                <div class="card-item">Card 3</div>
+                <div class="card-item">Card 4</div>
+                <div class="card-item">Card 5</div>
+                <div class="card-item">Card 6</div>
+                <div class="card-item">Card 7</div>
+                <div class="card-item">Card 8</div>
+                <div class="card-item">Card 9</div>
+                <div class="card-item">Card 10</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <div class="card-item">Card 11</div>
+                <!-- 더 많은 카드들... -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const snb = document.querySelector('.snb');
+    const toggleButton = document.getElementById('toggle-snb');
+
+    toggleButton.addEventListener('click', function () {
+        snb.classList.toggle('closed');
+    });
+});
+
+    </script>
+</body>
+<script src="../assets/js/tabs.js"></script>
+<script src="../assets/js/datetimepicker.js"></script>
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="../lib/flatpickr/flatpickr.min.js"></script>
+
+</html>

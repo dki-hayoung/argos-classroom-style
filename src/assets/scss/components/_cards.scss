@@ -12,13 +12,13 @@
   -webkit-column-gap: 16px;
   column-gap: 16px;
   row-gap: 24px;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  grid-template-columns: repeat(5, minmax(280px, 1fr));
   overflow-x: auto;
 }
 
-.acl-card {
+.card {
   display: flex;
-  background-color: $primary01;
+  background-color: var(--color-blue-01);
   padding: 0.8rem;
   width: 100%;
   height: auto;
@@ -67,15 +67,15 @@
 
 
 // QR Code _ Image 또는 Canvas
-.acl-code {
+.code {
   display: flex;
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
   padding: 2.5rem 0;
   border-radius: 1rem;
-  background-color: $white;
-  color: $text03;
+  background-color: var(--color-white);
+  color: var(--color-text-03);
 
   // QR Code
   &_qr {
@@ -93,18 +93,18 @@
 
     span {
       display: block;
-      @include typography(0.9375rem, 500, 150%, $letter-spacing-negative);
+      @include typography(0.9375rem, 500, 150%, -0.3%);
     }
     em {
       // Heading-01
-      @include typography(1.75rem, 700, 140%, $letter-spacing-negative);
-      color: $text01;
+      @include typography(1.75rem, 700, 140%, -0.3%);
+      color: var(--color-text-01);
     }
   }
 
   // bg color
   &--blue {
-    background-color: $primary01;
+    background-color: var(--color-blue-01);
   }
 
   // sizing
@@ -113,19 +113,19 @@
     padding: 1.25rem 0;
     border-radius: 0.75rem;
 
-    .acl-code_qr {
+    .code_qr {
       width: 3.375rem;
       height: 3.375rem;
     }
 
-    .acl-code_text {
+    .code_text {
       span {
         font-size: 0.8125rem;
       }
       em {
         // Heading-01
         font-size: 1.25rem;
-        color: $text01;
+        color: var(--color-text-01);
       }
     }
     

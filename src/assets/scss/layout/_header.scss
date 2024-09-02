@@ -2,7 +2,7 @@
 @import '../abstracts/mixins';
 
 // assistive
-.acl-assistive-text {
+.assistive-text {
   position: absolute !important;
   margin: -1px !important;
   border: 0 !important;
@@ -16,7 +16,7 @@
 }
 
 // Global Header
-.acl-global {
+.global {
   &-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -24,7 +24,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: $bg-light-blue;
+    background: var(--bg-light-blue);
     padding: 1.2813rem 1rem;
     height: 5rem;
     -webkit-box-align: center;
@@ -33,13 +33,13 @@
   
     // Global Header Container
     &_container {
-      position: fixed;
+      position: sticky;
       width: 100%;
       top: 0;
       left: 0;
       z-index: 100;
       
-      .acl-assistive-text {
+      .assistive-text {
         &_focus {
           top: 0;
           color: #5e5e5e;
@@ -51,10 +51,17 @@
     // Global Header Item
     &__item {
       // padding: 0 1rem;
-      
-      &--center {
-        flex: 1;
-        padding-right: 17.5rem;
+
+      &.left {
+        flex: 0 1 auto; /* A는 좌측 끝 */
+      }
+      &.center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &.right {
+        flex: 0 1 auto; /* C는 우측 끝 */
       }
     }
 
@@ -73,7 +80,7 @@
       font-size: 1.375rem;
       font-weight: 700;
       line-height: 1.4;
-      color: $primary10;
+      color: var(--color-blue-10);
     }
 
     // Global Header Logo
@@ -81,13 +88,12 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      min-width: 104px;
 
-      .acl-text {
+      .text {
         font-size: 1rem;
         line-height: 1.4;
         font-weight: 500;
-        color: $text03;
+        color: var(--color-text-03);
       }
     }
 
@@ -110,14 +116,14 @@
 
     // Actions Item
     &__item {
-      color: $text04;
+      color: var(--color-text-04);
     }
   }
 
   // Global Header Controls
   &-controls {
 
-    .acl-form-element__control {
+    .form-element__control {
       width: 320px;
     }
   }
@@ -126,16 +132,16 @@
     font-size: 1.375rem;
     font-weight: 500;
     line-height: 140%;
-    color: $text01;
+    color: var(--color-text-01);
   }
 }
 
 
 // Page Headers
-.acl-page-header {
+.page-header {
   width: 100%;
   height: fit-content;
-  background-color: $white;
+  background-color: var(--color-white);
   
   // page header row
   &__row {
@@ -156,11 +162,11 @@
     align-items: center;
     gap: 0.25rem;
 
-    .acl-form-element__label {
+    .form-element__label {
       font-size: 1.125rem;
       font-weight: 500;
       line-height: 140%;
-      color: $text01;
+      color: var(--color-text-01);
     }
   }
 
@@ -186,6 +192,6 @@
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 140%;
-    color: $text01;
+    color: var(--color-text-01);
   }
 }

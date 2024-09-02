@@ -1,0 +1,17 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.snb-tit {
+  //styleName: Title-02-B;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  letter-spacing: -0.003em;
+  text-align: left;
+  padding-bottom: 10px;
+  
+  &:not(:first-of-type) {
+    margin-top: 40px;
+  }
+}

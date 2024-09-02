@@ -1,112 +1,178 @@
-// 색상 변수 예시
-$acl-color-secondary: #5c5c5c;
-$acl-color-neutral-100: #ffffff;
-$acl-color-neutral-90: #f3f3f3;
-$acl-color-neutral-80: #c9c9c9;
-$acl-color-brand-40: #0b5cab;
-$acl-color-error: #ea001e;
-$acl-color-warning: #dd7a01;
-$acl-color-success: #45c65a;
-$acl-font-size-base: 16px;
-$acl-line-height-base: 1.5;
+:root {
+  /* Black & White */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  
+  /* Grayscale */
+  --color-gray-10: #141426;
+  --color-gray-09: #1C283E;
+  --color-gray-08: #47546C;
+  --color-gray-07: #6F7C94;
+  --color-gray-06: #8A93A2;
+  --color-gray-05: #AAB0BB;
+  --color-gray-04: #C6CAD1;
+  --color-gray-03: #D9DBE0;
+  --color-gray-02: #EDF1F1;
+  --color-gray-01: #F9FAFA;
 
-// typography 예시
-$font-size-base: 14px;
-$font-size-lg: 18px;
-$font-weight-bold: 700;
-$line-height-base: 1.5;
+  /* Primary Color */
+  --color-blue-10: #0F2D63;
+  --color-blue-09: #143B81;
+  --color-blue-08: #1A4CA7;
+  --color-blue-07: #2161D6;
+  --color-blue-06: #246BEB;
+  --color-blue-05: #5089EF;
+  --color-blue-04: #6C9CF2;
+  --color-blue-03: #9ABBF6;
+  --color-blue-02: #BBD1F9;
+  --color-blue-01: #E9F0FD;
 
-// Font sizes (rem units) 예시
-$acl-font-size-xs: 0.75rem;  // 12px
-$acl-font-size-sm: 0.875rem; // 14px
-$acl-font-size-md: 1rem;     // 16px (Base size)
-$acl-font-size-lg: 1.125rem; // 18px
-$acl-font-size-xl: 1.5rem;   // 24px
+  /* Text Color */
+  --color-text-01: #141426;
+  --color-text-02: #1C283E;
+  --color-text-03: #47546C;
+  --color-text-04: #6F7C94;
+  --color-text-05-disabled: #8A93A2;
 
-// Font weights 예시
-$acl-font-weight-thin: 100;
-$acl-font-weight-light: 300;
-$acl-font-weight-regular: 400; // Regular weight
-$acl-font-weight-medium: 500;
-$acl-font-weight-semibold: 600;
-$acl-font-weight-bold: 700; // Bold weight
+  /* Background Color */
+  --bg-white: #FFFFFF;
+  --bg-blue: #DDEBFF;
+  --bg-light-blue: #E7EDF6;
 
-// Line heights 예시
-$acl-line-height-none: 1;     // No line-height
-$acl-line-height-tight: 1.25; // Tight line-height
-$acl-line-height-normal: 1.5; // Normal line-height (Base)
-$acl-line-height-relaxed: 1.75; // Relaxed line-height
+  /* System Color */
+  --color-red: #da1218;
+  --color-badge-red: #ee0000;
+  --color-yellow: #f0d400;
 
-// Font families 예시
-$acl-font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$acl-font-family-serif: Georgia, "Times New Roman", Times, serif;
-$acl-font-family-mono: "Courier New", Courier, monospace;
+  /* Typography Variables */
+  --font-heading-04-size: 28px;
+  --font-heading-04-size-rem: 1.75rem;
+  --font-heading-04-weight: 700;
+  --font-heading-04-line-height: 140%;
+  --font-heading-04-letter-spacing: -0.3%;
 
-// Font Sizes in REM
-$font-size-body-02-rem: 1.125rem;
-$font-size-body-01-rem: 1rem;
-$font-size-caption-02-rem: 0.875rem;
-$font-size-caption-01-rem: 0.75rem;
+  --font-heading-03-size: 24px;
+  --font-heading-03-size-rem: 1.5rem;
+  --font-heading-03-weight: 700;
+  --font-heading-03-line-height: 140%;
+  --font-heading-03-letter-spacing: -0.3%;
 
-// Line Heights
-$line-height-160: 160%;
-$line-height-150: 150%;
+  --font-heading-02-size: 22px;
+  --font-heading-02-size-rem: 1.25rem;
+  --font-heading-02-weight: 700;
+  --font-heading-02-line-height: 140%;
+  --font-heading-02-letter-spacing: -0.3%;
 
-// Letter Spacing
-$letter-spacing-negative: -0.3%;
+  --font-heading-01-size: 20px;
+  --font-heading-01-size-rem: 1.25rem;
+  --font-heading-01-weight: 700;
+  --font-heading-01-line-height: 140%;
+  --font-heading-01-letter-spacing: -0.3%;
 
-// Font Weights
-$font-weight-bold: bold;
-$font-weight-medium: 500;
+  --font-title-02-b-size: 18px;
+  --font-title-02-b-size-rem: 1.125rem;
+  --font-title-02-b-weight: 700;
+  --font-title-02-b-line-height: 140%;
+  --font-title-02-b-letter-spacing: -0.3%;
 
+  --font-title-02-m-size: 18px;
+  --font-title-02-m-size-rem: 1.125rem;
+  --font-title-02-m-weight: 500;
+  --font-title-02-m-line-height: 140%;
+  --font-title-02-m-letter-spacing: -0.3%;
 
-//Black&White
-$black: #000;
-$white: #fff;
+  --font-title-01-b-size: 16px;
+  --font-title-01-b-size-rem: 1rem;
+  --font-title-01-b-weight: 700;
+  --font-title-01-b-line-height: 140%;
+  --font-title-01-b-letter-spacing: -0.3%;
 
-// Grayscale Colors
-$gray01: #F9FAFA;
-$gray02: #EDEFF1;
-$gray03: #D9DBE0;
-$gray04: #C6CAD1;
-$gray05: #AAB0BB;
-$gray06: #8A93A2;
-$gray07: #6F7C94;
-$gray08: #47546C;
-$gray09: #1C283E;
-$gray10: #141426;
+  --font-title-01-m-size: 16px;
+  --font-title-01-m-size-rem: 1rem;
+  --font-title-01-m-weight: 500;
+  --font-title-01-m-line-height: 140%;
+  --font-title-01-m-letter-spacing: -0.3%;
 
-// Primary Colors
-$primary01: #E9F0FD;
-$primary02: #BBD1F9;
-$primary03: #9ABBF6;
-$primary04: #6C9CF2;
-$primary05: #5089EF;
-$primary06: #246BEB;
-$primary07: #2161D6;
-$primary08: #1A4CA7;
-$primary09: #143B81;
-$primary10: #0F2D63;
+  --font-sub-title-01-size: 14px;
+  --font-sub-title-01-size-rem: 0.875rem;
+  --font-sub-title-01-weight: 700;
+  --font-sub-title-01-line-height: 140%;
+  --font-sub-title-01-letter-spacing: -0.3%;
 
-// Text Color 
-$text01: #141426;
-$text02: #1C283E;
-$text03: #47546C;
-$text04: #6F7C94;
-$text05: #8A93A2;
+  --font-body-02-b-size: 16px;
+  --font-body-02-b-size-rem: 1.125rem;
+  --font-body-02-b-weight: 700;
+  --font-body-02-b-line-height: 150%;
+  --font-body-02-b-letter-spacing: -0.3%;
 
-// Background Color
-$bg-white: #fff;
-$bg-blue: #DDEBFF;
-$bg-light-blue: #E7EDF6;
+  --font-body-02-m-size: 16px;
+  --font-body-02-m-size-rem: 1.125rem;
+  --font-body-02-m-weight: 500;
+  --font-body-02-m-line-height: 150%;
+  --font-body-02-m-letter-spacing: -0.3%;
 
-// System
-$red: #DA1E28;
-$accent: #FFD400;
+  --font-body-01-b-size: 15px;
+  --font-body-01-b-size-rem: 1rem;
+  --font-body-01-b-weight: 700;
+  --font-body-01-b-line-height: 150%;
+  --font-body-01-b-letter-spacing: -0.3%;
+
+  --font-body-01-m-size: 15px;
+  --font-body-01-m-size-rem: 1rem;
+  --font-body-01-m-weight: 500;
+  --font-body-01-m-line-height: 150%;
+  --font-body-01-m-letter-spacing: -0.3%;
+
+  --font-caption-02-b-size: 14px;
+  --font-caption-02-b-size-rem: 0.875rem;
+  --font-caption-02-b-weight: 700;
+  --font-caption-02-b-line-height: 150%;
+  --font-caption-02-b-letter-spacing: -0.3%;
+
+  --font-caption-02-m-size: 14px;
+  --font-caption-02-m-size-rem: 0.875rem;
+  --font-caption-02-m-weight: 500;
+  --font-caption-02-m-line-height: 150%;
+  --font-caption-02-m-letter-spacing: -0.3%;
+
+  --font-caption-01-b-size: 13px;
+  --font-caption-01-b-size-rem: 0.75rem;
+  --font-caption-01-b-weight: 700;
+  --font-caption-01-b-line-height: 150%;
+  --font-caption-01-b-letter-spacing: -0.3%;
+
+  --font-caption-01-m-size: 13px;
+  --font-caption-01-m-size-rem: 0.75rem;
+  --font-caption-01-m-weight: 500;
+  --font-caption-01-m-line-height: 150%;
+  --font-caption-01-m-letter-spacing: -0.3%;
+
+  --font-label-01-b-size: 12px;
+  --font-label-01-b-size-rem: 0.75rem;
+  --font-label-01-b-weight: 700;
+  --font-label-01-b-line-height: 150%;
+  --font-label-01-b-letter-spacing: -0.3%;
+
+  --font-label-01-m-size: 12px;
+  --font-label-01-m-size-rem: 0.75rem;
+  --font-label-01-m-weight: 500;
+  --font-label-01-m-line-height: 150%;
+  --font-label-01-m-letter-spacing: -0.3%;
+
+  /* Border Radius Variables */
+  --radius-1: 0.5rem;    /* 8px */
+  --radius-2: 0.75rem;   /* 12px */
+  --radius-3: 1rem;      /* 16px */
+  --radius-4: 1.25rem;   /* 20px */
+  --radius-5: 1.5rem;    /* 24px */
+  --radius-6: 2.5rem;    /* 40px */
+  --radius-circle: 100%; /* 100% to make a perfect circle */
+}
+
 
 // Icons Colors
 $icon-radius-border: .25rem; // 아이콘 테두리 반경
 $icon-color-background: transparent; // 아이콘 배경색
-$icon-color-foreground-default: $gray07; // 기본 아이콘 색상 (fallback)
-$icon-color-foreground-success: $primary06;
-$icon-color-foreground-error: $red;
+$icon-color-foreground-default: var(--color-gray-07); // 기본 아이콘 색상 (fallback)
+$icon-color-foreground-success: var(--color-blue-06);
+$icon-color-foreground-error: var(--color-red);

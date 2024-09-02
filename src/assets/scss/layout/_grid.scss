@@ -1,9 +1,9 @@
-.acl-grid {
+.grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.acl-grid__item {
+.grid__item {
   flex: 1 1 calc(33.333% - 1rem);
 }

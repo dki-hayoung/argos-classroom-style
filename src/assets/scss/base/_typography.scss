@@ -31,34 +31,79 @@
   font-style: normal;
 }
 
+/* Typography Classes */
+.heading-04 {
+  @include font-heading-04;
+}
+
+.heading-03 {
+  @include font-heading-03;
+}
+
+.heading-02 {
+  @include font-heading-02;
+}
+
+.heading-01 {
+  @include font-heading-01;
+}
+
+.title-02-b {
+  @include font-title-02-b;
+}
+
+.title-02-m {
+  @include font-title-02-m;
+}
+
+.title-01-b {
+  @include font-title-01-b;
+}
+
+.title-01-m {
+  @include font-title-01-m;
+}
+
+.sub-title-01 {
+  @include font-sub-title-01;
+}
+
 .body-02-b {
-  @include typography($font-size-body-02-rem, $font-weight-bold, $line-height-160, $letter-spacing-negative);
+  @include font-body-02-b;
 }
 
 .body-02-m {
-  @include typography($font-size-body-02-rem, $font-weight-medium, $line-height-150, $letter-spacing-negative);
+  @include font-body-02-m;
 }
 
 .body-01-b {
-  @include typography($font-size-body-01-rem, $font-weight-bold, $line-height-150, $letter-spacing-negative);
+  @include font-body-01-b;
 }
 
 .body-01-m {
-  @include typography($font-size-body-01-rem, $font-weight-medium, $line-height-150, $letter-spacing-negative);
+  @include font-body-01-m;
 }
 
 .caption-02-b {
-  @include typography($font-size-caption-02-rem, $font-weight-bold, $line-height-150, $letter-spacing-negative);
+  @include font-caption-02-b;
 }
 
 .caption-02-m {
-  @include typography($font-size-caption-02-rem, $font-weight-medium, $line-height-150, $letter-spacing-negative);
+  @include font-caption-02-m;
 }
 
 .caption-01-b {
-  @include typography($font-size-caption-01-rem, $font-weight-bold, $line-height-160, $letter-spacing-negative);
+  @include font-caption-01-b;
 }
 
 .caption-01-m {
-  @include typography($font-size-caption-01-rem, $font-weight-medium, $line-height-150, $letter-spacing-negative);
+  @include font-caption-01-m;
+}
+
+.label-01-b {
+  @include font-label-01-b;
+}
+
+.label-01-m {
+  @include font-label-01-m;
 }

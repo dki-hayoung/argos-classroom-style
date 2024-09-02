@@ -2,7 +2,7 @@
 @import '../abstracts/mixins';
 
 // 기본 버튼 스타일 (Block)
-.acl-button {
+.button {
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -16,7 +16,7 @@
   // 사이즈
   @include button-size(0.5rem 1.25rem, 1rem, 0.5rem); // padding, font, border-radius
   // 스타일
-  @include button-style (transparent, transparent, $text04, transparent, transparent, $primary06);
+  @include button-style (transparent, transparent, var(--color-text-04), transparent, transparent, var(--color-blue-06));
   cursor: pointer;
   text-align: center;
   -webkit-appearance: none;  // 기본 스타일 제거
@@ -48,32 +48,32 @@
   // button variations
   &_primary {
     font-weight: 700;
-    @include button-style ($primary06, transparent, $white, $primary08, transparent , $white);
+    @include button-style (var(--color-blue-06), transparent, var(--color-white), var(--color-blue-08), transparent , var(--color-white));
   }
 
   &_secondary {
     font-weight: 700;
-    @include button-style ($primary04, transparent, $white, $primary08, transparent , $white);
+    @include button-style (var(--color-blue-04), transparent, var(--color-white), var(--color-blue-08), transparent , var(--color-white));
   }
 
   &_destructive {
-    @include button-style ($red, transparent, $white, $red, transparent , $white);
+    @include button-style (var(--color-red), transparent, var(--color-white), var(--color-red), transparent , var(--color-white));
   }
 
   // Outline Buttons
   &_outline {
     font-weight: 700;
-    @include button-style (transparent, $gray04, $gray07, transparent, $primary08, $primary08);
+    @include button-style (transparent, var(--color-gray-04), var(--color-gray-07), transparent, var(--color-blue-08), var(--color-blue-08));
 
 
     &-primary {
       font-weight: 700;
-      @include button-style ($white, $primary06, $primary06, $white, $primary08 , $primary08);
+      @include button-style (var(--color-white), var(--color-blue-06), var(--color-blue-06), var(--color-white), var(--color-blue-08) , var(--color-blue-08));
     }
 
     &-secondary {
       font-weight: 700;
-      @include button-style ($white, $primary04, $primary04, $white, $primary08 , $primary08);
+      @include button-style (var(--color-white), var(--color-blue-04), var(--color-blue-04), var(--color-white), var(--color-blue-08) , var(--color-blue-08));
     }
   }
 
@@ -81,7 +81,7 @@
   &[disabled] {
     background-color: transparent;
     border-color: transparent;
-    color: $gray05;
+    color: var(--color-gray-05);
     // cursor: not-allowed;
     cursor: default;
   }
@@ -108,7 +108,7 @@
       transition: border .15s linear;
       // border: 1px solid currentColor;
       border-radius: 999px;
-      .acl-button__icon {
+      .button__icon {
         width: 1.25rem;
         height: 1.25rem;
       }
@@ -145,7 +145,7 @@
   }
 
   // button with icon
-  .acl-icon {
+  .icon {
     width: 1rem;
     height: 1rem;
   }

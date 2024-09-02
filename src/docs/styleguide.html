@@ -17,6 +17,8 @@
     <aside class="docs-sidebar">
       <h1 class="docs-logo"><i>💠</i>Argos Classroom<br>Design System</h1>
       <ul>
+        <li><a href="#" data-component="token">Design Tokens</a></li>
+        <li><a href="#" data-component="toast">Toast</a></li>
         <li><a href="#" data-component="button">Buttons</a></li>
         <li><a href="#" data-component="select">Select</a></li>
         <li><a href="#" data-component="globalheader">Global Header</a></li>
@@ -33,11 +35,265 @@
         <li><a href="#" data-component="color">Color</a></li>
         <li><a href="#" data-component="context">Context Menu</a></li>
         <li><a href="#" data-component="modal">Modal</a></li>
-        <li><a href="#" data-component="toast">Toast</a></li>
         <li><a href="#" data-component="chat">Chat</a></li>
       </ul>
     </aside>
     <main class="docs-main">
+
+      <div id="token-component" class="component-section">
+        <section class="component-header">
+          <h2>Design Tokens</h2>
+          <ul>
+            <li>HTML/CSS: Dev Ready</li>
+          </ul>
+        </section>
+        <section class="component-main">
+          
+          <!-- Surface Colors -->
+          <h3>Color System</h3>
+          <h4>Surface Colors</h4>
+          <div class="color-group">
+            <div class="color-chip" style="background-color: var(--color-gray-10);" >color-gray-10<br>#141426</div>
+            <div class="color-chip" style="background-color: var(--color-gray-09);" >color-gray-09<br>#1C283E</div>
+            <div class="color-chip" style="background-color: var(--color-gray-08);" >color-gray-08<br>#47546C</div>
+            <div class="color-chip" style="background-color: var(--color-gray-07);" >color-gray-07<br>#6F7C94</div>
+            <div class="color-chip" style="background-color: var(--color-gray-06);" >color-gray-06<br>#8A93A2</div>
+            <div class="color-chip" style="background-color: var(--color-gray-05);" >color-gray-05<br>#AAB0BB</div>
+            <div class="color-chip" style="background-color: var(--color-gray-04);" >color-gray-04<br>#C6CAD1</div>
+            <div class="color-chip" style="background-color: var(--color-gray-03); color: #555;" >color-gray-03<br>#D9DBE0</div>
+            <div class="color-chip" style="background-color: var(--color-gray-02); color: #555;" >color-gray-02<br>#EDF1F1</div>
+            <div class="color-chip" style="background-color: var(--color-gray-01); color: #555;" >color-gray-01<br>#F9FAFA</div>
+          </div>
+      
+          <!-- Primary Colors -->
+          <h4>Primary Colors</h4>
+          <div class="color-group">
+            <div class="color-chip" style="background-color: var(--color-blue-10);" >color-blue-10<br>#0F2D63</div>
+            <div class="color-chip" style="background-color: var(--color-blue-09);" >color-blue-09<br>#143B81</div>
+            <div class="color-chip" style="background-color: var(--color-blue-08);" >color-blue-08<br>#1A4CA7</div>
+            <div class="color-chip" style="background-color: var(--color-blue-07);" >color-blue-07<br>#2161D6</div>
+            <div class="color-chip" style="background-color: var(--color-blue-06);" >color-blue-06<br>#246BEB</div>
+            <div class="color-chip" style="background-color: var(--color-blue-05);" >color-blue-05<br>#5089EF</div>
+            <div class="color-chip" style="background-color: var(--color-blue-04);" >color-blue-04<br>#6C9CF2</div>
+            <div class="color-chip" style="background-color: var(--color-blue-03); color: #555;" >color-blue-03<br>#9ABBF6</div>
+            <div class="color-chip" style="background-color: var(--color-blue-02); color: #555;" >color-blue-02<br>#BBD1F9</div>
+            <div class="color-chip" style="background-color: var(--color-blue-01); color: #555;" >color-blue-01<br>#E9F0FD</div>
+          </div>
+      
+          <!-- Text Colors -->
+          <h4>Text Colors</h4>
+          <div class="color-group">
+            <div class="color-chip" style="background-color: var(--color-text-01); color: #fff;" >color-text-01<br>#141426</div>
+            <div class="color-chip" style="background-color: var(--color-text-02); color: #fff;" >color-text-02<br>#1C283E</div>
+            <div class="color-chip" style="background-color: var(--color-text-03); color: #fff;" >color-text-03<br>#47546C</div>
+            <div class="color-chip" style="background-color: var(--color-text-04); color: #fff;" >color-text-04<br>#6F7C94</div>
+            <div class="color-chip" style="background-color: var(--color-text-05-disabled); color: #fff;" >color-text-05-disabled<br>#8A93A2</div>
+          </div>
+      
+          <!-- Background Colors -->
+          <h4>Background Colors</h4>
+          <div class="color-group">
+            <div class="color-chip" style="background-color: var(--bg-white); color: #333;">bg-white<br>#FFFFFF</div>
+            <div class="color-chip" style="background-color: var(--bg-blue); color: #333;">bg-blue<br>#DDEBFF</div>
+            <div class="color-chip" style="background-color: var(--bg-light-blue); color: #333;">bg-light-blue<br>#E7EDF6</div>
+          </div>
+
+          <!-- System Colors -->
+          <h4>System Colors</h4>
+          <div class="color-group">
+            <div class="color-chip" style="background-color: var(--color-red);">color-red<br>#DA1E28</div>
+            <div class="color-chip" style="background-color: var(--color-badge-red);">color-badge-red<br>#EE0000</div>
+            <div class="color-chip" style="background-color: var(--color-yellow);">color-yellow<br>#FFD400</div>
+          </div>
+
+          <!-- Border Radius -->
+           <h3>Border Radius</h3>
+           <div class="radius-group">
+            <div class="radius-chip radius-1">
+              <span>radius-1</span>
+              <span>0.5rem (8px)</span>
+            </div>
+            <div class="radius-chip radius-2">
+              <span>radius-2</span>
+              <span>0.75rem (12px)</span>
+            </div>
+            <div class="radius-chip radius-3">
+              <span>radius-3</span>
+              <span>1rem (16px)</span>
+            </div>
+            <div class="radius-chip radius-4">
+              <span>radius-4</span>
+              <span>1.25rem (20px)</span>
+            </div>
+            <div class="radius-chip radius-5">
+              <span>radius-5</span>
+              <span>1.5rem (24px)</span>
+            </div>
+            <div class="radius-chip radius-6">
+              <span>radius-6</span>
+              <span>2.5rem (40px)</span>
+            </div>
+            <div class="radius-chip radius-circle">
+              <span>radius-circle</span>
+              <span>100%</span>
+            </div>
+          </div>
+
+          <!-- Typography -->
+           <h3>Typography</h3>
+           <h4>Title</h4>
+           <div class="typography-group">
+            <!-- Title Section -->
+            <div class="font-item heading-04">
+              <span>Heading-04</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item heading-03">
+              <span>Heading-03</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item heading-02">
+              <span>Heading-02</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item heading-01">
+              <span>Heading-01</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item title-02-b">
+              <span>Title-02-B</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item title-02-m">
+              <span>Title-02-M</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item title-01-b">
+              <span>Title-01-B</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item title-01-m">
+              <span>Title-01-M</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item sub-title-01">
+              <span>Sub Title-01</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            
+            <!-- Body Section -->
+            <h4>Body</h4>
+            
+            <div class="font-item body-02-b">
+              <span>Body-02-B</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item body-02-m">
+              <span>Body-02-M</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item body-01-b">
+              <span>Body-01-B</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item body-01-m">
+              <span>Body-01-M</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item caption-02-b">
+              <span>Caption-02-B</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item caption-02-m">
+              <span>Caption-02-M</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item caption-01-b">
+              <span>Caption-01-B</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item caption-01-m">
+              <span>Caption-01-M</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item label-01-b">
+              <span>Label-01-B</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+            <div class="font-item label-01-m">
+              <span>Label-01-M</span>
+              <p>다람쥐 헌 쳇바퀴에 타고파</p>
+            </div>
+          </div>
+      
+        </section>
+      </div>
+
+      <div id="toast-component" class="component-section">
+        <section class="component-header">
+          <h2>Toast</h2>
+          <ul>
+            <li>HTML/CSS: Dev Ready</li>
+            <li>PC only</li>
+          </ul>
+        </section>
+        <section class="component-main">
+          <h3>Base</h3>
+          <!-- <p class="docs-desc"><code class="doc">.relative</code> 삭제 후 사용</p> -->
+          <div class="component-preview">
+            <div class="toast_container relative">
+              <div class="toast" role="status">
+                <div class="toast__content"><em>‘아르고스의 과학수업’</em> 수업을 추가 했습니다.</div>
+              </div>
+            </div>
+          </div>
+          <div class="code-block">
+            <div class="action-bar"><button class="copy-button">Copy</button></div>
+            <pre><code class="language-html">
+&lt;div class=&quot;toast_container&quot;&gt;
+  &lt;div class=&quot;toast&quot; role=&quot;status&quot;&gt;
+    &lt;div class=&quot;toast__content&quot;&gt;&lt;em&gt;‘아르고스의 과학수업’&lt;/em&gt; 수업을 추가 했습니다.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;            
+            </code></pre>
+          </div>
+          
+          <h3>Dismissible Toast</h3>
+          <div class="component-preview">
+            <div class="toast_container relative">
+              <div class="toast toast_dismissible" role="status">
+                <div class="toast__content"><em>‘아르고스의 과학수업’</em> 수업을 추가 했습니다.</div>
+                <div class="toast__close">
+                  <button class="button button_icon button_icon-xx-small" title="Close">
+                    <svg class="button__icon" aria-hidden="true">
+                      <use xlink:href="../assets/images/icons/symbols.svg#close"></use>
+                    </svg>
+                    <span class="assistive-text">Close</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-block">
+            <div class="action-bar"><button class="copy-button">Copy</button></div>
+            <pre><code class="language-html">
+&lt;div class=&quot;toast_container&quot;&gt;
+  &lt;div class=&quot;toast toast_dismissible&quot; role=&quot;status&quot;&gt;
+    &lt;div class=&quot;toast__content&quot;&gt;&lt;em&gt;‘아르고스의 과학수업’&lt;/em&gt; 수업을 추가 했습니다.&lt;/div&gt;
+    &lt;div class=&quot;toast__close&quot;&gt;
+      &lt;button class=&quot;button button_icon button_icon-xx-small&quot; title=&quot;Close&quot;&gt;
+        &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+          &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#close&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class=&quot;assistive-text&quot;&gt;Close&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;            
+            </code></pre>
+          </div>
+        </section>
+      </div>
 
       <div id="button-component" class="component-section">
         <section class="component-header">
@@ -49,122 +305,122 @@
         </section>
         <section class="component-main">
           <h3>Buttons</h3>
-          <div class="component-preview"><button class="acl-button">Button</button> <button
-              class="acl-button acl-button_primary">Primary Button</button> <button
-              class="acl-button acl-button_secondary">Secondary Button</button> <button
-              class="acl-button acl-button_outline-primary">Outline Primary Button</button></div>
+          <div class="component-preview"><button class="button">Button</button> <button
+              class="button button_primary">Primary Button</button> <button
+              class="button button_secondary">Secondary Button</button> <button
+              class="button button_outline-primary">Outline Primary Button</button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button"&gt;Button&lt;/button&gt;
-&lt;button class="acl-button acl-button_primary"&gt;Primary Button&lt;/button&gt;
-&lt;button class="acl-button acl-button_secondary"&gt;Secondary Button&lt;/button&gt;
+&lt;button class="button"&gt;Button&lt;/button&gt;
+&lt;button class="button button_primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="button button_secondary"&gt;Secondary Button&lt;/button&gt;
             </code></pre>
           </div>
           <h3>Links</h3>
-          <div class="component-preview"><a href="#" class="acl-button">Button</a> <a href="#"
-              class="acl-button acl-button_primary">Primary Button</a> <a href="#"
-              class="acl-button acl-button_secondary">Secondary Button</a> <a href="#"
-              class="acl-button acl-button_outline-primary">Outline Primary Button</a> 
+          <div class="component-preview"><a href="#" class="button">Button</a> <a href="#"
+              class="button button_primary">Primary Button</a> <a href="#"
+              class="button button_secondary">Secondary Button</a> <a href="#"
+              class="button button_outline-primary">Outline Primary Button</a> 
               </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;a href="#" class="acl-button"&gt;Button&lt;/a&gt;
-&lt;a href="#" class="acl-button acl-button_primary"&gt;Primary Button&lt;/a&gt;
-&lt;a href="#" class="acl-button acl-button_secondary"&gt;Secondary Button&lt;/a&gt;
-&lt;a href="#" class="acl-button acl-button_outline-primary"&gt;Outline Primary Button&lt;/a&gt;         
+&lt;a href="#" class="button"&gt;Button&lt;/a&gt;
+&lt;a href="#" class="button button_primary"&gt;Primary Button&lt;/a&gt;
+&lt;a href="#" class="button button_secondary"&gt;Secondary Button&lt;/a&gt;
+&lt;a href="#" class="button button_outline-primary"&gt;Outline Primary Button&lt;/a&gt;         
             </code></pre>
           </div>
           <h3>Base</h3>
-          <p class="docs-desc">버튼의 모든 스타일을 제거한 <code class="doc">.acl-button</code> 클래스</p>
-          <div class="component-preview"><button class="acl-button">Button</button></div>
+          <p class="docs-desc">버튼의 모든 스타일을 제거한 <code class="doc">.button</code> 클래스</p>
+          <div class="component-preview"><button class="button">Button</button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button"&gt;Button&lt;/button&gt;
+&lt;button class="button"&gt;Button&lt;/button&gt;
             </code></pre>
           </div>
 
           <h3>Sizing</h3>
           <h4>Default</h4>
-          <p class="docs-desc">색상을 Primary로 변경하기 위해 <code class="doc">.acl-button_primary</code> 를 추가한다.</p>
-          <div class="component-preview"><button class="acl-button acl-button_primary">Primary Button</button></div>
+          <p class="docs-desc">색상을 Primary로 변경하기 위해 <code class="doc">.button_primary</code> 를 추가한다.</p>
+          <div class="component-preview"><button class="button button_primary">Primary Button</button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button acl-button_primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="button button_primary"&gt;Primary Button&lt;/button&gt;
             </code></pre>
           </div>
 
           <h4>Small</h4>
-          <p class="docs-desc">사이즈를 small로 변경하기 위해 <code class="doc">.acl-button_small</code> 를 추가한다.</p>
-          <div class="component-preview"><button class="acl-button acl-button_primary acl-button_small">Button</button></div>
+          <p class="docs-desc">사이즈를 small로 변경하기 위해 <code class="doc">.button_small</code> 를 추가한다.</p>
+          <div class="component-preview"><button class="button button_primary button_small">Button</button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button acl-button_primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="button button_primary"&gt;Primary Button&lt;/button&gt;
             </code></pre>
           </div>
 
           <h4>Large</h4>
-          <p class="docs-desc">사이즈를 Large로 변경하기 위해 <code class="doc">.acl-button_large</code> 를 추가한다.</p>
-          <div class="component-preview"><button class="acl-button acl-button_primary acl-button_large">Button</button></div>
+          <p class="docs-desc">사이즈를 Large로 변경하기 위해 <code class="doc">.button_large</code> 를 추가한다.</p>
+          <div class="component-preview"><button class="button button_primary button_large">Button</button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button acl-button_primary acl-button_large"&gt;Button&lt;/button&gt;
+&lt;button class="button button_primary button_large"&gt;Button&lt;/button&gt;
             </code></pre>
           </div>
 
           <h4>X-Large</h4>
-          <p class="docs-desc">사이즈를 X-Large로 변경하기 위해 <code class="doc">.acl-button_x-large</code> 를 추가한다.</p>
-          <div class="component-preview"><button class="acl-button acl-button_primary acl-button_x-large">Button</button></div>
+          <p class="docs-desc">사이즈를 X-Large로 변경하기 위해 <code class="doc">.button_x-large</code> 를 추가한다.</p>
+          <div class="component-preview"><button class="button button_primary button_x-large">Button</button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button acl-button_primary acl-button_x-large"&gt;Button&lt;/button&gt;
+&lt;button class="button button_primary button_x-large"&gt;Button&lt;/button&gt;
             </code></pre>
           </div>
 
           <h3>Variations</h3>
           <h4>Primary</h4>
-          <p class="docs-desc">색상을 Primary로 변경하기 위해 <code class="doc">.acl-button_primary</code> 를 추가한다.</p>
-          <div class="component-preview"><button class="acl-button acl-button_primary">Primary Button</button></div>
+          <p class="docs-desc">색상을 Primary로 변경하기 위해 <code class="doc">.button_primary</code> 를 추가한다.</p>
+          <div class="component-preview"><button class="button button_primary">Primary Button</button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button acl-button_primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="button button_primary"&gt;Primary Button&lt;/button&gt;
             </code></pre>
           </div>
           <h4>Secondary</h4>
-          <p class="docs-desc">색상을 Secondary로 변경하기 위해 <code class="doc">.acl-button_secondary</code> 를 추가한다.</p>
-          <div class="component-preview"><button class="acl-button acl-button_secondary">Secondary Button</button></div>
+          <p class="docs-desc">색상을 Secondary로 변경하기 위해 <code class="doc">.button_secondary</code> 를 추가한다.</p>
+          <div class="component-preview"><button class="button button_secondary">Secondary Button</button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button acl-button_secondary"&gt;Secondary Button&lt;/button&gt;
+&lt;button class="button button_secondary"&gt;Secondary Button&lt;/button&gt;
             </code></pre>
           </div>
 
           <h4>Outline</h4>
-          <p class="docs-desc">Outline 으로 변경하기 위해 <code class="doc">.acl-button_outline-primary</code> 또는 <code class="doc">.acl-button_outline-secondary</code> 를 추가한다.</p>
+          <p class="docs-desc">Outline 으로 변경하기 위해 <code class="doc">.button_outline-primary</code> 또는 <code class="doc">.button_outline-secondary</code> 를 추가한다.</p>
           <div class="component-preview">
-            <button class="acl-button acl-button_outline-primary">Outline Primary Button</button>
-            <button class="acl-button acl-button_outline-secondary">Outline Secondary Button</button>
+            <button class="button button_outline-primary">Outline Primary Button</button>
+            <button class="button button_outline-secondary">Outline Secondary Button</button>
             </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button acl-button_outline-primary"&gt;Outline Primary Button&lt;/button&gt;
-&lt;button class="acl-button acl-button_outline-primary"&gt;Outline Secondary Button&lt;/button&gt;
+&lt;button class="button button_outline-primary"&gt;Outline Primary Button&lt;/button&gt;
+&lt;button class="button button_outline-primary"&gt;Outline Secondary Button&lt;/button&gt;
             </code></pre>
           </div>
           <h3>With Icons</h3>
           <h4>Base</h4>
-          <p class="docs-desc">버튼 내부에 아이콘을 배치한다. <code class="doc">.acl-icon_left</code> 또는 <code class="doc">.acl-icon_right</code> 를 사용하여 아이콘을 왼쪽 또는 오른쪽에 배치할 수 있다.</p>
-          <div class="component-preview"><button class="acl-button">Button
-            <svg class="acl-icon acl-icon_right">
+          <p class="docs-desc">버튼 내부에 아이콘을 배치한다. <code class="doc">.icon_left</code> 또는 <code class="doc">.icon_right</code> 를 사용하여 아이콘을 왼쪽 또는 오른쪽에 배치할 수 있다.</p>
+          <div class="component-preview"><button class="button">Button
+            <svg class="icon icon_right">
                 <use xlink:href="../assets/images/icons/symbols.svg#arrow_extend"></use>
               </svg>
             </button>
@@ -172,8 +428,8 @@
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button"&gt;Primary Button
-  &lt;svg class="acl-icon acl-icon_right"&gt;
+&lt;button class="button"&gt;Primary Button
+  &lt;svg class="icon icon_right"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#arrow_right"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/button&gt;             
@@ -181,30 +437,30 @@
           </div>
 
           <h4>Left Icon</h4>
-          <div class="component-preview"><button class="acl-button acl-button_primary"><svg
-                class="acl-icon acl-icon_left">
+          <div class="component-preview"><button class="button button_primary"><svg
+                class="icon icon_left">
                 <use xlink:href="../assets/images/icons/symbols.svg#arrow_extend"></use>
               </svg>Primary Button</button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button acl-button_primary"&gt;
-  &lt;svg class="acl-icon acl-icon_left"&gt;
+&lt;button class="button button_primary"&gt;
+  &lt;svg class="icon icon_left"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#arrow_extend"&gt;&lt;/use&gt;
   &lt;/svg&gt;Primary Button
 &lt;/button&gt;
             </code></pre>
           </div>
           <h4>Right Icon</h4>
-          <div class="component-preview"><button class="acl-button acl-button_outline-primary">Primary Button <svg
-                class="acl-icon acl-icon_right">
+          <div class="component-preview"><button class="button button_outline-primary">Primary Button <svg
+                class="icon icon_right">
                 <use xlink:href="../assets/images/icons/symbols.svg#arrow_extend"></use>
               </svg></button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class="acl-button acl-button_outline-primary"&gt;Outline Primary Button
-  &lt;svg class="acl-icon acl-icon_right"&gt;
+&lt;button class="button button_outline-primary"&gt;Outline Primary Button
+  &lt;svg class="icon icon_right"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#arrow_extend"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/button&gt;             
@@ -215,7 +471,7 @@
             <h2 id="2180">0.0.0</h2>
             <h3 id="added">Added</h3>
             <ul>
-              <li>클래스 <code>acl-button_icon-large</code> 를 추가</li>
+              <li>클래스 <code>button_icon-large</code> 를 추가</li>
             </ul>
             <h3 id="fixed">Fixed</h3>
             <ul>
@@ -228,8 +484,8 @@
             <h2 id="2100">0.0.0</h2>
             <h3 id="changed">Changed</h3>
             <ul>
-              <li><code>acl-button_icon</code> with change of <code>display: inline-flex</code> to
-                <code>acl-button</code></li>
+              <li><code>button_icon</code> with change of <code>display: inline-flex</code> to
+                <code>button</code></li>
             </ul>
           </div>
         </section>
@@ -247,16 +503,16 @@
           <h3>Select</h3>
           <h4>Default</h4>
           <div class="component-preview" style="background-color:#f5f5f5">
-            <div class="acl-form-element">
-              <label class="acl-form-element__label" for="select-01">Select Label</label>
-              <div class="acl-select_container">
-                <select class="acl-select" id="select-01">
+            <div class="form-element">
+              <label class="form-element__label" for="select-01">Select Label</label>
+              <div class="select_container">
+                <select class="select" id="select-01">
                   <option value="">Select…</option>
                   <option value="option1">Option One</option>
                   <option value="option2">Option Two</option>
                   <option value="option3">Option Three</option>
                 </select>
-                <svg class="acl-icon">
+                <svg class="icon">
                   <use xlink:href="../assets/images/icons/symbols.svg#arrow_down"></use>
                 </svg>
               </div>
@@ -265,10 +521,10 @@
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element&quot;&gt;
-  &lt;label class=&quot;acl-form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
-  &lt;div class=&quot;acl-form-element__control&quot;&gt;
-    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; type=&quot;text&quot; class=&quot;acl-input&quot; value=&quot;&quot;&gt;
+&lt;div class=&quot;form-element&quot;&gt;
+  &lt;label class=&quot;form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
+  &lt;div class=&quot;form-element__control&quot;&gt;
+    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; type=&quot;text&quot; class=&quot;input&quot; value=&quot;&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;              
               </code></pre>
@@ -277,41 +533,41 @@
           <h3>States</h3>
           <h4>Disabled</h4>
           <div class="component-preview">
-            <div class="acl-form-element"><label class="acl-form-element__label" for="text-input-id-0">Input
+            <div class="form-element"><label class="form-element__label" for="text-input-id-0">Input
                 Label</label>
-              <div class="acl-form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
-                  disabled class="acl-input acl-input-outline"></div>
+              <div class="form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
+                  disabled class="input input-outline"></div>
             </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element&quot;&gt;
-  &lt;label class=&quot;acl-form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
-  &lt;div class=&quot;acl-form-element__control&quot;&gt;
-    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; disabled type=&quot;text&quot; class=&quot;acl-input acl-input-outline&quot; value=&quot;&quot;&gt;
+&lt;div class=&quot;form-element&quot;&gt;
+  &lt;label class=&quot;form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
+  &lt;div class=&quot;form-element__control&quot;&gt;
+    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; disabled type=&quot;text&quot; class=&quot;input input-outline&quot; value=&quot;&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;                        
               </code></pre>
           </div>
           <h4>Error</h4>
           <div class="component-preview">
-            <div class="acl-form-element acl-has-error"><label class="acl-form-element__label"
+            <div class="form-element has-error"><label class="form-element__label"
                 for="text-input-id-0">Input Label</label>
-              <div class="acl-form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
-                  required aria-describedby="error-message-id-0" class="acl-input" aria-invalid="true"></div>
-              <div class="acl-form-element__help" id="error-message-id-0">Enter a value.</div>
+              <div class="form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
+                  required aria-describedby="error-message-id-0" class="input" aria-invalid="true"></div>
+              <div class="form-element__help" id="error-message-id-0">Enter a value.</div>
             </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element acl-has-error&quot;&gt;
-  &lt;label class=&quot;acl-form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
-  &lt;div class=&quot;acl-form-element__control&quot;&gt;
-    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; required=&quot;&quot; aria-describedby=&quot;error-message-id-0&quot; type=&quot;text&quot; class=&quot;acl-input&quot; aria-invalid=&quot;true&quot; value=&quot;&quot;&gt;
+&lt;div class=&quot;form-element has-error&quot;&gt;
+  &lt;label class=&quot;form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
+  &lt;div class=&quot;form-element__control&quot;&gt;
+    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; required=&quot;&quot; aria-describedby=&quot;error-message-id-0&quot; type=&quot;text&quot; class=&quot;input&quot; aria-invalid=&quot;true&quot; value=&quot;&quot;&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;acl-form-element__help&quot; id=&quot;error-message-id-0&quot;&gt;Enter a value.&lt;/div&gt;
+  &lt;div class=&quot;form-element__help&quot; id=&quot;error-message-id-0&quot;&gt;Enter a value.&lt;/div&gt;
 &lt;/div&gt;                        
               </code></pre>
           </div>
@@ -331,21 +587,21 @@
           <h3>Console Header</h3>
           <h4>Default</h4>
           <div class="component-preview demo-viewport">
-            <header class="acl-global-header_container"><a href="#" class="acl-assistive-text acl-assistive-text_focus">Skip to Navigation</a> 
-                <a href="#" class="acl-assistive-text acl-assistive-text_focus">Skip to Main Content</a>
-              <div class="acl-global-header acl-global-header_console">
-                <div class="acl-global-header__item">
-                  <h1 class="acl-global-header__logo">Argos Classroom</h1>
+            <header class="global-header_container"><a href="#" class="assistive-text assistive-text_focus">Skip to Navigation</a> 
+                <a href="#" class="assistive-text assistive-text_focus">Skip to Main Content</a>
+              <div class="global-header global-header_console">
+                <div class="global-header__item">
+                  <h1 class="global-header__logo">Argos Classroom</h1>
                 </div>
-                <div class="acl-global-header__item acl-global-header--flex">
-                  <ul class="acl-global-controls">
-                    <li class="acl-global-controls_item">
-                      <div class="acl-form-element">
+                <div class="global-header__item global-header--flex">
+                  <ul class="global-controls">
+                    <li class="global-controls_item">
+                      <div class="form-element">
                         <label class="blind" for="text-input-id-0">학생 번호 이름 검색</label>
-                        <div class="acl-form-element__control acl-input-has-icon acl-input-has-icon_right">
-                          <input type="text" id="text-input-id-0" placeholder="수업 또는 교사 이름을 검색해주세요." class="acl-input" />
-                          <button class="acl-button acl-button_icon" title="Menu Icon">
-                            <svg class="acl-button__icon" aria-hidden="true">
+                        <div class="form-element__control input-has-icon input-has-icon_right">
+                          <input type="text" id="text-input-id-0" placeholder="수업 또는 교사 이름을 검색해주세요." class="input" />
+                          <button class="button button_icon" title="Menu Icon">
+                            <svg class="button__icon" aria-hidden="true">
                               <use xlink:href="../assets/images/icons/symbols.svg#search"></use>
                             </svg>
                           </button>
@@ -353,21 +609,21 @@
                       </div>
                     </li>
                   </ul>
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-actions__item">
-                      <button class="acl-button acl-button_icon" title="CS">
-                        <svg class="acl-button__icon" aria-hidden="true">
+                  <ul class="global-actions">
+                    <li class="global-actions__item">
+                      <button class="button button_icon" title="CS">
+                        <svg class="button__icon" aria-hidden="true">
                           <use xlink:href="../assets/images/icons/symbols.svg#cs"></use>
                         </svg>
-                        <span class="acl-assistive-text">CS</span>
+                        <span class="assistive-text">CS</span>
                       </button>
                     </li>
-                    <li class="acl-global-actions__item">
-                      <button class="acl-button acl-button_icon" title="My">
-                        <svg class="acl-button__icon" aria-hidden="true">
+                    <li class="global-actions__item">
+                      <button class="button button_icon" title="My">
+                        <svg class="button__icon" aria-hidden="true">
                           <use xlink:href="../assets/images/icons/symbols.svg#my"></use>
                         </svg>
-                        <span class="acl-assistive-text">My</span>
+                        <span class="assistive-text">My</span>
                       </button>
                     </li>
                   </ul>
@@ -388,28 +644,28 @@
 
           <h4>처음진입, 등록된 수업이 없는경우</h4>
           <div class="component-preview demo-viewport">
-            <header class="acl-global-header_container"><a href="#" class="acl-assistive-text acl-assistive-text_focus">Skip to Navigation</a> 
-                <a href="#" class="acl-assistive-text acl-assistive-text_focus">Skip to Main Content</a>
-              <div class="acl-global-header acl-global-header_console">
-                <div class="acl-global-header__item">
-                  <h1 class="acl-global-header__logo">Argos Classroom</h1>
+            <header class="global-header_container"><a href="#" class="assistive-text assistive-text_focus">Skip to Navigation</a> 
+                <a href="#" class="assistive-text assistive-text_focus">Skip to Main Content</a>
+              <div class="global-header global-header_console">
+                <div class="global-header__item">
+                  <h1 class="global-header__logo">Argos Classroom</h1>
                 </div>
-                <div class="acl-global-header__item acl-global-header--flex">
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-actions__item">
-                      <button class="acl-button acl-button_icon" title="CS">
-                        <svg class="acl-button__icon" aria-hidden="true">
+                <div class="global-header__item global-header--flex">
+                  <ul class="global-actions">
+                    <li class="global-actions__item">
+                      <button class="button button_icon" title="CS">
+                        <svg class="button__icon" aria-hidden="true">
                           <use xlink:href="../assets/images/icons/symbols.svg#cs"></use>
                         </svg>
-                        <span class="acl-assistive-text">CS</span>
+                        <span class="assistive-text">CS</span>
                       </button>
                     </li>
-                    <li class="acl-global-actions__item">
-                      <button class="acl-button acl-button_icon" title="My">
-                        <svg class="acl-button__icon" aria-hidden="true">
+                    <li class="global-actions__item">
+                      <button class="button button_icon" title="My">
+                        <svg class="button__icon" aria-hidden="true">
                           <use xlink:href="../assets/images/icons/symbols.svg#my"></use>
                         </svg>
-                        <span class="acl-assistive-text">My</span>
+                        <span class="assistive-text">My</span>
                       </button>
                     </li>
                   </ul>
@@ -431,34 +687,34 @@
           <h3>Class Room Header</h3>
           <h4>수업 시작 전</h4>
           <div class="component-preview demo-viewport">
-            <header class="acl-global-header_container"><a href="#"
-                class="acl-assistive-text acl-assistive-text_focus">Skip to Navigation</a> <a href="#"
-                class="acl-assistive-text acl-assistive-text_focus">Skip to Main Content</a>
-              <div class="acl-global-header">
-                <div class="acl-global-header__item">
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-actions__item"><button class="acl-button acl-button_icon"
-                        title="Menu Icon"><svg class="acl-button__icon" aria-hidden="true">
+            <header class="global-header_container"><a href="#"
+                class="assistive-text assistive-text_focus">Skip to Navigation</a> <a href="#"
+                class="assistive-text assistive-text_focus">Skip to Main Content</a>
+              <div class="global-header">
+                <div class="global-header__item">
+                  <ul class="global-actions">
+                    <li class="global-actions__item"><button class="button button_icon"
+                        title="Menu Icon"><svg class="button__icon" aria-hidden="true">
                           <use xlink:href="../assets/images/icons/symbols.svg#menu_off"></use>
-                        </svg> <span class="acl-assistive-text">Menu</span></button></li>
+                        </svg> <span class="assistive-text">Menu</span></button></li>
                   </ul>
                 </div>
-                <div class="acl-global-header__item">
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-actions__item">
-                      <div class="acl-global__text">Arogos의 수학 수업</div>
+                <div class="global-header__item">
+                  <ul class="global-actions">
+                    <li class="global-actions__item">
+                      <div class="global__text">Arogos의 수학 수업</div>
                     </li>
-                    <li class="acl-global-actions__item"><button class="acl-button acl-button_outline-primary">수업코드 :
-                        1234 <svg class="acl-icon acl-icon_x-small acl-icon_right">
+                    <li class="global-actions__item"><button class="button button_outline-primary">수업코드 :
+                        1234 <svg class="icon icon_x-small icon_right">
                           <use xlink:href="../assets/images/icons/symbols.svg#arrow_right"></use>
                         </svg></button></li>
                   </ul>
                 </div>
-                <div class="acl-global-header__item">
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-header__time"></li>
-                    <li class="acl-global-actions__item"><button class="acl-button acl-button_secondary"><svg
-                          class="acl-icon acl-icon_small acl-icon_left">
+                <div class="global-header__item">
+                  <ul class="global-actions">
+                    <li class="global-header__time"></li>
+                    <li class="global-actions__item"><button class="button button_secondary"><svg
+                          class="icon icon_small icon_left">
                           <use xlink:href="../assets/images/icons/symbols.svg#export"></use>
                         </svg>수업 종료</button></li>
                   </ul>
@@ -478,36 +734,36 @@
 
           <h4>수업 진행 중</h4>
           <div class="component-preview demo-viewport">
-            <header class="acl-global-header_container"><a href="#"
-                class="acl-assistive-text acl-assistive-text_focus">Skip to Navigation</a> <a href="#"
-                class="acl-assistive-text acl-assistive-text_focus">Skip to Main Content</a>
-              <div class="acl-global-header">
-                <div class="acl-global-header__item">
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-actions__item"><button class="acl-button acl-button_icon"
-                        title="Menu Icon"><svg class="acl-button__icon" aria-hidden="true">
+            <header class="global-header_container"><a href="#"
+                class="assistive-text assistive-text_focus">Skip to Navigation</a> <a href="#"
+                class="assistive-text assistive-text_focus">Skip to Main Content</a>
+              <div class="global-header">
+                <div class="global-header__item">
+                  <ul class="global-actions">
+                    <li class="global-actions__item"><button class="button button_icon"
+                        title="Menu Icon"><svg class="button__icon" aria-hidden="true">
                           <use xlink:href="../assets/images/icons/symbols.svg#menu_on"></use>
-                        </svg> <span class="acl-assistive-text">Menu</span></button></li>
+                        </svg> <span class="assistive-text">Menu</span></button></li>
                   </ul>
                 </div>
-                <div class="acl-global-header__item">
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-actions__item">
-                      <div class="acl-global__text">Arogos의 수학 수업</div>
+                <div class="global-header__item">
+                  <ul class="global-actions">
+                    <li class="global-actions__item">
+                      <div class="global__text">Arogos의 수학 수업</div>
                     </li>
-                    <li class="acl-global-actions__item"><button class="acl-button acl-button_outline-primary">수업코드 :
-                        1234 <svg class="acl-icon acl-icon_x-small acl-icon_right">
+                    <li class="global-actions__item"><button class="button button_outline-primary">수업코드 :
+                        1234 <svg class="icon icon_x-small icon_right">
                           <use xlink:href="../assets/images/icons/symbols.svg#arrow_right"></use>
                         </svg></button></li>
                   </ul>
                 </div>
-                <div class="acl-global-header__item">
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-header__time"><svg class="acl-icon acl-icon_x-small gray07">
+                <div class="global-header__item">
+                  <ul class="global-actions">
+                    <li class="global-header__time"><svg class="icon icon_x-small gray07">
                         <use xlink:href="../assets/images/icons/symbols.svg#time"></use>
-                      </svg> <span class="acl-text">00 : 45 : 01</span></li>
-                    <li class="acl-global-actions__item"><button class="acl-button acl-button_secondary"><svg
-                          class="acl-icon acl-icon_small acl-icon_left">
+                      </svg> <span class="text">00 : 45 : 01</span></li>
+                    <li class="global-actions__item"><button class="button button_secondary"><svg
+                          class="icon icon_small icon_left">
                           <use xlink:href="../assets/images/icons/symbols.svg#export"></use>
                         </svg>수업 종료</button></li>
                   </ul>
@@ -527,25 +783,25 @@
 
           <h4>종료</h4>
           <div class="component-preview demo-viewport">
-            <header class="acl-global-header_container"><a href="#"
-                class="acl-assistive-text acl-assistive-text_focus">Skip to Navigation</a> <a href="#"
-                class="acl-assistive-text acl-assistive-text_focus">Skip to Main Content</a>
-              <div class="acl-global-header">
-                <div class="acl-global-header__item">
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-actions__item"><button class="acl-button acl-button_icon"
-                        title="Menu Icon"><svg class="acl-button__icon" aria-hidden="true">
+            <header class="global-header_container"><a href="#"
+                class="assistive-text assistive-text_focus">Skip to Navigation</a> <a href="#"
+                class="assistive-text assistive-text_focus">Skip to Main Content</a>
+              <div class="global-header">
+                <div class="global-header__item">
+                  <ul class="global-actions">
+                    <li class="global-actions__item"><button class="button button_icon"
+                        title="Menu Icon"><svg class="button__icon" aria-hidden="true">
                           <use xlink:href="../assets/images/icons/symbols.svg#menu_on"></use>
-                        </svg> <span class="acl-assistive-text">Menu</span></button></li>
+                        </svg> <span class="assistive-text">Menu</span></button></li>
                   </ul>
                 </div>
-                <div class="acl-global-header__item acl-global-header__item--center">
-                  <ul class="acl-global-actions">
-                    <li class="acl-global-actions__item">
-                      <div class="acl-global__text">Arogos의 수학 수업</div>
+                <div class="global-header__item global-header__item--center">
+                  <ul class="global-actions">
+                    <li class="global-actions__item">
+                      <div class="global__text">Arogos의 수학 수업</div>
                     </li>
-                    <li class="acl-global-actions__item"><button class="acl-button acl-button_outline-primary">수업코드 :
-                        1234 <svg class="acl-icon acl-icon_x-small acl-icon_right">
+                    <li class="global-actions__item"><button class="button button_outline-primary">수업코드 :
+                        1234 <svg class="icon icon_x-small icon_right">
                           <use xlink:href="../assets/images/icons/symbols.svg#arrow_right"></use>
                         </svg></button></li>
                   </ul>
@@ -576,43 +832,43 @@
         <section class="component-main">
           <h3>Classroom</h3>
           <div class="component-preview" style="background-color: #E7EDF6;">
-            <div class="acl-page-header">
-              <div class="acl-page-header__row">
-                <div class="acl-page-header__actions">
-                  <div class="acl-page-header__control">
-                    <div class="acl-checkbox">
+            <div class="page-header">
+              <div class="page-header__row">
+                <div class="page-header__actions">
+                  <div class="page-header__control">
+                    <div class="checkbox">
                       <input type="checkbox" name="options" id="checkbox-unique-id-1" value="checkbox-unique-id-1"
                         checked="" />
-                      <label class="acl-checkbox__label" for="checkbox-unique-id-1">
-                        <span class="acl-checkbox_faux"><svg class="acl-icon"><use xlink:href="../assets/images/icons/symbols.svg#check"></use></svg></span>
-                        <span class="acl-form-element__label">전체선택</span>
+                      <label class="checkbox__label" for="checkbox-unique-id-1">
+                        <span class="checkbox_faux"><svg class="icon"><use xlink:href="../assets/images/icons/symbols.svg#check"></use></svg></span>
+                        <span class="form-element__label">전체선택</span>
                       </label>
                     </div>
                   </div>
-                  <div class="acl-page-header__meta">
+                  <div class="page-header__meta">
                     <em class="primary06">1</em>/15
                   </div>
                 </div>
-                <div class="acl-page-header__controls">
-                  <div class="acl-page-header__control">
-                    <div class="acl-form-element">
+                <div class="page-header__controls">
+                  <div class="page-header__control">
+                    <div class="form-element">
                       <label class="blind" for="text-input-id-0">학생 번호 이름 검색</label>
-                      <div class="acl-form-element__control acl-input-has-icon acl-input-has-icon_right">
-                        <input type="text" id="text-input-id-0" placeholder="학생 번호 이름을 입력하세요." class="acl-input" />
-                        <button class="acl-button acl-button_icon" title="Menu Icon">
-                          <svg class="acl-button__icon" aria-hidden="true">
+                      <div class="form-element__control input-has-icon input-has-icon_right">
+                        <input type="text" id="text-input-id-0" placeholder="학생 번호 이름을 입력하세요." class="input" />
+                        <button class="button button_icon" title="Menu Icon">
+                          <svg class="button__icon" aria-hidden="true">
                             <use xlink:href="../assets/images/icons/symbols.svg#search"></use>
                           </svg>
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="acl-page-header__control">
-                    <button class="acl-button acl-button_outline acl-button_icon acl-button_icon-border" title="Reset Icon">
-                      <svg class="acl-button__icon" aria-hidden="true">
+                  <div class="page-header__control">
+                    <button class="button button_outline button_icon button_icon-border" title="Reset Icon">
+                      <svg class="button__icon" aria-hidden="true">
                         <use xlink:href="../assets/images/icons/symbols.svg#reset"></use>
                       </svg>
-                      <span class="acl-assistive-text">Reset</span>
+                      <span class="assistive-text">Reset</span>
                     </button>
                   </div>
                 </div>
@@ -631,19 +887,19 @@
 
           <h3>Console</h3>
           <div class="component-preview" style="background-color: #E7EDF6;">
-            <div class="acl-page-header">
-              <div class="acl-page-header__row">
-                <div class="acl-page-header__meta">title 및 meta 정보</div>
-                <div class="acl-page-header__controls">
-                  <div class="acl-page-header__control">내 수업</div>
-                  <div class="acl-page-header__control">수업 추가 +</div>
+            <div class="page-header">
+              <div class="page-header__row">
+                <div class="page-header__meta">title 및 meta 정보</div>
+                <div class="page-header__controls">
+                  <div class="page-header__control">내 수업</div>
+                  <div class="page-header__control">수업 추가 +</div>
                 </div>
               </div>
-              <div class="acl-page-header__row">
-                <div class="acl-page-header__meta">총6개</div>
-                <div class="acl-page-header__controls">
-                  <div class="acl-page-header__control">버튼</div>
-                  <div class="acl-page-header__control">버튼</div>
+              <div class="page-header__row">
+                <div class="page-header__meta">총6개</div>
+                <div class="page-header__controls">
+                  <div class="page-header__control">버튼</div>
+                  <div class="page-header__control">버튼</div>
                 </div>
               </div>
             </div>
@@ -672,10 +928,10 @@
           <h3>Default</h3>
           <div class="component-preview" style="background-color: #E7EDF6;">
             <div style="width: 480px; padding: 32px;">
-              <div class="acl-code">
-                <img src="../assets/images/temp/QR_code_sample.png" alt="수업 코드의 QR code" class="acl-code_qr">
+              <div class="code">
+                <img src="../assets/images/temp/QR_code_sample.png" alt="수업 코드의 QR code" class="code_qr">
                 <p class="body-02-b">or</p>
-                <div class="acl-code_text">
+                <div class="code_text">
                   <span>수업 코드</span>
                   <em>1234</em>
                 </div>
@@ -693,10 +949,10 @@
           <h4>Primary</h4>
           <div class="component-preview">
             <div style="width: 480px; padding: 32px;">
-              <div class="acl-code acl-code--blue">
-                <img src="../assets/images/temp/QR_code_sample.png" alt="수업 코드의 QR code" class="acl-code_qr">
+              <div class="code code--blue">
+                <img src="../assets/images/temp/QR_code_sample.png" alt="수업 코드의 QR code" class="code_qr">
                 <p class="body-02-b">or</p>
-                <div class="acl-code_text">
+                <div class="code_text">
                   <span>수업 코드</span>
                   <em>1234</em>
                 </div>
@@ -714,10 +970,10 @@
           <h4>Small</h4>
           <div class="component-preview" style="background-color: #E7EDF6;">
             <div style="width: 320px; padding: 30px;">
-              <div class="acl-code acl-code_small">
-                <img src="../assets/images/temp/QR_code_sample.png" alt="수업 코드의 QR code" class="acl-code_qr">
+              <div class="code code_small">
+                <img src="../assets/images/temp/QR_code_sample.png" alt="수업 코드의 QR code" class="code_qr">
                 <p class="body-02-b">or</p>
-                <div class="acl-code_text">
+                <div class="code_text">
                   <span>수업 코드</span>
                   <em>1234</em>
                 </div>
@@ -744,26 +1000,26 @@
         <section class="component-main">
           <h3>Base</h3>
           <div class="component-preview">
-            <div class="acl-form-element">
-              <div class="acl-form-element__control">
-                <div class="acl-checkbox"><input type="checkbox" name="options" id="checkbox-unique-id-3"
-                    value="checkbox-unique-id-3" checked><label class="acl-checkbox__label"
-                    for="checkbox-unique-id-3"><span class="acl-checkbox_faux"><svg class="acl-icon">
+            <div class="form-element">
+              <div class="form-element__control">
+                <div class="checkbox"><input type="checkbox" name="options" id="checkbox-unique-id-3"
+                    value="checkbox-unique-id-3" checked><label class="checkbox__label"
+                    for="checkbox-unique-id-3"><span class="checkbox_faux"><svg class="icon">
                         <use xlink:href="../assets/images/icons/symbols.svg#check"></use>
-                      </svg></span> <span class="acl-form-element__label">Checkbox Label</span></label></div>
+                      </svg></span> <span class="form-element__label">Checkbox Label</span></label></div>
               </div>
             </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element__control&quot;&gt;
-  &lt;div class=&quot;acl-checkbox&quot;&gt;
+&lt;div class=&quot;form-element__control&quot;&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;options&quot; id=&quot;checkbox-unique-id-3&quot; value=&quot;checkbox-unique-id-3&quot;
       checked=&quot;&quot; /&gt;
-    &lt;label class=&quot;acl-checkbox__label&quot; for=&quot;checkbox-unique-id-3&quot;&gt;
-      &lt;span class=&quot;acl-checkbox_faux&quot;&gt;&lt;svg class=&quot;acl-icon&quot;&gt;&lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#check&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;
-      &lt;span class=&quot;acl-form-element__label&quot;&gt;Checkbox Label&lt;/span&gt;
+    &lt;label class=&quot;checkbox__label&quot; for=&quot;checkbox-unique-id-3&quot;&gt;
+      &lt;span class=&quot;checkbox_faux&quot;&gt;&lt;svg class=&quot;icon&quot;&gt;&lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#check&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;
+      &lt;span class=&quot;form-element__label&quot;&gt;Checkbox Label&lt;/span&gt;
     &lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;              
@@ -772,10 +1028,6 @@
           <h3>States</h3>
           <h4>Error (TBD)</h4>
           <div class="component-preview">
-            <div class="card">
-              <div class="card-title">Card Title</div>
-              <div class="card-content">This is some card content.</div>
-            </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
@@ -788,10 +1040,6 @@
           </div>
           <h4>Disabled (TBD)</h4>
           <div class="component-preview">
-            <div class="card">
-              <div class="card-title">Card Title</div>
-              <div class="card-content">This is some card content.</div>
-            </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
@@ -817,38 +1065,38 @@
           <h3>Input</h3>
           <h4>Default</h4>
           <div class="component-preview" style="background-color:#f5f5f5">
-            <div class="acl-form-element"><label class="acl-form-element__label" for="text-input-id-0">Input
+            <div class="form-element"><label class="form-element__label" for="text-input-id-0">Input
                 Label</label>
-              <div class="acl-form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
-                  class="acl-input"></div>
+              <div class="form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
+                  class="input"></div>
             </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element&quot;&gt;
-  &lt;label class=&quot;acl-form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
-  &lt;div class=&quot;acl-form-element__control&quot;&gt;
-    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; type=&quot;text&quot; class=&quot;acl-input&quot; value=&quot;&quot;&gt;
+&lt;div class=&quot;form-element&quot;&gt;
+  &lt;label class=&quot;form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
+  &lt;div class=&quot;form-element__control&quot;&gt;
+    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; type=&quot;text&quot; class=&quot;input&quot; value=&quot;&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;              
               </code></pre>
           </div>
           <h4>Outline</h4>
           <div class="component-preview">
-            <div class="acl-form-element"><label class="acl-form-element__label" for="text-input-id-0">Input
+            <div class="form-element"><label class="form-element__label" for="text-input-id-0">Input
                 Label</label>
-              <div class="acl-form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
-                  class="acl-input acl-input-outline"></div>
+              <div class="form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
+                  class="input input-outline"></div>
             </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element&quot;&gt;
-  &lt;label class=&quot;acl-form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
-  &lt;div class=&quot;acl-form-element__control&quot;&gt;
-    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; type=&quot;text&quot; class=&quot;acl-input acl-input-outline&quot; value=&quot;&quot;&gt;
+&lt;div class=&quot;form-element&quot;&gt;
+  &lt;label class=&quot;form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
+  &lt;div class=&quot;form-element__control&quot;&gt;
+    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; type=&quot;text&quot; class=&quot;input input-outline&quot; value=&quot;&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;              
               </code></pre>
@@ -856,52 +1104,52 @@
           <h3>States</h3>
           <h4>Disabled</h4>
           <div class="component-preview">
-            <div class="acl-form-element"><label class="acl-form-element__label" for="text-input-id-0">Input
+            <div class="form-element"><label class="form-element__label" for="text-input-id-0">Input
                 Label</label>
-              <div class="acl-form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
-                  disabled class="acl-input acl-input-outline"></div>
+              <div class="form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
+                  disabled class="input input-outline"></div>
             </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element&quot;&gt;
-  &lt;label class=&quot;acl-form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
-  &lt;div class=&quot;acl-form-element__control&quot;&gt;
-    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; disabled type=&quot;text&quot; class=&quot;acl-input acl-input-outline&quot; value=&quot;&quot;&gt;
+&lt;div class=&quot;form-element&quot;&gt;
+  &lt;label class=&quot;form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
+  &lt;div class=&quot;form-element__control&quot;&gt;
+    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; disabled type=&quot;text&quot; class=&quot;input input-outline&quot; value=&quot;&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;                        
               </code></pre>
           </div>
           <h4>Error</h4>
           <div class="component-preview">
-            <div class="acl-form-element acl-has-error"><label class="acl-form-element__label"
+            <div class="form-element has-error"><label class="form-element__label"
                 for="text-input-id-0">Input Label</label>
-              <div class="acl-form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
-                  required aria-describedby="error-message-id-0" class="acl-input" aria-invalid="true"></div>
-              <div class="acl-form-element__help" id="error-message-id-0">Enter a value.</div>
+              <div class="form-element__control"><input id="text-input-id-0" placeholder="Placeholder text…"
+                  required aria-describedby="error-message-id-0" class="input" aria-invalid="true"></div>
+              <div class="form-element__help" id="error-message-id-0">Enter a value.</div>
             </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element acl-has-error&quot;&gt;
-  &lt;label class=&quot;acl-form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
-  &lt;div class=&quot;acl-form-element__control&quot;&gt;
-    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; required=&quot;&quot; aria-describedby=&quot;error-message-id-0&quot; type=&quot;text&quot; class=&quot;acl-input&quot; aria-invalid=&quot;true&quot; value=&quot;&quot;&gt;
+&lt;div class=&quot;form-element has-error&quot;&gt;
+  &lt;label class=&quot;form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
+  &lt;div class=&quot;form-element__control&quot;&gt;
+    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; required=&quot;&quot; aria-describedby=&quot;error-message-id-0&quot; type=&quot;text&quot; class=&quot;input&quot; aria-invalid=&quot;true&quot; value=&quot;&quot;&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;acl-form-element__help&quot; id=&quot;error-message-id-0&quot;&gt;Enter a value.&lt;/div&gt;
+  &lt;div class=&quot;form-element__help&quot; id=&quot;error-message-id-0&quot;&gt;Enter a value.&lt;/div&gt;
 &lt;/div&gt;                        
               </code></pre>
           </div>
           <h3>With Icon</h3>
           <h4>Icon on the right</h4>
           <div class="component-preview">
-            <div class="acl-form-element"><label class="acl-form-element__label" for="text-input-id-0">Input
+            <div class="form-element"><label class="form-element__label" for="text-input-id-0">Input
                 Label</label>
-              <div class="acl-form-element__control acl-input-has-icon acl-input-has-icon_right"><input
-                  id="text-input-id-0" placeholder="Placeholder text…" class="acl-input"> <button
-                  class="acl-button acl-button_icon" title="Menu Icon"><svg class="acl-button__icon" aria-hidden="true">
+              <div class="form-element__control input-has-icon input-has-icon_right"><input
+                  id="text-input-id-0" placeholder="Placeholder text…" class="input"> <button
+                  class="button button_icon" title="Menu Icon"><svg class="button__icon" aria-hidden="true">
                     <use xlink:href="../assets/images/icons/symbols.svg#search"></use>
                   </svg></button></div>
             </div>
@@ -909,12 +1157,12 @@
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element&quot;&gt;
-  &lt;label class=&quot;acl-form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
-  &lt;div class=&quot;acl-form-element__control acl-input-has-icon acl-input-has-icon_right&quot;&gt;
-    &lt;input type=&quot;text&quot; id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; class=&quot;acl-input&quot; /&gt;
-    &lt;button class=&quot;acl-button acl-button_icon&quot; title=&quot;Menu Icon&quot;&gt;
-      &lt;svg class=&quot;acl-button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;div class=&quot;form-element&quot;&gt;
+  &lt;label class=&quot;form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
+  &lt;div class=&quot;form-element__control input-has-icon input-has-icon_right&quot;&gt;
+    &lt;input type=&quot;text&quot; id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; class=&quot;input&quot; /&gt;
+    &lt;button class=&quot;button button_icon&quot; title=&quot;Menu Icon&quot;&gt;
+      &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
         &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#search&quot;&gt;&lt;/use&gt;
       &lt;/svg&gt;
     &lt;/button&gt;
@@ -944,19 +1192,19 @@
             </ul>
           </p>
           <div class="component-preview" style="background-color:#f5f5f5">
-            <div class="acl-form-element"><label class="acl-form-element__label" for="text-input-id-0">Input Label</label>
-              <div class="acl-form-element__control">
-                <input type="text" id="datepicker" placeholder="Select Date/Time" data-input class="acl-input acl-input_date">
+            <div class="form-element"><label class="form-element__label" for="text-input-id-0">Input Label</label>
+              <div class="form-element__control">
+                <input type="text" id="datepicker" placeholder="Select Date/Time" data-input class="input input_date">
               </div>
             </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element&quot;&gt;
-  &lt;label class=&quot;acl-form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
-  &lt;div class=&quot;acl-form-element__control&quot;&gt;
-    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; type=&quot;text&quot; class=&quot;acl-input&quot; value=&quot;&quot;&gt;
+&lt;div class=&quot;form-element&quot;&gt;
+  &lt;label class=&quot;form-element__label&quot; for=&quot;text-input-id-0&quot;&gt;Input Label&lt;/label&gt;
+  &lt;div class=&quot;form-element__control&quot;&gt;
+    &lt;input id=&quot;text-input-id-0&quot; placeholder=&quot;Placeholder text…&quot; type=&quot;text&quot; class=&quot;input&quot; value=&quot;&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;              
               </code></pre>
@@ -975,37 +1223,37 @@
         <section class="component-main">
           <h3>Base</h3>
           <div class="component-preview" style="background-color:#E7EDF6">
-            <fieldset class="acl-form-element">
-              <legend class="acl-form-element__legend acl-form-element__label">요일</legend>
-              <div class="acl-radio_button-group">
-                <span class="acl-button acl-radio_button">
+            <fieldset class="form-element">
+              <legend class="form-element__legend form-element__label">요일</legend>
+              <div class="radio_button-group">
+                <span class="button radio_button">
                   <input type="radio" name="example-unique-name-197" id="example-unique-id-199" value="monday">
-                  <label class="acl-radio_button__label" for="example-unique-id-199">
-                    <span class="acl-radio_faux">월</span>
+                  <label class="radio_button__label" for="example-unique-id-199">
+                    <span class="radio_faux">월</span>
                   </label>
                 </span>
-                <span class="acl-button acl-radio_button">
+                <span class="button radio_button">
                   <input type="radio" name="example-unique-name-197" id="example-unique-id-200" value="tuesday">
-                  <label class="acl-radio_button__label" for="example-unique-id-200">
-                    <span class="acl-radio_faux">화</span>
+                  <label class="radio_button__label" for="example-unique-id-200">
+                    <span class="radio_faux">화</span>
                   </label>
                 </span>
-                <span class="acl-button acl-radio_button">
+                <span class="button radio_button">
                   <input type="radio" name="example-unique-name-197" id="example-unique-id-201" value="wednesday">
-                  <label class="acl-radio_button__label" for="example-unique-id-201">
-                    <span class="acl-radio_faux">수</span>
+                  <label class="radio_button__label" for="example-unique-id-201">
+                    <span class="radio_faux">수</span>
                   </label>
                 </span>
-                <span class="acl-button acl-radio_button">
+                <span class="button radio_button">
                   <input type="radio" name="example-unique-name-197" id="example-unique-id-202" value="thursday">
-                  <label class="acl-radio_button__label" for="example-unique-id-202">
-                    <span class="acl-radio_faux">목</span>
+                  <label class="radio_button__label" for="example-unique-id-202">
+                    <span class="radio_faux">목</span>
                   </label>
                 </span>
-                <span class="acl-button acl-radio_button">
+                <span class="button radio_button">
                   <input type="radio" name="example-unique-name-197" id="example-unique-id-203" value="friday">
-                  <label class="acl-radio_button__label" for="example-unique-id-203">
-                    <span class="acl-radio_faux">금</span>
+                  <label class="radio_button__label" for="example-unique-id-203">
+                    <span class="radio_faux">금</span>
                   </label>
                 </span>
               </div>
@@ -1014,13 +1262,13 @@
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class=&quot;acl-form-element__control&quot;&gt;
-  &lt;div class=&quot;acl-checkbox&quot;&gt;
+&lt;div class=&quot;form-element__control&quot;&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;options&quot; id=&quot;checkbox-unique-id-3&quot; value=&quot;checkbox-unique-id-3&quot;
       checked=&quot;&quot; /&gt;
-    &lt;label class=&quot;acl-checkbox__label&quot; for=&quot;checkbox-unique-id-3&quot;&gt;
-      &lt;span class=&quot;acl-checkbox_faux&quot;&gt;&lt;svg class=&quot;acl-icon&quot;&gt;&lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#check&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;
-      &lt;span class=&quot;acl-form-element__label&quot;&gt;Checkbox Label&lt;/span&gt;
+    &lt;label class=&quot;checkbox__label&quot; for=&quot;checkbox-unique-id-3&quot;&gt;
+      &lt;span class=&quot;checkbox_faux&quot;&gt;&lt;svg class=&quot;icon&quot;&gt;&lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#check&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;
+      &lt;span class=&quot;form-element__label&quot;&gt;Checkbox Label&lt;/span&gt;
     &lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;              
@@ -1039,109 +1287,109 @@
         </section>
         <section class="component-main">
           <h3>Base</h3>
-          <div class="component-preview"><button class="acl-button acl-button_icon" title="Menu Icon"><svg
-                class="acl-button__icon" aria-hidden="true">
+          <div class="component-preview"><button class="button button_icon" title="Menu Icon"><svg
+                class="button__icon" aria-hidden="true">
                 <use xlink:href="../assets/images/icons/symbols.svg#myshare"></use>
-              </svg> <span class="acl-assistive-text">Menu</span></button></div>
+              </svg> <span class="assistive-text">Menu</span></button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class=&quot;acl-button acl-button_icon&quot; title=&quot;Menu Icon&quot;&gt;
-  &lt;svg class=&quot;acl-button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;button class=&quot;button button_icon&quot; title=&quot;Menu Icon&quot;&gt;
+  &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
     &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#myshare&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
-  &lt;span class=&quot;acl-assistive-text&quot;&gt;Menu&lt;/span&gt;
+  &lt;span class=&quot;assistive-text&quot;&gt;Menu&lt;/span&gt;
 &lt;/button&gt;                   
               </code></pre>
           </div>
           <h3>Sizes</h3>
-          <div class="component-preview"><button class="acl-button acl-button_icon acl-button_icon-large"
-              title="Menu Icon"><svg class="acl-button__icon" aria-hidden="true">
+          <div class="component-preview"><button class="button button_icon button_icon-large"
+              title="Menu Icon"><svg class="button__icon" aria-hidden="true">
                 <use xlink:href="../assets/images/icons/symbols.svg#myshare"></use>
-              </svg> <span class="acl-assistive-text">Menu</span></button> <button class="acl-button acl-button_icon"
-              title="Menu Icon"><svg class="acl-button__icon" aria-hidden="true">
+              </svg> <span class="assistive-text">Menu</span></button> <button class="button button_icon"
+              title="Menu Icon"><svg class="button__icon" aria-hidden="true">
                 <use xlink:href="../assets/images/icons/symbols.svg#myshare"></use>
-              </svg> <span class="acl-assistive-text">Menu</span></button> <button
-              class="acl-button acl-button_icon acl-button_icon-small" title="Menu Icon"><svg class="acl-button__icon"
+              </svg> <span class="assistive-text">Menu</span></button> <button
+              class="button button_icon button_icon-small" title="Menu Icon"><svg class="button__icon"
                 aria-hidden="true">
                 <use xlink:href="../assets/images/icons/symbols.svg#myshare"></use>
-              </svg> <span class="acl-assistive-text">Menu</span></button> <button
-              class="acl-button acl-button_icon acl-button_icon-x-small" title="Menu Icon"><svg class="acl-button__icon"
+              </svg> <span class="assistive-text">Menu</span></button> <button
+              class="button button_icon button_icon-x-small" title="Menu Icon"><svg class="button__icon"
                 aria-hidden="true">
                 <use xlink:href="../assets/images/icons/symbols.svg#myshare"></use>
-              </svg> <span class="acl-assistive-text">Menu</span></button> <button
-              class="acl-button acl-button_icon acl-button_icon-xx-small" title="Menu Icon"><svg
-                class="acl-button__icon" aria-hidden="true">
+              </svg> <span class="assistive-text">Menu</span></button> <button
+              class="button button_icon button_icon-xx-small" title="Menu Icon"><svg
+                class="button__icon" aria-hidden="true">
                 <use xlink:href="../assets/images/icons/symbols.svg#myshare"></use>
-              </svg> <span class="acl-assistive-text">Menu</span></button></div>
+              </svg> <span class="assistive-text">Menu</span></button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class=&quot;acl-button acl-button_icon acl-button_icon-large&quot; title=&quot;Menu Icon&quot;&gt;
-  &lt;svg class=&quot;acl-button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;button class=&quot;button button_icon button_icon-large&quot; title=&quot;Menu Icon&quot;&gt;
+  &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
     &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#myshare&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
-  &lt;span class=&quot;acl-assistive-text&quot;&gt;Menu&lt;/span&gt;
+  &lt;span class=&quot;assistive-text&quot;&gt;Menu&lt;/span&gt;
 &lt;/button&gt;
-&lt;button class=&quot;acl-button acl-button_icon&quot; title=&quot;Menu Icon&quot;&gt;
-  &lt;svg class=&quot;acl-button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;button class=&quot;button button_icon&quot; title=&quot;Menu Icon&quot;&gt;
+  &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
     &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#myshare&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
-  &lt;span class=&quot;acl-assistive-text&quot;&gt;Menu&lt;/span&gt;
+  &lt;span class=&quot;assistive-text&quot;&gt;Menu&lt;/span&gt;
 &lt;/button&gt;
-&lt;button class=&quot;acl-button acl-button_icon acl-button_icon-small&quot; title=&quot;Menu Icon&quot;&gt;
-  &lt;svg class=&quot;acl-button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;button class=&quot;button button_icon button_icon-small&quot; title=&quot;Menu Icon&quot;&gt;
+  &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
     &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#myshare&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
-  &lt;span class=&quot;acl-assistive-text&quot;&gt;Menu&lt;/span&gt;
+  &lt;span class=&quot;assistive-text&quot;&gt;Menu&lt;/span&gt;
 &lt;/button&gt;
-&lt;button class=&quot;acl-button acl-button_icon acl-button_icon-x-small&quot; title=&quot;Menu Icon&quot;&gt;
-  &lt;svg class=&quot;acl-button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;button class=&quot;button button_icon button_icon-x-small&quot; title=&quot;Menu Icon&quot;&gt;
+  &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
     &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#myshare&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
-  &lt;span class=&quot;acl-assistive-text&quot;&gt;Menu&lt;/span&gt;
+  &lt;span class=&quot;assistive-text&quot;&gt;Menu&lt;/span&gt;
 &lt;/button&gt;
-&lt;button class=&quot;acl-button acl-button_icon acl-button_icon-xx-small&quot; title=&quot;Menu Icon&quot;&gt;
-  &lt;svg class=&quot;acl-button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;button class=&quot;button button_icon button_icon-xx-small&quot; title=&quot;Menu Icon&quot;&gt;
+  &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
     &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#myshare&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
-  &lt;span class=&quot;acl-assistive-text&quot;&gt;Menu&lt;/span&gt;
+  &lt;span class=&quot;assistive-text&quot;&gt;Menu&lt;/span&gt;
 &lt;/button&gt;                      
               </code></pre>
           </div>
           <h3>Icon Container</h3>
           <div class="component-preview">
             <div style="color:#246beb"><button
-                class="acl-button acl-button_outline-primary acl-button_icon acl-button_icon-border"
-                title="Reset Icon"><svg class="acl-button__icon" aria-hidden="true">
+                class="button button_outline-primary button_icon button_icon-border"
+                title="Reset Icon"><svg class="button__icon" aria-hidden="true">
                   <use xlink:href="../assets/images/icons/symbols.svg#reset"></use>
-                </svg> <span class="acl-assistive-text">Reset</span></button></div>
+                </svg> <span class="assistive-text">Reset</span></button></div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class=&quot;acl-button acl-button_outline-primary acl-button_icon acl-button_icon-border&quot; title=&quot;Reset Icon&quot;&gt;
-  &lt;svg class=&quot;acl-button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;button class=&quot;button button_outline-primary button_icon button_icon-border&quot; title=&quot;Reset Icon&quot;&gt;
+  &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
     &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#reset&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
-  &lt;span class=&quot;acl-assistive-text&quot;&gt;Reset&lt;/span&gt;
+  &lt;span class=&quot;assistive-text&quot;&gt;Reset&lt;/span&gt;
 &lt;/button&gt;                           
               </code></pre>
           </div>
           <h3>States</h3>
           <h4>Diabled</h4>
-          <div class="component-preview"><button class="acl-button acl-button_icon" disabled title="Myshare Icon"><svg
-                class="acl-button__icon" aria-hidden="true">
+          <div class="component-preview"><button class="button button_icon" disabled title="Myshare Icon"><svg
+                class="button__icon" aria-hidden="true">
                 <use xlink:href="../assets/images/icons/symbols.svg#myshare"></use>
-              </svg> <span class="acl-assistive-text">Myshare</span></button></div>
+              </svg> <span class="assistive-text">Myshare</span></button></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;button class=&quot;acl-button acl-button_icon&quot; disabled title=&quot;Myshare Icon&quot;&gt;
-  &lt;svg class=&quot;acl-button__icon&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;button class=&quot;button button_icon&quot; disabled title=&quot;Myshare Icon&quot;&gt;
+  &lt;svg class=&quot;button__icon&quot; aria-hidden=&quot;true&quot;&gt;
     &lt;use xlink:href=&quot;../assets/images/icons/symbols.svg#myshare&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;
-  &lt;span class=&quot;acl-assistive-text&quot;&gt;Myshare&lt;/span&gt;
+  &lt;span class=&quot;assistive-text&quot;&gt;Myshare&lt;/span&gt;
 &lt;/button&gt;                          
               </code></pre>
           </div>
@@ -1159,75 +1407,75 @@
         <section class="component-main">
           <h3>Base</h3>
           <div class="component-preview">
-            <div class="acl-tabs">
-              <ul class="acl-tabs__nav" role="tablist">
-                <li class="acl-tabs__item acl-is-active" title="Item One" role="presentation"><a class="acl-tabs__link"
+            <div class="tabs">
+              <ul class="tabs__nav" role="tablist">
+                <li class="tabs__item is-active" title="Item One" role="presentation"><a class="tabs__link"
                     href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-1"
                     id="tab-1__item">Item One</a></li>
-                <li class="acl-tabs__item" title="Item Two" role="presentation"><a class="acl-tabs__link" href="#"
+                <li class="tabs__item" title="Item Two" role="presentation"><a class="tabs__link" href="#"
                     role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-2"
                     id="tab-2__item">Item Two</a></li>
-                <li class="acl-tabs__item" title="Item Three" role="presentation"><a class="acl-tabs__link" href="#"
+                <li class="tabs__item" title="Item Three" role="presentation"><a class="tabs__link" href="#"
                     role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-3"
                     id="tab-3__item">Item Three</a></li>
               </ul>
-              <div id="tab-1" class="acl-tabs__content acl-show" role="tabpanel"
+              <div id="tab-1" class="tabs__content show" role="tabpanel"
                 aria-labelledby="tab-1__item">Item One Content</div>
-              <div id="tab-2" class="acl-tabs__content acl-hide" role="tabpanel"
+              <div id="tab-2" class="tabs__content hide" role="tabpanel"
                 aria-labelledby="tab-2__item">Item Two Content</div>
-              <div id="tab-3" class="acl-tabs__content acl-hide" role="tabpanel"
+              <div id="tab-3" class="tabs__content hide" role="tabpanel"
                 aria-labelledby="tab-3__item">Item Three Content</div>
             </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-  &lt;div class="acl-tabs"&gt;
-  &lt;ul class="acl-tabs__nav" role="tablist"&gt;
-    &lt;li class="acl-tabs__item acl-is-active" title="Item One" role="presentation"&gt;
-      &lt;a class="acl-tabs__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-1" id="tab-1__item"&gt;Item One&lt;/a&gt;
+  &lt;div class="tabs"&gt;
+  &lt;ul class="tabs__nav" role="tablist"&gt;
+    &lt;li class="tabs__item is-active" title="Item One" role="presentation"&gt;
+      &lt;a class="tabs__link" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-1" id="tab-1__item"&gt;Item One&lt;/a&gt;
     &lt;/li&gt;
-    &lt;li class="acl-tabs__item" title="Item Two" role="presentation"&gt;
-      &lt;a class="acl-tabs__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-2" id="tab-2__item"&gt;Item Two&lt;/a&gt;
+    &lt;li class="tabs__item" title="Item Two" role="presentation"&gt;
+      &lt;a class="tabs__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-2" id="tab-2__item"&gt;Item Two&lt;/a&gt;
     &lt;/li&gt;
-    &lt;li class="acl-tabs__item" title="Item Three" role="presentation"&gt;
-      &lt;a class="acl-tabs__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-3" id="tab-3__item"&gt;Item Three&lt;/a&gt;
+    &lt;li class="tabs__item" title="Item Three" role="presentation"&gt;
+      &lt;a class="tabs__link" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-3" id="tab-3__item"&gt;Item Three&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-  &lt;div id="tab-1" class="acl-tabs__content acl-show" role="tabpanel" aria-labelledby="tab-1__item"&gt;Item One Content&lt;/div&gt;
-  &lt;div id="tab-2" class="acl-tabs__content acl-hide" role="tabpanel" aria-labelledby="tab-2__item"&gt;Item Two Content&lt;/div&gt;
-  &lt;div id="tab-3" class="acl-tabs__content acl-hide" role="tabpanel" aria-labelledby="tab-3__item"&gt;Item Three Content&lt;/div&gt;
+  &lt;div id="tab-1" class="tabs__content show" role="tabpanel" aria-labelledby="tab-1__item"&gt;Item One Content&lt;/div&gt;
+  &lt;div id="tab-2" class="tabs__content hide" role="tabpanel" aria-labelledby="tab-2__item"&gt;Item Two Content&lt;/div&gt;
+  &lt;div id="tab-3" class="tabs__content hide" role="tabpanel" aria-labelledby="tab-3__item"&gt;Item Three Content&lt;/div&gt;
 &lt;/div&gt;              
             </code></pre>
           </div>
           <h3>With Icon</h3>
-          <p class="docs-desc">탭의 컨테이너에 flex속성 <code class="doc">.acl-tabs_flex</code>를 추가한다. 아이콘 탭으로 변경하기 위해 <code
-              class="doc">.acl-tabs__with-icon</code>를 추가한다.</p>
+          <p class="docs-desc">탭의 컨테이너에 flex속성 <code class="doc">.tabs_flex</code>를 추가한다. 아이콘 탭으로 변경하기 위해 <code
+              class="doc">.tabs__with-icon</code>를 추가한다.</p>
           <div class="component-preview" style="background-color:#e7edf6">
             <div style="width:320px">
-              <div class="acl-tabs acl-tabs_flex">
-                <ul class="acl-tabs__nav" role="tablist">
-                  <li class="acl-tabs__item acl-is-active" title="채팅" role="presentation"><a
-                      class="acl-tabs__link acl-tabs__with-icon" href="#" role="tab" tabindex="0" aria-selected="true"
-                      aria-controls="tab-1" id="tab-1__item"><svg class="acl-icon">
+              <div class="tabs tabs_flex">
+                <ul class="tabs__nav" role="tablist">
+                  <li class="tabs__item is-active" title="채팅" role="presentation"><a
+                      class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="0" aria-selected="true"
+                      aria-controls="tab-1" id="tab-1__item"><svg class="icon">
                         <use xlink:href="../assets/images/icons/symbols.svg#chat"></use>
-                      </svg> <b class="acl-tabs__label">채팅</b></a></li>
-                  <li class="acl-tabs__item" title="학생" role="presentation"><a
-                      class="acl-tabs__link acl-tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false"
-                      aria-controls="tab-2" id="tab-2__item"><svg class="acl-icon">
+                      </svg> <b class="tabs__label">채팅</b></a></li>
+                  <li class="tabs__item" title="학생" role="presentation"><a
+                      class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false"
+                      aria-controls="tab-2" id="tab-2__item"><svg class="icon">
                         <use xlink:href="../assets/images/icons/symbols.svg#student"></use>
-                      </svg> <b class="acl-tabs__label">학생</b></a></li>
-                  <li class="acl-tabs__item" title="정보" role="presentation"><a
-                      class="acl-tabs__link acl-tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false"
-                      aria-controls="tab-3" id="tab-3__item"><svg class="acl-icon">
+                      </svg> <b class="tabs__label">학생</b></a></li>
+                  <li class="tabs__item" title="정보" role="presentation"><a
+                      class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false"
+                      aria-controls="tab-3" id="tab-3__item"><svg class="icon">
                         <use xlink:href="../assets/images/icons/symbols.svg#info"></use>
-                      </svg> <b class="acl-tabs__label">정보</b></a></li>
+                      </svg> <b class="tabs__label">정보</b></a></li>
                 </ul>
-                <div id="tab-1" class="acl-tabs__content acl-show" role="tabpanel"
+                <div id="tab-1" class="tabs__content show" role="tabpanel"
                   aria-labelledby="tab-1__item">Item One Content</div>
-                <div id="tab-2" class="acl-tabs__content acl-hide" role="tabpanel"
+                <div id="tab-2" class="tabs__content hide" role="tabpanel"
                   aria-labelledby="tab-2__item">Item Two Content</div>
-                <div id="tab-3" class="acl-tabs__content acl-hide" role="tabpanel"
+                <div id="tab-3" class="tabs__content hide" role="tabpanel"
                   aria-labelledby="tab-3__item">Item Three Content</div>
               </div>
             </div>
@@ -1235,42 +1483,42 @@
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;div class="acl-tabs acl-tabs_flex"&gt;
-  &lt;ul class="acl-tabs__nav" role="tablist"&gt;
-    &lt;li class="acl-tabs__item acl-is-active" title="채팅" role="presentation"&gt;
-      &lt;a class="acl-tabs__link acl-tabs__with-icon" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-1" id="tab-1__item"&gt;
-        &lt;span class="acl-icon-container acl-current-color" title="chat icon"&gt;
-          &lt;svg class="acl-icon"&gt;
+&lt;div class="tabs tabs_flex"&gt;
+  &lt;ul class="tabs__nav" role="tablist"&gt;
+    &lt;li class="tabs__item is-active" title="채팅" role="presentation"&gt;
+      &lt;a class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-1" id="tab-1__item"&gt;
+        &lt;span class="icon-container current-color" title="chat icon"&gt;
+          &lt;svg class="icon"&gt;
             &lt;use xlink:href="../assets/images/icons/symbols.svg#chat"&gt;&lt;/use&gt;
           &lt;/svg&gt;
         &lt;/span&gt;
-        &lt;b class="acl-tabs__label"&gt;채팅&lt;/b&gt;
+        &lt;b class="tabs__label"&gt;채팅&lt;/b&gt;
       &lt;/a&gt;
     &lt;/li&gt;
-    &lt;li class="acl-tabs__item" title="학생" role="presentation"&gt;
-      &lt;a class="acl-tabs__link acl-tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-2" id="tab-2__item"&gt;
-        &lt;span class="acl-icon-container acl-current-color" title="student icon"&gt;
-          &lt;svg class="acl-icon"&gt;
+    &lt;li class="tabs__item" title="학생" role="presentation"&gt;
+      &lt;a class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-2" id="tab-2__item"&gt;
+        &lt;span class="icon-container current-color" title="student icon"&gt;
+          &lt;svg class="icon"&gt;
             &lt;use xlink:href="../assets/images/icons/symbols.svg#student"&gt;&lt;/use&gt;
           &lt;/svg&gt;
         &lt;/span&gt;
-        &lt;b class="acl-tabs__label"&gt;학생&lt;/b&gt;
+        &lt;b class="tabs__label"&gt;학생&lt;/b&gt;
       &lt;/a&gt;
     &lt;/li&gt;
-    &lt;li class="acl-tabs__item" title="정보" role="presentation"&gt;
-      &lt;a class="acl-tabs__link acl-tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-3" id="tab-3__item"&gt;
-        &lt;span class="acl-icon-container acl-current-color" title="info icon"&gt;
-          &lt;svg class="acl-icon"&gt;
+    &lt;li class="tabs__item" title="정보" role="presentation"&gt;
+      &lt;a class="tabs__link tabs__with-icon" href="#" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-3" id="tab-3__item"&gt;
+        &lt;span class="icon-container current-color" title="info icon"&gt;
+          &lt;svg class="icon"&gt;
             &lt;use xlink:href="../assets/images/icons/symbols.svg#info"&gt;&lt;/use&gt;
           &lt;/svg&gt;
         &lt;/span&gt;
-        &lt;b class="acl-tabs__label"&gt;정보&lt;/b&gt;
+        &lt;b class="tabs__label"&gt;정보&lt;/b&gt;
       &lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-  &lt;div id="tab-1" class="acl-tabs__content acl-show" role="tabpanel" aria-labelledby="tab-1__item"&gt;Item One Content&lt;/div&gt;
-  &lt;div id="tab-2" class="acl-tabs__content acl-hide" role="tabpanel" aria-labelledby="tab-2__item"&gt;Item Two Content&lt;/div&gt;
-  &lt;div id="tab-3" class="acl-tabs__content acl-hide" role="tabpanel" aria-labelledby="tab-3__item"&gt;Item Three Content&lt;/div&gt;
+  &lt;div id="tab-1" class="tabs__content show" role="tabpanel" aria-labelledby="tab-1__item"&gt;Item One Content&lt;/div&gt;
+  &lt;div id="tab-2" class="tabs__content hide" role="tabpanel" aria-labelledby="tab-2__item"&gt;Item Two Content&lt;/div&gt;
+  &lt;div id="tab-3" class="tabs__content hide" role="tabpanel" aria-labelledby="tab-3__item"&gt;Item Three Content&lt;/div&gt;
 &lt;/div&gt;   
             </code></pre>
           </div>
@@ -1287,34 +1535,34 @@
         <section class="component-main">
           <h3>Color</h3>
           <h4>Default</h4>
-          <p class="docs-desc">아이콘의 기본 색상으로 변경하려는 경우 <code class="doc">.acl-icon-default</code>를 추가한다.</p>
-          <div class="component-preview"><span class="acl-icon-container" title="Link icon"><svg
-                class="acl-icon acl-icon-default">
+          <p class="docs-desc">아이콘의 기본 색상으로 변경하려는 경우 <code class="doc">.icon-default</code>를 추가한다.</p>
+          <div class="component-preview"><span class="icon-container" title="Link icon"><svg
+                class="icon icon-default">
                 <use xlink:href="../assets/images/icons/symbols.svg#link"></use>
               </svg></span></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;span class="acl-icon-container" title="Description of icon when needed"&gt;
-  &lt;svg class="acl-icon acl-icon-default"&gt;
+&lt;span class="icon-container" title="Description of icon when needed"&gt;
+  &lt;svg class="icon icon-default"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#link"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/span&gt;
             </code></pre>
           </div>
           <h4>Current</h4>
-          <p class="docs-desc">아이콘 색상을 부모와 동일하게 변경하려는 경우 <code class="doc">.acl-current-color</code>를 아이콘의 컨테이너에 추가한다.
+          <p class="docs-desc">아이콘 색상을 부모와 동일하게 변경하려는 경우 <code class="doc">.current-color</code>를 아이콘의 컨테이너에 추가한다.
           </p>
-          <div class="component-preview"><span style="color:purple"><span class="acl-icon-container acl-current-color"
-                title="Link icon"><svg class="acl-icon">
+          <div class="component-preview"><span style="color:purple"><span class="icon-container current-color"
+                title="Link icon"><svg class="icon">
                   <use xlink:href="../assets/images/icons/symbols.svg#link_on"></use>
                 </svg></span></span></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
 &lt;span style="color: purple;"&gt;
-  &lt;span class="acl-icon-container acl-current-color" title="Description of icon when needed"&gt;
-    &lt;svg class="acl-icon"&gt;
+  &lt;span class="icon-container current-color" title="Description of icon when needed"&gt;
+    &lt;svg class="icon"&gt;
       &lt;use xlink:href="../assets/images/icons/symbols.svg#link"&gt;&lt;/use&gt;
     &lt;/svg&gt;
   &lt;/span&gt;
@@ -1322,32 +1570,32 @@
             </code></pre>
           </div>
           <h4>Success</h4>
-          <p class="docs-desc">아이콘 색상을 Success로 변경하려는 경우 <code class="doc">.acl-icon-success</code>를 추가한다.</p>
-          <div class="component-preview"><span class="acl-icon-container" title="Link icon"><svg
-                class="acl-icon acl-icon-success">
+          <p class="docs-desc">아이콘 색상을 Success로 변경하려는 경우 <code class="doc">.icon-success</code>를 추가한다.</p>
+          <div class="component-preview"><span class="icon-container" title="Link icon"><svg
+                class="icon icon-success">
                 <use xlink:href="../assets/images/icons/symbols.svg#link_on"></use>
               </svg></span></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;span class="acl-icon-container" title="Link icon"&gt;
-  &lt;svg class="acl-icon acl-icon-success"&gt;
+&lt;span class="icon-container" title="Link icon"&gt;
+  &lt;svg class="icon icon-success"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#link"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/span&gt;
             </code></pre>
           </div>
           <h4>Error</h4>
-          <p class="docs-desc">아이콘 색상을 Error로 변경하려는 경우 <code class="doc">.acl-icon-error</code>를 추가한다.</p>
-          <div class="component-preview"><span class="acl-icon-container" title="Link icon"><svg
-                class="acl-icon acl-icon-error">
+          <p class="docs-desc">아이콘 색상을 Error로 변경하려는 경우 <code class="doc">.icon-error</code>를 추가한다.</p>
+          <div class="component-preview"><span class="icon-container" title="Link icon"><svg
+                class="icon icon-error">
                 <use xlink:href="../assets/images/icons/symbols.svg#link_on"></use>
               </svg></span></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;span class="acl-icon-container" title="Link icon"&gt;
-  &lt;svg class="acl-icon acl-icon-error"&gt;
+&lt;span class="icon-container" title="Link icon"&gt;
+  &lt;svg class="icon icon-error"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#link"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/span&gt;
@@ -1355,78 +1603,78 @@
           </div>
           <h3>Size</h3>
           <h4>Default</h4>
-          <div class="component-preview"><span class="acl-icon-container" title="Link icon"><svg class="acl-icon">
+          <div class="component-preview"><span class="icon-container" title="Link icon"><svg class="icon">
                 <use xlink:href="../assets/images/icons/symbols.svg#link"></use>
               </svg></span></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;span class="acl-icon-container" title="Link icon"&gt;
-  &lt;svg class="acl-icon"&gt;
+&lt;span class="icon-container" title="Link icon"&gt;
+  &lt;svg class="icon"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#link"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/span&gt;
             </code></pre>
           </div>
           <h4>X-Small</h4>
-          <p class="docs-desc">아이콘 크기를 X-Small로 변경하려는 경우 <code class="doc">.acl-icon_x-small</code>를 추가한다.</p>
-          <div class="component-preview"><span class="acl-icon-container" title="Link icon"><svg
-                class="acl-icon acl-icon_x-small">
+          <p class="docs-desc">아이콘 크기를 X-Small로 변경하려는 경우 <code class="doc">.icon_x-small</code>를 추가한다.</p>
+          <div class="component-preview"><span class="icon-container" title="Link icon"><svg
+                class="icon icon_x-small">
                 <use xlink:href="../assets/images/icons/symbols.svg#link"></use>
               </svg></span></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;span class="acl-icon-container" title="Link icon"&gt;
-  &lt;svg class="acl-icon acl-icon_x-small"&gt;
+&lt;span class="icon-container" title="Link icon"&gt;
+  &lt;svg class="icon icon_x-small"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#link"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/span&gt;
             </code></pre>
           </div>
           <h4>Small</h4>
-          <p class="docs-desc">아이콘 크기를 Small로 변경하려는 경우 <code class="doc">.acl-icon_small</code>를 추가한다.</p>
-          <div class="component-preview"><span class="acl-icon-container" title="Link icon"><svg
-                class="acl-icon acl-icon_small">
+          <p class="docs-desc">아이콘 크기를 Small로 변경하려는 경우 <code class="doc">.icon_small</code>를 추가한다.</p>
+          <div class="component-preview"><span class="icon-container" title="Link icon"><svg
+                class="icon icon_small">
                 <use xlink:href="../assets/images/icons/symbols.svg#link"></use>
               </svg></span></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;span class="acl-icon-container" title="Link icon"&gt;
-  &lt;svg class="acl-icon acl-icon_small"&gt;
+&lt;span class="icon-container" title="Link icon"&gt;
+  &lt;svg class="icon icon_small"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#link"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/span&gt;
             </code></pre>
           </div>
           <h4>Large</h4>
-          <p class="docs-desc">아이콘 크기를 Large로 변경하려는 경우 <code class="doc">.acl-icon_large</code>를 추가한다.</p>
-          <div class="component-preview"><span class="acl-icon-container" title="Link icon"><svg
-                class="acl-icon acl-icon_large">
+          <p class="docs-desc">아이콘 크기를 Large로 변경하려는 경우 <code class="doc">.icon_large</code>를 추가한다.</p>
+          <div class="component-preview"><span class="icon-container" title="Link icon"><svg
+                class="icon icon_large">
                 <use xlink:href="../assets/images/icons/symbols.svg#link"></use>
               </svg></span></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;span class="acl-icon-container" title="Link icon"&gt;
-  &lt;svg class="acl-icon acl-icon_large"&gt;
+&lt;span class="icon-container" title="Link icon"&gt;
+  &lt;svg class="icon icon_large"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#link"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/span&gt;
             </code></pre>
           </div>
           <h4>X-Large</h4>
-          <p class="docs-desc">아이콘 크기를 X-Large로 변경하려는 경우 <code class="doc">.acl-icon_x-large</code>를 추가한다.</p>
-          <div class="component-preview"><span class="acl-icon-container" title="Link icon"><svg
-                class="acl-icon acl-icon_x-large">
+          <p class="docs-desc">아이콘 크기를 X-Large로 변경하려는 경우 <code class="doc">.icon_x-large</code>를 추가한다.</p>
+          <div class="component-preview"><span class="icon-container" title="Link icon"><svg
+                class="icon icon_x-large">
                 <use xlink:href="../assets/images/icons/symbols.svg#link"></use>
               </svg></span></div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-&lt;span class="acl-icon-container" title="Link icon"&gt;
-  &lt;svg class="acl-icon acl-icon_x-large"&gt;
+&lt;span class="icon-container" title="Link icon"&gt;
+  &lt;svg class="icon icon_x-large"&gt;
     &lt;use xlink:href="../assets/images/icons/symbols.svg#link"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/span&gt;
@@ -1436,159 +1684,159 @@
           <div class="component-preview">
             <ul class="docs-icon">
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-link" title="Link icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-link" title="Link icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#link"></use>
                     </svg></span>
                   <figcaption>link</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-lock" title="Lock icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-lock" title="Lock icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#lock"></use>
                     </svg></span>
                   <figcaption>lock</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-maximize" title="Maximize icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-maximize" title="Maximize icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#maximize"></use>
                     </svg></span>
                   <figcaption>maximize</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-message-text" title="Message text icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-message-text" title="Message text icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#message_text"></use>
                     </svg></span>
                   <figcaption>message_text</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-mobile" title="Mobile icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-mobile" title="Mobile icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#mobile"></use>
                     </svg></span>
                   <figcaption>mobile</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-pin" title="Pin icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-pin" title="Pin icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#pin"></use>
                     </svg></span>
                   <figcaption>pin</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-myshare" title="Myshare icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-myshare" title="Myshare icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#myshare"></use>
                     </svg></span>
                   <figcaption>myshare</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-user-edit" title="User edit icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-user-edit" title="User edit icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#user_edit"></use>
                     </svg></span>
                   <figcaption>user_edit</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-folder-open" title="Folder open icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-folder-open" title="Folder open icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#folder_open"></use>
                     </svg></span>
                   <figcaption>folder_open</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-chat" title="Chat icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-chat" title="Chat icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#chat"></use>
                     </svg></span>
                   <figcaption>chat</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-info" title="Info icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-info" title="Info icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#info"></use>
                     </svg></span>
                   <figcaption>info</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-student" title="Student icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-student" title="Student icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#student"></use>
                     </svg></span>
                   <figcaption>student</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-arrow-right" title="Arrow Right icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-arrow-right" title="Arrow Right icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#arrow_right"></use>
                     </svg></span>
                   <figcaption>arrow_right</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-export" title="Export icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-export" title="Export icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#export"></use>
                     </svg></span>
                   <figcaption>export</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-reset" title="Reset icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-reset" title="Reset icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#reset"></use>
                     </svg></span>
                   <figcaption>reset</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-menu" title="Menu Off icon"><svg class="acl-icon">
+                <figure><span class="icon-container icon-menu" title="Menu Off icon"><svg class="icon">
                       <use xlink:href="../assets/images/icons/symbols.svg#menu_off"></use>
                     </svg></span>
                   <figcaption>menu_off</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-search" title="Search icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-search" title="Search icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#search"></use>
                     </svg></span>
                   <figcaption>search</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-arrow_down" title="Arrow Down icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-arrow_down" title="Arrow Down icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#arrow_down"></use>
                     </svg></span>
                   <figcaption>arrow down</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-time" title="Time icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-time" title="Time icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#time"></use>
                     </svg></span>
                   <figcaption>time</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-check" title="Check icon"><svg
-                      class="acl-icon acl-icon-default">
+                <figure><span class="icon-container icon-check" title="Check icon"><svg
+                      class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#check"></use>
                     </svg></span>
                   <figcaption>Check</figcaption>
@@ -1596,8 +1844,8 @@
               </li>
               <li class="docs-icon-list">
                 <figure>
-                  <span class="acl-icon-container acl-icon-arrow_extend" title="Arrow Extend icon">
-                    <svg class="acl-icon acl-icon-default">
+                  <span class="icon-container icon-arrow_extend" title="Arrow Extend icon">
+                    <svg class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#arrow_extend"></use>
                     </svg>
                   </span>
@@ -1606,8 +1854,8 @@
               </li>
               <li class="docs-icon-list">
                 <figure>
-                  <span class="acl-icon-container acl-icon-cs" title="CS icon">
-                    <svg class="acl-icon acl-icon-default">
+                  <span class="icon-container icon-cs" title="CS icon">
+                    <svg class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#cs"></use>
                     </svg>
                   </span>
@@ -1616,8 +1864,8 @@
               </li>
               <li class="docs-icon-list">
                 <figure>
-                  <span class="acl-icon-container acl-icon-my" title="My icon">
-                    <svg class="acl-icon acl-icon-default">
+                  <span class="icon-container icon-my" title="My icon">
+                    <svg class="icon icon-default">
                       <use xlink:href="../assets/images/icons/symbols.svg#my"></use>
                     </svg>
                   </span>
@@ -1625,79 +1873,89 @@
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-menu" title="Menu On icon"><svg class="acl-icon">
+                <figure>
+                  <span class="icon-container icon-close" title="Close icon">
+                    <svg class="icon icon-default">
+                      <use xlink:href="../assets/images/icons/symbols.svg#close"></use>
+                    </svg>
+                  </span>
+                  <figcaption>close</figcaption>
+                </figure>
+              </li>
+              <li class="docs-icon-list">
+                <figure><span class="icon-container icon-menu" title="Menu On icon"><svg class="icon">
                       <use xlink:href="../assets/images/icons/symbols.svg#menu_on"></use>
                     </svg></span>
                   <figcaption>menu_on</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-link" title="Link icon"><svg
-                      class="acl-icon acl-icon-success">
+                <figure><span class="icon-container icon-link" title="Link icon"><svg
+                      class="icon icon-success">
                       <use xlink:href="../assets/images/icons/symbols.svg#link_on"></use>
                     </svg></span>
                   <figcaption>link_on</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-lock" title="Lock icon"><svg
-                      class="acl-icon acl-icon-success">
+                <figure><span class="icon-container icon-lock" title="Lock icon"><svg
+                      class="icon icon-success">
                       <use xlink:href="../assets/images/icons/symbols.svg#lock_on"></use>
                     </svg></span>
                   <figcaption>lock_on</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-maximize" title="Maximize icon"><svg
-                      class="acl-icon acl-icon-success">
+                <figure><span class="icon-container icon-maximize" title="Maximize icon"><svg
+                      class="icon icon-success">
                       <use xlink:href="../assets/images/icons/symbols.svg#maximize_on"></use>
                     </svg></span>
                   <figcaption>maximize_on</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-message-text" title="Message text icon"><svg
-                      class="acl-icon acl-icon-success">
+                <figure><span class="icon-container icon-message-text" title="Message text icon"><svg
+                      class="icon icon-success">
                       <use xlink:href="../assets/images/icons/symbols.svg#message_text_on"></use>
                     </svg></span>
                   <figcaption>message_text_on</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-mobile" title="Mobile icon"><svg
-                      class="acl-icon acl-icon-success">
+                <figure><span class="icon-container icon-mobile" title="Mobile icon"><svg
+                      class="icon icon-success">
                       <use xlink:href="../assets/images/icons/symbols.svg#mobile_on"></use>
                     </svg></span>
                   <figcaption>mobile_on</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-pin" title="Pin icon"><svg
-                      class="acl-icon acl-icon-success">
+                <figure><span class="icon-container icon-pin" title="Pin icon"><svg
+                      class="icon icon-success">
                       <use xlink:href="../assets/images/icons/symbols.svg#pin_on"></use>
                     </svg></span>
                   <figcaption>pin_on</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-myshare" title="Myshare icon"><svg
-                      class="acl-icon acl-icon-success">
+                <figure><span class="icon-container icon-myshare" title="Myshare icon"><svg
+                      class="icon icon-success">
                       <use xlink:href="../assets/images/icons/symbols.svg#myshare_on"></use>
                     </svg></span>
                   <figcaption>myshare_on</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-user-edit" title="User edit icon"><svg
-                      class="acl-icon acl-icon-success">
+                <figure><span class="icon-container icon-user-edit" title="User edit icon"><svg
+                      class="icon icon-success">
                       <use xlink:href="../assets/images/icons/symbols.svg#user_edit_on"></use>
                     </svg></span>
                   <figcaption>user_edit_on</figcaption>
                 </figure>
               </li>
               <li class="docs-icon-list">
-                <figure><span class="acl-icon-container acl-icon-folder-open" title="Folder open icon"><svg
-                      class="acl-icon acl-icon-success">
+                <figure><span class="icon-container icon-folder-open" title="Folder open icon"><svg
+                      class="icon icon-success">
                       <use xlink:href="../assets/images/icons/symbols.svg#folder_open_on"></use>
                     </svg></span>
                   <figcaption>folder_open_on</figcaption>
@@ -1727,43 +1985,43 @@
           <div class="component-preview">
             <div class="card-wrap">
               <div class="card-inner">
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
-                <div class="acl-card">
+                <div class="card">
                   <div class="card-title">Card Title</div>
                   <div class="card-content">This is some card content.</div>
                 </div>
@@ -1902,10 +2160,6 @@
         </section>
         <section class="component-main">
           <div class="component-preview">
-            <div class="card">
-              <div class="card-title">Card Title</div>
-              <div class="card-content">This is some card content.</div>
-            </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
@@ -1929,37 +2183,6 @@
         </section>
         <section class="component-main">
           <div class="component-preview">
-            <div class="card">
-              <div class="card-title">Card Title</div>
-              <div class="card-content">This is some card content.</div>
-            </div>
-          </div>
-          <div class="code-block">
-            <div class="action-bar"><button class="copy-button">Copy</button></div>
-            <pre><code class="language-html">
-&lt;div class="card"&gt;
-  &lt;div class="card-title"&gt;Card Title&lt;/div&gt;
-  &lt;div class="card-content"&gt;This is some card content.&lt;/div&gt;
-&lt;/div&gt;
-            </code></pre>
-          </div>
-        </section>
-      </div>
-
-      <div id="toast-component" class="component-section">
-        <section class="component-header">
-          <h2>Toast</h2>
-          <ul>
-            <li>HTML/CSS: Dev Ready</li>
-            <li>PC only</li>
-          </ul>
-        </section>
-        <section class="component-main">
-          <div class="component-preview">
-            <div class="card">
-              <div class="card-title">Card Title</div>
-              <div class="card-content">This is some card content.</div>
-            </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
@@ -1984,30 +2207,14 @@
         <section class="component-main">
           <h3>Base</h3>
           <div class="component-preview">
-            <div class="card">
-              <div class="card-title">Card Title</div>
-              <div class="card-content">This is some card content.</div>
-            </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>
             <pre><code class="language-html">
-                ___________________________
-    &lt;     나는 이 분야의 전문가다.     &gt;
-                    ---------------------------
-                        \   ^__^
-                         \  (oo)\_______
-                            (__)\       )\/\
-                                ||----w |
-                                ||     ||
             </code></pre>
           </div>
           <h3>Chat started bookend</h3>
           <div class="component-preview">
-            <div class="card">
-              <div class="card-title">Card Title</div>
-              <div class="card-content">This is some card content.</div>
-            </div>
           </div>
           <div class="code-block">
             <div class="action-bar"><button class="copy-button">Copy</button></div>

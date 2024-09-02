@@ -1,7 +1,7 @@
 @import '../abstracts/variables';
 
 // 아이콘 컨테이너 스타일
-.acl-icon-container {
+.icon-container {
   display: inline-block;
   border-radius: $icon-radius-border; // SCSS 변수 사용
   line-height: 1;
@@ -9,7 +9,7 @@
 }
 
 // 아이콘 기본 스타일
-.acl-icon {
+.icon {
   // 24px
   width: 1.5rem;
   height: 1.5rem;
@@ -58,7 +58,7 @@
 }
 
 //부모 요소의 색상을 아이콘 색상으로 사용
-.acl-current-color .acl-icon {
+.current-color .icon {
   color: currentColor; // SCSS 변수 사용
 }
 

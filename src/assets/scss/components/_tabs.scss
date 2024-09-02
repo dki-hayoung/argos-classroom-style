@@ -1,6 +1,6 @@
 @import '../abstracts/variables';
 
-.acl-tabs {
+.tabs {
   
   // 기본 탭 스타일
   display: block;
@@ -13,13 +13,13 @@
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid var(--color-white);
   }
 
   &__item {
     font-size: 1rem;
     font-weight: 500;
-    color: $gray07;
+    color: var(--color-gray-07);
     position: relative;
     padding: 0 .75rem 0 .75rem;
     margin-bottom: -3px;
@@ -35,16 +35,16 @@
       background-color: none;
       transition: .2s;
     }
-    &.acl-active,
-    &.acl-is-active {
-      color: $primary06;
+    &.active,
+    &.is-active {
+      color: var(--color-blue-06);
       font-weight: 700;
       &:after {
         background-color: currentColor;
         height: 2px;
       }
-      .acl-tabs__label {
-        color: $gray10;
+      .tabs__label {
+        color: var(--color-gray-10);
       }
     }
     &:hover,
@@ -52,13 +52,13 @@
       text-decoration: none;
       -webkit-box-shadow: none;
       box-shadow: none;
-      color: $primary06;
+      color: var(--color-blue-06);
       font-weight: 700;
       &:after {
         background-color: currentColor;
       }
-      .acl-tabs__label {
-        color: $gray10;
+      .tabs__label {
+        color: var(--color-gray-10);
       }
     }
   }
@@ -93,7 +93,7 @@
 
   // 너비가 균등한 플렉서블 탭
   &_flex {
-    .acl-tabs__nav {
+    .tabs__nav {
       display: flex;
     }
     li {
@@ -113,15 +113,15 @@
     line-height: 1.4;
   }
   &__label {
-    color: $gray07;
+    color: var(--color-gray-07);
   }
 }
 
 // 활성화된 탭 스타일
-.acl-show {
+.show {
   display: block;
 }
 
-.acl-hide {
+.hide {
   display: none !important;
 }
